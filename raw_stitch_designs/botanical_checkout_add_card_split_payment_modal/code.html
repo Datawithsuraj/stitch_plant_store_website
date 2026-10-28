@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"inverse-primary":"#9ed1bd","tertiary":"#581904","tertiary-fixed":"#ffdbd0","on-tertiary-fixed-variant":"#793019","background":"#faf9f4","on-surface":"#1b1c19","primary-fixed":"#baeed9","surface":"#faf9f4","on-secondary-container":"#546a2e","inverse-surface":"#30312e","on-tertiary-fixed":"#3a0a00","on-error-container":"#93000a","tertiary-container":"#762e17","on-background":"#1b1c19","surface-variant":"#e3e3de","secondary-container":"#cfe99f","outline":"#707974","tertiary-fixed-dim":"#ffb59f","surface-container-lowest":"#ffffff","on-secondary-fixed":"#131f00","primary":"#003629","error":"#ba1a1a","on-secondary":"#ffffff","surface-container-low":"#f5f4ef","secondary-fixed-dim":"#b6d088","surface-container":"#efeee9","primary-container":"#1b4d3e","outline-variant":"#c0c9c3","on-primary-fixed-variant":"#1d4f40","on-tertiary-container":"#fd9779","error-container":"#ffdad6","surface-container-high":"#e9e8e3","primary-fixed-dim":"#9ed1bd","surface-dim":"#dbdad5","on-tertiary":"#ffffff","on-error":"#ffffff","surface-container-highest":"#e3e3de","secondary-fixed":"#d2eca2","surface-bright":"#faf9f4","surface-tint":"#376757","secondary":"#50652a","on-primary-fixed":"#002117","on-surface-variant":"#404945","on-primary":"#ffffff","inverse-on-surface":"#f2f1ec","on-secondary-fixed-variant":"#394d14","on-primary-container":"#8abda9"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1.25rem","space-lg":"1.5rem","space-md":"1rem","space-xs":"0.25rem","gutter":"1.5rem","space-xl":"2.5rem","margin":"3rem","gutter-mobile":"1rem","space-sm":"0.5rem"},"fontFamily":{"display-lg":["Playfair Display"],"label-lg":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"headline-lg":["Playfair Display"],"display-lg-mobile":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"body-sm":["Plus Jakarta Sans"]},"fontSize":{"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["22px",{"lineHeight":"30px","fontWeight":"600"}],"headline-lg-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"500"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"title-lg":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"500"}],"display-lg-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}};</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,45,38,0.04)]"><div class="h-20 max-w-[1320px] mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex flex-col" href="#"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Verdant Haven</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Botanical Atelier</span></a><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[18px]">lock</span><span class="font-label-sm text-label-sm">Encrypted Checkout</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="cart-review" href="#">Cart Review</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="shipping-delivery" href="#">Shipping &amp; Delivery</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="payment-confirmation" href="#">Payment</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="botanical-care-guarantee" href="#">Care Guarantee</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">call</span><span class="font-label-sm text-label-sm">Concierge: 1-800-VERDANT</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">public</span><span class="font-label-sm text-label-sm">USD ($)</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-200px)]"><div class="flex flex-col w-full">
+<!-- Progress Stepper -->
+<section class="w-full bg-surface-container-low/70 py-space-md">
+<div class="max-w-[1320px] mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm items-center">
+<!-- Step 1: Completed -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-xl shadow-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Step 1 • Fulfilled</span>
+<button class="font-label-sm text-label-sm text-primary underline underline-offset-4 hover:text-secondary transition-colors">Edit</button>
+</div>
+<p class="font-title-md text-title-md text-on-surface truncate">Dispatch &amp; Courier</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">48hr Climate Van • Portland, OR 97201</p>
+</div>
+</div>
+<!-- Step 2: Active -->
+<div class="flex items-center gap-space-sm bg-primary-container text-on-primary p-space-sm rounded-xl shadow-md">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center flex-shrink-0 font-label-lg">
+            2
+          </div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">Step 2 • Active Settlement</span>
+<p class="font-title-md text-title-md text-on-primary font-headline-sm">Payment &amp; Provenance</p>
+<p class="font-body-sm text-body-sm text-on-primary-container truncate">Batch #VH-84920 Allocation</p>
+</div>
+<span class="material-symbols-outlined text-primary-fixed-dim text-[20px] animate-pulse">lock_open</span>
+</div>
+<!-- Step 3: Upcoming -->
+<div class="flex items-center gap-space-sm bg-surface-container/60 p-space-sm rounded-xl opacity-75">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center flex-shrink-0 font-label-lg">
+            3
+          </div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Step 3 • Final Step</span>
+<p class="font-title-md text-title-md text-on-surface">Review &amp; Confirmation</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Greenhouse Custody Transfer</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Checkout Workspace Grid -->
+<section class="w-full py-space-xl">
+<div class="max-w-[1320px] mx-auto px-gutter">
+<!-- Breadcrumb Meta Banner -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Checkout</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward_ios</span>
+<span class="text-primary font-bold">Settlement Protocol</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward_ios</span>
+<span class="text-outline">Clara Vance (clara.vance@conservatory.org)</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1 bg-secondary-container/50 text-on-secondary-container rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide uppercase">Specimen Bay #04 Held (14:38 remaining)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Main Column (Forms & Authorizations) -->
+<div class="lg:col-span-7 flex flex-col gap-space-xl">
+<!-- Express Payment Section -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary tracking-wide uppercase">Express Botanical Checkout</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Instant Allocation
+              </span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<!-- Apple Pay -->
+<button class="h-12 rounded-lg bg-on-surface text-surface flex items-center justify-center gap-2 hover:opacity-90 transition-transform active:scale-[0.98] shadow-sm">
+<svg class="h-5 w-auto fill-current" viewbox="0 0 170 82">
+<path d="M48.24 37.15c-.15-7.46 6.08-11.08 6.36-11.26-3.48-5.07-8.87-5.77-10.79-5.85-4.59-.47-8.98 2.71-11.31 2.71-2.33 0-5.96-2.65-9.77-2.58-5.03.07-9.67 2.93-12.26 7.44-5.23 9.07-1.34 22.48 3.75 29.83 2.49 3.59 5.46 7.62 9.36 7.48 3.75-.15 5.17-2.42 9.7-2.42 4.53 0 5.81 2.42 9.75 2.34 4.01-.07 6.55-3.66 9-7.26 2.85-4.16 4.02-8.19 4.09-8.39-.09-.04-7.88-3.03-7.97-12.08zM41.87 13.9c2.06-2.51 3.46-5.99 3.08-9.48-2.98.12-6.59 1.99-8.73 4.49-1.88 2.18-3.53 5.73-3.08 9.14 3.32.26 6.67-1.64 8.73-4.15z"></path>
+<path d="M68.64 56.4V26.24h7.84v4.54c1.8-3.4 5.44-5.04 8.92-5.04 6.72 0 11.72 5.28 11.72 13.44 0 8.16-5.04 13.44-11.76 13.44-3.44 0-6.96-1.64-8.8-4.96v8.74h-7.92zm7.84-17.24c0 4.64 2.8 7.68 6.64 7.68 3.84 0 6.64-3.04 6.64-7.68s-2.8-7.68-6.64-7.68c-3.84 0-6.64 3.04-6.64 7.68zM116.1 48.72c.4 5.36 4.72 8.08 9.36 8.08 3.76 0 6.56-1.52 7.76-4h7.04c-1.84 5.28-7.36 8.56-14.88 8.56-9.6 0-16.72-6.48-16.72-16.8 0-10.08 7.04-16.8 16.48-16.8 9.68 0 16.4 6.72 16.4 16.64 0 .8-.08 1.6-.16 2.32h-25.28zm17.6-6.16c-.32-4.16-3.6-7.36-8.72-7.36-4.96 0-8.24 3.2-8.72 7.36h17.44z"></path>
+</svg>
+</button>
+<!-- Google Pay -->
+<button class="h-12 rounded-lg bg-surface-container-high hover:bg-surface-variant transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="font-title-md text-title-md font-bold text-on-surface">G</span>
+<span class="font-title-md text-title-md font-medium text-on-surface-variant">Pay</span>
+</button>
+<!-- Shop Pay -->
+<button class="h-12 rounded-lg bg-[#5a31f4] text-white flex items-center justify-center hover:opacity-95 transition-opacity shadow-sm">
+<span class="font-title-md text-title-md tracking-tight font-extrabold italic">shop<span class="text-white font-normal">pay</span></span>
+</button>
+<!-- PayPal -->
+<button class="h-12 rounded-lg bg-[#ffc439] text-[#003087] flex items-center justify-center hover:brightness-105 transition-all shadow-sm">
+<span class="font-title-md text-title-md font-black italic tracking-tighter">Pay<span class="text-[#0079c1]">Pal</span></span>
+</button>
+</div>
+<!-- Stylized Divider -->
+<div class="relative flex items-center justify-center my-space-xs">
+<div class="w-full h-[1px] bg-outline-variant/60"></div>
+<span class="absolute bg-surface-container-lowest px-space-md font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">
+                Or Pay With Secure Botanical Settlement
+              </span>
+</div>
+</div>
+<!-- Payment Options Accordion / Tabs -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-xs"><h2 class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs"><span class="material-symbols-outlined text-[24px]">account_balance_wallet</span>Payment Instrument</h2><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-space-sm py-1 rounded hidden sm:inline-block">Tier-1 Horticultural Vault</span><button class="font-label-sm text-label-sm text-primary bg-primary-fixed/50 hover:bg-primary-fixed px-space-sm py-1 rounded font-semibold transition-colors flex items-center gap-1" onclick="document.getElementById('split-card-modal').classList.remove('hidden')" type="button"><span class="material-symbols-outlined text-[16px]">tune</span>+ Split / Add Card</button></div></div>
+<!-- Radio Selection Container -->
+<div class="flex flex-col gap-space-md" id="payment-options"><div class="bg-surface-container-low p-space-md rounded-xl transition-all"><label class="flex items-start justify-between cursor-pointer"><div class="flex items-center gap-space-sm"><input checked="" class="w-5 h-5 text-primary accent-primary cursor-pointer mt-0.5" name="payment_method" type="radio"/><div><span class="font-title-md text-title-md text-on-surface block">Botanical Charge / Credit Card</span><span class="font-body-sm text-body-sm text-on-surface-variant">All major greenhouse credit protocols accepted</span></div></div><div class="flex items-center gap-1.5 opacity-90"><span class="px-2 py-0.5 bg-surface-container-lowest rounded text-on-surface font-label-sm text-[10px] font-bold tracking-wider">VISA</span><span class="px-2 py-0.5 bg-surface-container-lowest rounded text-on-surface font-label-sm text-[10px] font-bold tracking-wider">MC</span><span class="px-2 py-0.5 bg-surface-container-lowest rounded text-on-surface font-label-sm text-[10px] font-bold tracking-wider">AMEX</span><span class="px-2 py-0.5 bg-surface-container-lowest rounded text-on-surface font-label-sm text-[10px] font-bold tracking-wider">DISC</span></div></label><div class="mt-space-md pt-space-md grid grid-cols-1 sm:grid-cols-2 gap-space-md"><div class="sm:col-span-2 flex flex-col gap-1"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Card Number</label><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">credit_card</span><input class="w-full h-12 pl-10 pr-10 rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-inner" type="text" value="4829 •••• •••• 9104"/><span class="material-symbols-outlined absolute right-3 text-secondary text-[20px]" title="Encrypted Card">verified_user</span></div></div><div class="sm:col-span-2 flex flex-col gap-1"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Name on Card</label><input class="w-full h-12 px-space-sm rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-inner" type="text" value="Clara Vance"/></div><div class="flex flex-col gap-1"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Expiration</label><input class="w-full h-12 px-space-sm rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-inner text-center" placeholder="MM / YY" type="text" value="09 / 28"/></div><div class="flex flex-col gap-1"><div class="flex items-center justify-between"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Security Code</label><span class="font-label-sm text-label-sm text-outline flex items-center gap-0.5 cursor-help" title="3-digit verification number on signature strip"><span class="material-symbols-outlined text-[14px]">info</span> CVV</span></div><div class="relative flex items-center"><input class="w-full h-12 px-space-sm rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-inner tracking-widest text-center" maxlength="4" type="password" value="842"/><span class="material-symbols-outlined absolute right-3 text-outline text-[18px]">lock</span></div></div><div class="sm:col-span-2 pt-space-xs"><label class="flex items-start gap-space-sm cursor-pointer select-none"><input checked="" class="w-4 h-4 rounded text-primary accent-primary mt-1" type="checkbox"/><span class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Save instrument to <strong class="text-primary font-semibold">Sanctuary Vault™</strong> for rapid priority allocation during future rare cultivar drops.</span></label></div></div></div><div class="bg-surface-container-lowest p-space-md rounded-xl hover:bg-surface-container-low/50 transition-colors"><label class="flex items-start justify-between cursor-pointer"><div class="flex items-center gap-space-sm"><input class="w-5 h-5 text-primary accent-primary cursor-pointer mt-0.5" name="payment_method" type="radio"/><div><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface">Flexible Nursery Financing</span><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] font-bold">0% APR</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">4 bi-weekly interest-free tranches of <strong>$56.75</strong> via Klarna or Affirm</p></div></div><span class="material-symbols-outlined text-outline text-[22px]">calendar_month</span></label></div><div class="bg-surface-container-lowest p-space-md rounded-xl hover:bg-surface-container-low/50 transition-colors"><label class="flex items-start justify-between cursor-pointer"><div class="flex items-center gap-space-sm"><input class="w-5 h-5 text-primary accent-primary cursor-pointer mt-0.5" name="payment_method" type="radio"/><div><span class="font-title-md text-title-md text-on-surface">Conservatory House Credit &amp; Gift Certificate</span><p class="font-body-sm text-body-sm text-on-surface-variant">Redeem member dividends, botanical grants, or digital vouchers</p></div></div><span class="material-symbols-outlined text-outline text-[22px]">card_giftcard</span></label></div><button class="w-full py-space-sm px-space-md rounded-xl border border-dashed border-outline-variant bg-surface-container-low/50 hover:bg-surface-container-low text-primary font-label-lg flex items-center justify-center gap-2 transition-colors" onclick="document.getElementById('split-card-modal').classList.remove('hidden')" type="button"><span class="material-symbols-outlined text-[18px]">add_circle</span><span>+ Add New Card or Configure Split Settlement</span></button></div>
+</div>
+<!-- Billing Address Module -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<h2 class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px]">home_pin</span>
+              Billing Address
+            </h2>
+<div class="space-y-space-sm">
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low cursor-pointer">
+<input checked="" class="w-4 h-4 text-primary accent-primary mt-1" name="billing_address" type="radio"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Same as greenhouse dispatch address</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Clara Vance • 2840 SW Periander St, Portland, OR 97201</span>
+</div>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg hover:bg-surface-container-low/60 transition-colors cursor-pointer">
+<input class="w-4 h-4 text-primary accent-primary" name="billing_address" type="radio"/>
+<span class="font-body-md text-body-md text-on-surface">Specify an alternative botanical entity or commercial invoicing address</span>
+</label>
+</div>
+</div>
+<!-- Botanical Transit Assurance Add-ons -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px]">thermostat</span>
+                Transit &amp; Climate Assurance
+              </h2>
+<span class="font-label-sm text-label-sm uppercase font-semibold text-secondary tracking-wider">Atelier Covered</span>
+</div>
+<!-- Guarantee 1: Climate-Proof -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-low/80">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">dew_point</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Climate-Proof Transit Guarantee</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">INCLUDED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Embedded thermal sensor tag #TS-994 monitors ambient humidity and root warmth. Guaranteed immediate nursery specimen replacement if temperatures fall below 50°F during Pacific transit.
+                </p>
+</div>
+</div>
+<!-- Guarantee 2: Reforestation -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-low/80">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">forest</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Pacific Northwest Douglas Fir Offset</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">INCLUDED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  100% neutralized dispatch emissions supporting native woodland canopy conservation in Clackamas County, Oregon.
+                </p>
+</div>
+</div>
+</div>
+<!-- Escrow & Security Callout -->
+<div class="bg-surface-container-high/60 p-space-md rounded-xl flex items-center justify-between gap-space-md flex-wrap sm:flex-nowrap">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[32px]">shield_lock</span>
+<div>
+<p class="font-title-md text-title-md text-primary font-headline-sm">Verdant Haven Nursery Escrow Protection</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Your funds are retained securely in escrow and only released once your plant arrives safely and passes your visual inspection.</p>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<span class="px-2 py-1 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm rounded shadow-sm">256-Bit SSL</span>
+<span class="px-2 py-1 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm rounded shadow-sm">Stripe Verified</span>
+</div>
+</div>
+<!-- Primary Submit Button & Allocations -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<button class="w-full h-16 bg-primary-container text-on-primary font-headline-sm text-headline-sm rounded-xl shadow-lg hover:shadow-xl hover:bg-primary transition-all flex items-center justify-center gap-space-sm group active:scale-[0.99]">
+<span>Authorize Payment &amp; Reserve Specimen ($227.00)</span>
+<span class="material-symbols-outlined text-[24px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center max-w-xl mx-auto">
+              By authorizing settlement, specimen <strong class="text-primary font-mono">#MD-2025-V7</strong> is instantly earmarked in Bay 4 of the Conservatory. Custom breathable packaging and root conditioning commence immediately.
+            </p>
+</div>
+</div>
+<!-- Right Column (Specimen Dossier & Summary) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Order Specimen Dossier -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col gap-space-md sticky top-24">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Atelier Custody</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Specimen Dossier</h3>
+</div>
+<span class="px-2 py-1 bg-surface-container rounded-full font-label-sm text-label-sm text-on-surface-variant">2 Line Items</span>
+</div>
+<!-- Item 1: Monstera Deliciosa -->
+<div class="flex gap-space-md p-space-sm bg-surface-container-low/60 rounded-xl">
+<div class="w-24 h-28 rounded-lg overflow-hidden relative flex-shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A magnificent archival Monstera Deliciosa with symmetrical deep fenestrations and aerial roots in a handcrafted Tuscan terracotta vessel, shot in a soft ambient greenhouse lighting, editorial luxury botanical studio style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrfoXvO79g_WYGBM6IhW7NU8NxYS0vQniNMeNg5tveIivKf1Brte7gk8Ya1MMMjcCjor5qSQLU4Q0zC-eXjfB3acn3Iq35q-Z6avMbRpyDMYA2sqTXhESnLTx0SjTOFAwQhF-Bq55MLzFZfhjLcNQWzZoHWMO-LiSTIKVQ2ISpFNu0hqkLdkqZQBnFrgGouxwd87y8AwQ56pO3kRfPHo2rZZnrcOXRY7huvh8HYL0zEm-D6kAR0p--Fg"/>
+<div class="absolute bottom-1 left-1 px-1.5 py-0.5 bg-primary/90 text-on-primary font-label-sm text-[10px] rounded tracking-widest uppercase">
+                  Grade A
+                </div>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h4 class="font-title-md text-title-md text-on-surface font-headline-sm truncate leading-snug">Monstera Deliciosa Liebm.</h4>
+<span class="font-title-md text-title-md text-primary font-bold">$185.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">8.5" Breathable Tuscan Terracotta Pot</p>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">military_tech</span>
+<span class="font-label-sm text-[11px] text-secondary font-medium">NFC Brass Medallion #MD-772</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<span class="font-label-sm text-label-sm font-mono text-outline-variant bg-surface-container px-2 py-0.5 rounded">Tag #MD-2025-V7</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Qty: 1</span>
+</div>
+</div>
+</div>
+<!-- Item 2: Aroid Bark Substrate Blend -->
+<div class="flex gap-space-md p-space-sm bg-surface-container-low/60 rounded-xl">
+<div class="w-24 h-24 rounded-lg overflow-hidden relative flex-shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Artisanal resealable matte craft pouch of Organic Aroid Haven Substrate Blend showing chunks of Douglas fir bark, chunky perlite, and horticultural charcoal on a polished raw stone background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTwNrZDFphmOG_2NtKHXDvpJjtvLuLmcm8Er2XH4XbL7DqtTUHz1WYQHag4U8ZsNizMdyTlbazAPki_aiLKP6Dja_Rzryf4Lm2x9QWB9ZxcmMr1PVzwgZApxzKPX0X3YEtBHsSrx4A4eVMV3ErtqzyXBcPYKSaQduUZ8HDsr0_aC6DkUZ24o1acBZcYkHzpDeqdx9GisjslrcgcguayAyATF591ZU_Ku-yP5bjJzLMZ2J6B249nK80Qw"/>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h4 class="font-title-md text-title-md text-on-surface font-headline-sm truncate leading-snug">Organic Aroid Bark Substrate</h4>
+<span class="font-title-md text-title-md text-primary font-bold">$24.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Blend No. 4 • 4L Micro-Perforated Pouch</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">eco</span> Peat-Free Certified
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Qty: 1</span>
+</div>
+</div>
+</div>
+<!-- Promo Code Module -->
+<div class="pt-space-xs">
+<div class="flex gap-2">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-[18px]">loyalty</span>
+<input class="w-full h-11 pl-9 pr-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface uppercase tracking-wider focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" placeholder="Promo or Conservatory Voucher" type="text" value="GARDENCLUB"/>
+</div>
+<button class="h-11 px- space-md px-4 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold transition-colors">
+                  Applied
+                </button>
+</div>
+<p class="font-label-sm text-[11px] text-secondary mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Member tier validated • Complimentary thermal wrapping applied
+              </p>
+</div>
+<!-- Ledger Breakdown -->
+<div class="bg-surface-container-low/40 p-space-md rounded-xl space-y-space-xs">
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">
+<span>Specimen &amp; Care Subtotal</span>
+<span class="text-on-surface font-medium">$209.00</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span>Climate-Controlled Dispatch</span>
+<span class="material-symbols-outlined text-[14px] text-outline cursor-help" title="Thermal insulated dispatch van directly from conservatory">info</span>
+</div>
+<span class="text-on-surface font-medium">$18.00</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span>Agricultural Tax</span>
+<span class="font-label-sm text-[10px] bg-secondary-container/60 text-on-secondary-container px-1 rounded">OR Nursery Exemption</span>
+</div>
+<span class="text-secondary font-semibold">$0.00</span>
+</div>
+<div class="w-full h-[1px] bg-outline-variant/40 my-2"></div>
+<div class="flex justify-between items-baseline pt-1">
+<div>
+<span class="font-title-lg text-title-lg text-primary font-headline-sm">Total Settlement</span>
+<p class="font-label-sm text-[11px] text-on-surface-variant">Guaranteed price in USD ($)</p>
+</div>
+<span class="font-headline-md text-headline-md text-primary font-bold">$227.00</span>
+</div>
+</div>
+<!-- Horticulturist Provenance Card -->
+<div class="bg-primary/5 p-space-md rounded-xl flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Portrait of senior botanist Dr Elena Alvarez wearing linen work apron in a lush conservatory holding horticultural monitoring clipboard with warm natural sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-lPXftw3S2V01TiLAreB4WuE3cWBw866tzrkh0iDGYV1NDVbkHb_QFRihCcoe7Iok3e8ZKHvpyjWiBB_OUilg9GSk8cQXIZDldy8XRkWxx4I_NRRDQjBJNVgQ46fYp-LPSwhIbVg4DvOekc4JxrG-5j7FEk9fKTdPzQWWOINxG7vRlLYdPgzFsNOLE6btjAp526QZVl8Wl9Sgl1_ML0UGLB_JLS1QI2OlqV-0MytCfYEhI8DJYEdPeA"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Assigned Care Specialist</span>
+<span class="font-title-md text-title-md text-primary font-headline-sm">Dr. Elena Alvarez, Ph.D.</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[13px] leading-tight mt-0.5">
+                  "Specimen #MD-2025-V7 exhibits robust adventitious root development and pristine chlorophyll saturation. Hydration levels verified optimal."
+                </p>
+</div>
+</div>
+<!-- Concierge Live Assist -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span>
+<span>Questions regarding specimen custody?</span>
+</div>
+<a class="text-primary font-semibold hover:underline flex items-center gap-0.5" href="#">
+                Concierge Chat
+                <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interaction for payment option selection tabs
+  document.addEventListener('DOMContentLoaded', () => {
+    const radioButtons = document.querySelectorAll('input[name="payment_method"]');
+    radioButtons.forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        // Aesthetic toggle trigger for demo fidelity
+        const options = document.querySelectorAll('#payment-options > div');
+        options.forEach(opt => {
+          if (opt.contains(e.target)) {
+            opt.classList.add('bg-surface-container-low');
+            opt.classList.remove('bg-surface-container-lowest');
+          } else {
+            opt.classList.remove('bg-surface-container-low');
+            opt.classList.add('bg-surface-container-lowest');
+          }
+        });
+      });
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low"><div class="max-w-[1320px] mx-auto px-gutter py-space-xl flex flex-col gap-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs text-primary"><span class="material-symbols-outlined text-[20px]">potted_plant</span><span class="font-title-md text-title-md">30-Day Plant Guarantee</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Hand-selected speciments nurtured to thrive in your space, protected by our arrival assurance.</p></div><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs text-primary"><span class="material-symbols-outlined text-[20px]">eco</span><span class="font-title-md text-title-md">Sustainably Cultivated</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Zero peat moss, 100% compostable root-ball packaging, and organic soil mixes.</p></div><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs text-primary"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-title-md text-title-md">Safe Transit Packaging</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Insulated, climate-conscious thermal boxes engineered precisely for living foliage.</p></div><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs text-primary"><span class="material-symbols-outlined text-[20px]">nest_eco_leaf</span><span class="font-title-md text-title-md">Horticultural Advice</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Direct ongoing care support from our master nursery team for the life of your botanical.</p></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md"><div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a><span>•</span><a class="hover:text-primary transition-colors" href="#">Terms of Service</a><span>•</span><a class="hover:text-primary transition-colors" href="#">Sustainability Pledge</a><span>•</span><a class="hover:text-primary transition-colors" href="#">Delivery Concierge</a></div><p class="font-label-sm text-label-sm text-on-surface-variant">© 2025 Verdant Haven Botanical Atelier &amp; Nursery. All rights reserved.</p></div></div></footer><div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-surface/40 backdrop-blur-md" id="split-card-modal"><div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden border border-outline-variant/40 animate-in fade-in zoom-in-95"><div class="bg-surface-container-low px-space-lg py-space-md border-b border-outline-variant/40 flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">payments</span></div><div><h3 class="font-headline-sm text-headline-sm text-primary">Instrument &amp; Settlement Allocation</h3><p class="font-label-sm text-label-sm text-on-surface-variant">Configure alternative botanical card or distribute order balance</p></div></div><button class="w-9 h-9 rounded-full hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="document.getElementById('split-card-modal').classList.add('hidden')" type="button"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="flex border-b border-outline-variant/30 bg-surface-container-lowest px-space-lg pt-space-xs"><button class="py-space-sm px-space-md font-label-lg text-on-surface-variant hover:text-on-surface border-b-2 border-transparent flex items-center gap-1.5 transition-all" id="tab-btn-newcard" onclick="document.getElementById('tab-content-newcard').classList.remove('hidden'); document.getElementById('tab-content-split').classList.add('hidden'); this.className='py-space-sm px-space-md font-label-lg font-semibold text-primary border-b-2 border-primary flex items-center gap-1.5 transition-all'; document.getElementById('tab-btn-split').className='py-space-sm px-space-md font-label-lg text-on-surface-variant hover:text-on-surface border-b-2 border-transparent flex items-center gap-1.5 transition-all';" type="button"><span class="material-symbols-outlined text-[18px]">credit_card</span><span>Add New Card</span></button><button class="py-space-sm px-space-md font-label-lg font-semibold text-primary border-b-2 border-primary flex items-center gap-1.5 transition-all" id="tab-btn-split" onclick="document.getElementById('tab-content-split').classList.remove('hidden'); document.getElementById('tab-content-newcard').classList.add('hidden'); this.className='py-space-sm px-space-md font-label-lg font-semibold text-primary border-b-2 border-primary flex items-center gap-1.5 transition-all'; document.getElementById('tab-btn-newcard').className='py-space-sm px-space-md font-label-lg text-on-surface-variant hover:text-on-surface border-b-2 border-transparent flex items-center gap-1.5 transition-all';" type="button"><span class="material-symbols-outlined text-[18px]">call_split</span><span>Split Settlement ($227.00)</span><span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-wider">Multi-Pay</span></button></div><div class="p-space-lg max-h-[75vh] overflow-y-auto"><div class="hidden flex flex-col gap-space-md" id="tab-content-newcard"><div class="bg-surface-container-low/70 p-space-sm rounded-xl flex items-center gap-space-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><span>Credentials encrypted and secured under Tier-1 Botanical Escrow standards.</span></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md"><div class="sm:col-span-2 flex flex-col gap-1"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Cardholder Legal Name</label><input class="w-full h-11 px-space-sm rounded-lg bg-surface-container-low font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="e.g. Clara Vance" type="text" value="Clara Vance"/></div><div class="sm:col-span-2 flex flex-col gap-1"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Card Number</label><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">credit_card</span><input class="w-full h-11 pl-10 pr-space-sm rounded-lg bg-surface-container-low font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="•••• •••• •••• ••••" type="text" value=""/></div></div><div class="flex flex-col gap-1"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Expiration</label><input class="w-full h-11 px-space-sm rounded-lg bg-surface-container-low font-body-md text-on-surface text-center focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="MM / YY" type="text"/></div><div class="flex flex-col gap-1"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Security Code (CVV)</label><input class="w-full h-11 px-space-sm rounded-lg bg-surface-container-low font-body-md text-on-surface text-center focus:outline-none focus:ring-2 focus:ring-primary/20" maxlength="4" placeholder="CVC / CVV" type="password"/></div><div class="sm:col-span-2 flex flex-col gap-space-xs pt-1"><label class="flex items-center gap-space-sm cursor-pointer"><input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/><span class="font-body-sm text-body-sm text-on-surface-variant">Billing address matches dispatch destination (2840 SW Periander St, Portland, OR)</span></label><label class="flex items-center gap-space-sm cursor-pointer"><input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/><span class="font-body-sm text-body-sm text-on-surface-variant">Save to Sanctuary Vault™ for future botanical drops</span></label></div></div></div><div class="flex flex-col gap-space-md" id="tab-content-split"><div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl"><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-secondary font-semibold">Total Settlement Balance</span></div><span class="font-headline-sm text-headline-sm text-primary font-bold">$227.00</span></div><div class="p-space-md rounded-xl bg-surface-container-low/60 border border-outline-variant/30 flex flex-col gap-space-sm"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">credit_card</span><span class="font-title-md text-title-md text-on-surface font-semibold">1st Instrument: Botanical Card (*9104)</span></div><div class="flex items-center gap-1"><span class="font-headline-sm text-title-lg text-primary font-bold">$150.00</span></div></div><div class="flex items-center gap-3"><input class="w-full accent-primary h-2 bg-surface-container-highest rounded-lg cursor-pointer" max="217" min="10" type="range" value="150"/><span class="font-label-sm text-label-sm font-mono text-on-surface-variant min-w-[50px] text-right">66%</span></div><p class="font-body-sm text-[12px] text-on-surface-variant">Charge $150.00 to Clara Vance's primary encrypted Visa ending in 9104.</p></div><div class="p-space-md rounded-xl bg-surface-container-low/60 border border-outline-variant/30 flex flex-col gap-space-sm"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">card_giftcard</span><span class="font-title-md text-title-md text-on-surface font-semibold">2nd Instrument: Secondary or Credit</span></div><span class="font-headline-sm text-title-lg text-secondary font-bold">$77.00</span></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-1"><label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/40 cursor-pointer"><input checked="" class="accent-primary w-4 h-4" name="split_second_method" type="radio"/><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">Conservatory Member Credit</span><span class="font-body-sm text-[11px] text-on-surface-variant">Available: $120.00</span></div></label><label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/40 cursor-pointer"><input class="accent-primary w-4 h-4" name="split_second_method" type="radio"/><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">New Secondary Card</span><span class="font-body-sm text-[11px] text-on-surface-variant">Amex, Mastercard, Discover</span></div></label></div></div><div class="p-space-sm rounded-lg bg-secondary-container/40 flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">task_alt</span> Remaining Balance to Allocate:</span><span class="font-bold font-mono text-secondary">$0.00 (Balanced)</span></div></div></div><div class="bg-surface-container-low px-space-lg py-space-md border-t border-outline-variant/40 flex items-center justify-between"><button class="px-space-md py-2.5 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-lg font-medium transition-colors" onclick="document.getElementById('split-card-modal').classList.add('hidden')" type="button">Cancel</button><div class="flex items-center gap-space-sm"><button class="px-space-lg py-2.5 rounded-xl bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-lg font-semibold shadow-md transition-all flex items-center gap-1.5 active:scale-[0.98]" onclick="document.getElementById('split-card-modal').classList.add('hidden')" type="button"><span class="material-symbols-outlined text-[18px]">check</span><span>Apply Split Allocation</span></button></div></div></div></div></body></html>

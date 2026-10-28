@@ -1,0 +1,21 @@
+{
+  "name": "verdant-haven-botanical-boutique",
+  "version": "1.0.0",
+  "description": "Verdant Haven — High-End Artisanal Botanical Boutique, Plant E-Commerce & Sanctuary Portal",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve -l 3000 .",
+    "start": "npx serve -l 3000 .",
+    "serve:py": "python -m http.server 3000",
+    "verify": "python verify_site.py"
+  },
+  "keywords": [
+    "botanical",
+    "plant-store",
+    "ecommerce",
+    "tailwind",
+    "verdant-haven"
+  ],
+  "author": "Verdant Haven Atelier",
+  "license": "MIT"
+}

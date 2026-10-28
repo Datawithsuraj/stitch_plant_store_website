@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#efeee9", "on-tertiary": "#ffffff", "outline-variant": "#c0c9c3", "surface-dim": "#dbdad5", "on-primary": "#ffffff", "on-primary-fixed": "#002117", "primary-container": "#1b4d3e", "error": "#ba1a1a", "tertiary-fixed": "#ffdbd0", "inverse-surface": "#30312e", "secondary": "#50652a", "outline": "#707974", "on-tertiary-fixed-variant": "#793019", "surface-container-high": "#e9e8e3", "on-secondary": "#ffffff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#1d4f40", "on-tertiary-container": "#fd9779", "on-tertiary-fixed": "#3a0a00", "primary": "#003629", "surface-container-highest": "#e3e3de", "on-secondary-container": "#546a2e", "surface-container-lowest": "#ffffff", "on-surface": "#1b1c19", "background": "#faf9f4", "surface-tint": "#376757", "inverse-on-surface": "#f2f1ec", "tertiary-container": "#762e17", "surface-variant": "#e3e3de", "secondary-container": "#cfe99f", "on-background": "#1b1c19", "on-primary-container": "#8abda9", "error-container": "#ffdad6", "surface-bright": "#faf9f4", "surface-container-low": "#f5f4ef", "surface": "#faf9f4", "primary-fixed-dim": "#9ed1bd", "on-secondary-fixed": "#131f00", "on-secondary-fixed-variant": "#394d14", "on-surface-variant": "#404945", "secondary-fixed": "#d2eca2", "inverse-primary": "#9ed1bd", "on-error": "#ffffff", "tertiary-fixed-dim": "#ffb59f", "tertiary": "#581904", "primary-fixed": "#baeed9", "secondary-fixed-dim": "#b6d088" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1.25rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xl": "2.5rem", "margin": "3rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1.5rem" }, "fontFamily": { "body-sm": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "headline-sm": [ "Playfair Display" ], "body-lg": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Playfair Display" ], "display-lg": [ "Playfair Display" ], "display-lg-mobile": [ "Playfair Display" ], "label-lg": [ "Plus Jakarta Sans" ], "headline-lg": [ "Playfair Display" ] }, "fontSize": { "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "title-lg": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "title-md": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "headline-lg-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "display-lg": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "display-lg-mobile": [ "38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-md shadow-[0_1px_12px_rgba(27,45,38,0.04)]"><div class="h-20 max-w-[1320px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex flex-col" data-path="sanctuary" href="#"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-serif">Verdant Haven</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary -mt-1">Glasshouse &amp; Atelier</span></a></div><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary font-title-md"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-lg transition-colors" data-path="sanctuary" href="#">Sanctuary</a><a aria-current="page" class="px-space-sm py-space-xs rounded-lg transition-colors bg-primary-container text-on-primary font-title-md" data-path="botanical-catalog" href="#">Botanical Catalog</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-lg transition-colors" data-path="provenance" href="#">Provenance</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-lg transition-colors" data-path="care-lab" href="#">Care Lab</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-lg transition-colors" data-path="reviews-feedback" href="#">Reviews &amp; Feedback</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-lg transition-colors" data-path="acclimation-journal" href="#">Acclimation Journal</a></nav><div class="flex items-center gap-space-md"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Banner / Editorial Header -->
+<section class="w-full bg-surface-container-low px-margin-mobile md:px-margin py-space-xl">
+<div class="max-w-[1320px] mx-auto">
+<!-- Breadcrumb / Eyebrow Archetype -->
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Sauvie Island Glasshouse • Living Herbarium Inventory</span>
+</div>
+<!-- Hero Typography Cluster -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+<div class="lg:col-span-8">
+<h1 class="font-display-lg text-display-lg font-serif text-primary tracking-tight leading-none mb-space-md">
+            Curated Botanical Catalog <br class="hidden sm:inline"/>
+<span class="italic font-normal text-surface-tint">&amp; Living Cultivar Archive</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Acclimated botanical specimens, rare architectural aroids, and micro-batch nursery cultivars. Every specimen is paired with an earthenware vessel, sensor telemetry, and an authentic cryptographic plant passport.
+          </p>
+</div>
+<!-- Glasshouse Badges & Status Strip -->
+<div class="lg:col-span-4 flex flex-col gap-space-xs">
+<div class="bg-surface p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">thermostat</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Glasshouse Dome A</p>
+<p class="font-title-md text-title-md text-primary">22.4°C • 68% RH</p>
+</div>
+</div>
+<span class="px-2 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase">Equilibrated</span>
+</div>
+</div>
+</div>
+<!-- Quick Stats Pill Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter mt-space-lg pt-space-md">
+<div class="flex items-center gap-space-sm bg-surface p-space-sm rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">potted_plant</span>
+</div>
+<div>
+<span class="block font-title-md text-title-md text-primary">84 Cultivars</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">In Glasshouse</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface p-space-sm rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div>
+<span class="block font-title-md text-title-md text-primary">100% Guaranteed</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Acclimation Warranty</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface p-space-sm rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">science</span>
+</div>
+<div>
+<span class="block font-title-md text-title-md text-primary">Formula A-7</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Living Bio-Substrate</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface p-space-sm rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<div>
+<span class="block font-title-md text-title-md text-primary">White-Glove</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Climate Courier</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Specimen Explorer Workspace -->
+<section class="max-w-[1320px] mx-auto w-full px-margin-mobile md:px-margin py-space-lg">
+<!-- Search & Facet Bar -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col gap-space-md">
+<!-- Search and Sort Row -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<div class="relative flex-grow max-w-2xl">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-12 pl-12 pr-4 bg-surface rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Search by botanical binomial, common name, accession ID, or foliar characteristics..." type="text"/>
+</div>
+<div class="flex items-center gap-space-sm self-end lg:self-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider whitespace-nowrap">Sort By</span>
+<div class="relative">
+<select class="appearance-none bg-surface pl-4 pr-10 py-2.5 rounded-lg font-label-lg text-label-lg text-primary focus:outline-none focus:ring-2 focus:ring-primary-container cursor-pointer shadow-sm">
+<option>Curator's Recommendation</option>
+<option>Rarity &amp; Provenance Tier</option>
+<option>Foliar Maturity (High to Low)</option>
+<option>Light Requirements (Lowest First)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Quick Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm whitespace-nowrap transition-colors shadow-sm">
+          All Cultivars (84)
+        </button>
+<button class="px-4 py-2 rounded-lg bg-surface text-on-surface hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap transition-colors shadow-sm">
+          Rare &amp; Archival (12)
+        </button>
+<button class="px-4 py-2 rounded-lg bg-surface text-on-surface hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap transition-colors shadow-sm">
+          Aroids &amp; Epiphytes (38)
+        </button>
+<button class="px-4 py-2 rounded-lg bg-surface text-on-surface hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap transition-colors shadow-sm">
+          Arboreal &amp; Ficus (16)
+        </button>
+<button class="px-4 py-2 rounded-lg bg-surface text-on-surface hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap transition-colors shadow-sm">
+          Dappled Shade &amp; Humidity (18)
+        </button>
+<button class="px-4 py-2 rounded-lg bg-surface text-on-surface hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap transition-colors shadow-sm">
+          Pet Friendly &amp; Non-Toxic (14)
+        </button>
+</div>
+<!-- Active Filters Tagline -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">Active Facets:</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+            Category: Aroids
+            <span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+            Light: Bright Indirect
+            <span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+            Status: In Stock (Glasshouse Ready)
+            <span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+</div>
+<button class="text-tertiary-container hover:text-tertiary font-label-sm text-label-sm underline underline-offset-4 cursor-pointer">
+          Clear All Filters
+        </button>
+</div>
+</div>
+<!-- Main Grid: Sidebar + 3-Column Catalog -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Sidebar: Multi-Facet Filters -->
+<aside class="lg:col-span-3 flex flex-col gap-space-md">
+<!-- Accordion Category 1: Light Exposure -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm cursor-pointer select-none">
+<span class="font-title-md text-title-md text-primary">Light Exposure</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">wb_sunny</span>
+</div>
+<div class="space-y-2.5">
+<label class="flex items-center justify-between text-on-surface cursor-pointer group">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Deep Dappled (50-150 FC)
+              </span>
+<span class="font-label-sm text-label-sm text-outline">12</span>
+</label>
+<label class="flex items-center justify-between text-on-surface cursor-pointer group">
+<span class="flex items-center gap-2 font-body-sm text-body-sm font-medium text-primary">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Bright Indirect (250-600 FC)
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">46</span>
+</label>
+<label class="flex items-center justify-between text-on-surface cursor-pointer group">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Morning Conservatory (800+)
+              </span>
+<span class="font-label-sm text-label-sm text-outline">26</span>
+</label>
+</div>
+</div>
+<!-- Accordion Category 2: Provenance & Lineage -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm cursor-pointer select-none">
+<span class="font-title-md text-title-md text-primary">Provenance &amp; Lineage</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">fingerprint</span>
+</div>
+<div class="space-y-2.5">
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Clonal Mother Cut
+              </span>
+<span class="font-label-sm text-label-sm text-outline">18</span>
+</label>
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Tissue Culture Propagated
+              </span>
+<span class="font-label-sm text-label-sm text-outline">29</span>
+</label>
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                CITES Registered &amp; DNA
+              </span>
+<span class="font-label-sm text-label-sm text-outline">8</span>
+</label>
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Certified Glasshouse Stock
+              </span>
+<span class="font-label-sm text-label-sm text-outline">64</span>
+</label>
+</div>
+</div>
+<!-- Accordion Category 3: Pet & Household Safety -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm cursor-pointer select-none">
+<span class="font-title-md text-title-md text-primary">Pet &amp; Safety</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">pets</span>
+</div>
+<div class="space-y-2.5">
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Pet Safe (ASPCA Verified)
+              </span>
+<span class="font-label-sm text-label-sm text-outline">14</span>
+</label>
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Mild Calcium Oxalate
+              </span>
+<span class="font-label-sm text-label-sm text-outline">52</span>
+</label>
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Foliage Only / Non-Bloom
+              </span>
+<span class="font-label-sm text-label-sm text-outline">70</span>
+</label>
+</div>
+</div>
+<!-- Accordion Category 4: Vessel & Substrate Pairings -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm cursor-pointer select-none">
+<span class="font-title-md text-title-md text-primary">Vessel Atelier</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">architecture</span>
+</div>
+<div class="space-y-2.5">
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Tuscan Thrown Terracotta
+              </span>
+<span class="font-label-sm text-label-sm text-outline">32</span>
+</label>
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Celadon Glazed Earthenware
+              </span>
+<span class="font-label-sm text-label-sm text-outline">24</span>
+</label>
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Charcoal Basalt Vessel
+              </span>
+<span class="font-label-sm text-label-sm text-outline">16</span>
+</label>
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Bare-Root Hydro Kokedama
+              </span>
+<span class="font-label-sm text-label-sm text-outline">12</span>
+</label>
+</div>
+</div>
+<!-- Accordion Category 5: Acclimation Stage -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm cursor-pointer select-none">
+<span class="font-title-md text-title-md text-primary">Acclimation Hardening</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">nature</span>
+</div>
+<div class="space-y-2.5">
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm font-medium text-primary">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                &gt;90 Days Glasshouse
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">58</span>
+</label>
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Early Acclimation (&lt;30d)
+              </span>
+<span class="font-label-sm text-label-sm text-outline">14</span>
+</label>
+<label class="flex items-center justify-between text-on-surface cursor-pointer">
+<span class="flex items-center gap-2 font-body-sm text-body-sm">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+                Courier Transit Cleared
+              </span>
+<span class="font-label-sm text-label-sm text-outline">72</span>
+</label>
+</div>
+</div>
+<!-- Telemetry Diagnostic Widget -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-md shadow-md">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">sensors</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">NFC Telemetry Pods</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container mb-space-sm leading-snug">
+            Each specimen ships with an integrated ceramic NFC disc streaming volumetric water &amp; lumen telemetry straight to your Acclimation Journal.
+          </p>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-primary-fixed">Sensor Battery: 24 Mos</span>
+<span class="font-label-sm text-label-sm text-on-primary underline cursor-pointer">Read Protocol</span>
+</div>
+</div>
+</aside>
+<!-- Main Specimen Catalog (3 Columns Desktop, 2 Columns Tablet, 1 Column Mobile) -->
+<div class="lg:col-span-9 flex flex-col gap-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1: Monstera Deliciosa (Featured Specimen) -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial studio photo of a majestic Monstera Deliciosa with large glossy fenestrated leaves in a handcrafted warm Tuscan terracotta pot, bathed in soft afternoon light within an architectural conservatory setting, deep forest green and cream tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwIjeUJVEsZ9wCzkg6Dh_ysWnm2T03QiN9OEQUKVHTFyj-O6UcK9_mwGNnWoVGqtd9r3JBTO4qq5V5zJCHJRQ2shG9Plkij4HnVQgnsS0shGg_k7KSOTf2S2-X6t18laPA0qX569usK2xT5z7eInE_m51YNwHGEwiUKnfMSdNuXy7lda6mqlA0kVCOtyLIY9v6TTcYQZFvO73fZc4proksxPV1VEFWrqCuZ8oCKNX6mupWS1NEsaW3Jg"/>
+<span class="absolute top-3 left-3 bg-primary/90 text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm backdrop-blur-sm shadow-sm">
+                Sauvie Island Bay #04 Clonal F1
+              </span>
+<button aria-label="Bookmark cultivar" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-primary hover:bg-surface transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-2 left-2 right-2 flex items-center gap-1">
+<span class="bg-surface/90 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-semibold text-primary">NFC Equipped</span>
+<span class="bg-surface/90 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-semibold text-secondary">6 Fenestrations</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between bg-surface">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-serif text-primary">Monstera Deliciosa Liebm.</h3>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-space-sm">
+                  Epiphytic Architectural Aroid • Acc #MD-2025-V7
+                </p>
+<!-- Microclimate Meters -->
+<div class="grid grid-cols-3 gap-1.5 p-2 rounded-lg bg-surface-container-low mb-space-sm text-center">
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Light</span>
+<span class="font-label-sm text-label-sm text-primary">Bright Ind.</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Humidity</span>
+<span class="font-label-sm text-label-sm text-primary">65% RH</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Schedule</span>
+<span class="font-label-sm text-label-sm text-primary">Bi-Weekly</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+                  Includes Italian Tuscan terracotta planter, Formula A-7 live substrate, and an authenticated 90-day hardening guarantee.
+                </p>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-sm pt-2">
+<span class="font-display-lg text-headline-sm text-primary font-serif font-bold">$185</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container px-2 py-0.5 rounded">Ready to Dispatch</span>
+</div>
+<button class="w-full py-2.5 px-4 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-2">
+<span>Customize &amp; Inspect</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Philodendron Spiritus Sancti -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up archival botanic shot of the extremely rare Philodendron Spiritus Sancti with its long pendant sword-like leaves, set within a dark raw basalt stoneware vessel against an earthy warm minimal conservatory backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6jhhxYrVHekghiGZbGAAFLkMQIh7QXMS7oitulwIzwr_gPDKj0J1l1RU9WTSr0WiIhxflmjhJiXX5aVjhMaNHruNFOJII-qCkM9UYZQ27jFo1jf_uutv7_-u2Wj9PN8XSVgaW9HZEoOSs-6Y0On1dIq32K8JY7vItc66O-NNJezNYFVPLhuQq14U7Ui3OSIdhdGL6y1lDJDGaEEH-pkA0AgSKsLLCvNgUz53dfHgTurRF3pINdhtjNg"/>
+<span class="absolute top-3 left-3 bg-tertiary text-on-tertiary px-3 py-1 rounded-full font-label-sm text-label-sm backdrop-blur-sm shadow-sm">
+                CITES Registered &amp; DNA Verified
+              </span>
+<button aria-label="Bookmark cultivar" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-primary hover:bg-surface transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-2 left-2 right-2 flex items-center gap-1">
+<span class="bg-surface/90 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-semibold text-tertiary">Archival Specimen</span>
+<span class="bg-surface/90 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-semibold text-primary">Private Escort</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between bg-surface">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-serif text-primary">Philodendron Spiritus Sancti</h3>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-space-sm">
+                  Endangered Brazilian Archival Specimen • Acc #PSS-8812
+                </p>
+<!-- Microclimate Meters -->
+<div class="grid grid-cols-3 gap-1.5 p-2 rounded-lg bg-surface-container-low mb-space-sm text-center">
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Light</span>
+<span class="font-label-sm text-label-sm text-primary">Dappled</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Humidity</span>
+<span class="font-label-sm text-label-sm text-primary">75% RH</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Substrate</span>
+<span class="font-label-sm text-label-sm text-primary">Formula B-2</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+                  Archival foliage accessioned from lineage clone. Accompanied by official CITES paperwork and delivered by private botanical escort.
+                </p>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-sm pt-2">
+<span class="font-display-lg text-headline-sm text-primary font-serif font-bold">$1,450</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed px-2 py-0.5 rounded">1 Allocation Left</span>
+</div>
+<button class="w-full py-2.5 px-4 bg-tertiary-container text-on-tertiary rounded-lg font-label-lg text-label-lg hover:bg-tertiary transition-colors shadow-sm flex items-center justify-center gap-2">
+<span>Request Specimen Allocation</span>
+<span class="material-symbols-outlined text-[16px]">lock_open</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Ficus Lyrata Standard -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Architectural photograph of a tall mature Ficus Lyrata standard fiddle leaf fig tree standing proudly in an artisanal sage celadon glazed stoneware planter, warm sunlight pouring through floor to ceiling glasshouse windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1MQ_z8wkSvP0WH2cc1Nei7kl2atQnJkiseFBfYCaJFbvxbj4WYIxB5pnacCVzMjkVz_ubsd_9cw3prUSH4LHl0WwVLFkyRfw6IhCOTkbXoiIXKGPlvCrPhnMxbdYIdXN7iNVqYk2sRyek3mHlM0zd-w-6EoH7lWh1XVe-lZzYWVet0mT55eg-Sa12Prt8XwxdWpW3k50ctK78Axqr5TjsapvsZ7iC-adH1BIht6R8b-j-8O8QN30wrw"/>
+<span class="absolute top-3 left-3 bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-sm text-label-sm backdrop-blur-sm shadow-sm">
+                Aged 4-Year Canopy Standard
+              </span>
+<button aria-label="Bookmark cultivar" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-primary hover:bg-surface transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-2 left-2 right-2 flex items-center gap-1">
+<span class="bg-surface/90 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-semibold text-primary">180cm Canopy</span>
+<span class="bg-surface/90 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-semibold text-secondary">Zero-Shock Crated</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between bg-surface">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-serif text-primary">Ficus Lyrata Standard</h3>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-space-sm">
+                  Arboreal Specimen • Acc #FL-4091
+                </p>
+<!-- Microclimate Meters -->
+<div class="grid grid-cols-3 gap-1.5 p-2 rounded-lg bg-surface-container-low mb-space-sm text-center">
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Light</span>
+<span class="font-label-sm text-label-sm text-primary">Direct AM</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Humidity</span>
+<span class="font-label-sm text-label-sm text-primary">55% RH</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Schedule</span>
+<span class="font-label-sm text-label-sm text-primary">Weekly Soak</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+                  Single-stem canopy trained over 4 years. Shipped in thermal wooden suspension crating to eliminate transit branch shock.
+                </p>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-sm pt-2">
+<span class="font-display-lg text-headline-sm text-primary font-serif font-bold">$240</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container px-2 py-0.5 rounded">Ready to Dispatch</span>
+</div>
+<button class="w-full py-2.5 px-4 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-2">
+<span>Customize &amp; Inspect</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4: Calathea Orbifolia -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Overhead botanical composition of Calathea Orbifolia featuring expansive circular leaves with silvery green geometric striping in an unglazed sand earthenware saucer pot, natural morning shadow play." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaF2PJj_c8KSFOYmYABE_tHv6X1eLd8x-htfZGyR1VqI_LgfciFKa2HFrep2HsjZzVhk2IZ-msXdne-1jyd1kpuE0ymBlLl9c6h--8j4S2EsHgqkR9Vf3a1HMaa9r8WID5fz7zoQaZ40fvFPhgerXkDYceWxrqlKvx_5o-NMBg7d3KyQ-Y-WGBWHlLkIVuqAl78797glg9kvEmPL0e_2lD33at9QDANjUXZFe1uV4YKJTMZJ87YCcz1A"/>
+<span class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm backdrop-blur-sm shadow-sm font-semibold">
+                Non-Toxic / Pet Friendly
+              </span>
+<button aria-label="Bookmark cultivar" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-primary hover:bg-surface transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-2 left-2 right-2 flex items-center gap-1">
+<span class="bg-surface/90 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-semibold text-secondary">Zero Fluoride</span>
+<span class="bg-surface/90 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-semibold text-primary">Nyctinastic</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between bg-surface">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-serif text-primary">Calathea Orbifolia</h3>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-space-sm">
+                  Prayer Plant Specialist • Acc #CO-1934
+                </p>
+<!-- Microclimate Meters -->
+<div class="grid grid-cols-3 gap-1.5 p-2 rounded-lg bg-surface-container-low mb-space-sm text-center">
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Light</span>
+<span class="font-label-sm text-label-sm text-primary">Med Dapple</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Humidity</span>
+<span class="font-label-sm text-label-sm text-primary">70% RH</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Water</span>
+<span class="font-label-sm text-label-sm text-primary">Rainwater</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+                  Conditioned exclusively on reverse osmosis rainwater. Active nyctinastic rhythmic foliage lifts each dusk without edge burn.
+                </p>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-sm pt-2">
+<span class="font-display-lg text-headline-sm text-primary font-serif font-bold">$95</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container px-2 py-0.5 rounded">Ready to Dispatch</span>
+</div>
+<button class="w-full py-2.5 px-4 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-2">
+<span>Customize &amp; Inspect</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5: Anthurium Regale -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Stunning portrait of Anthurium Regale with massive velvety cordate emerald leaves and bright crystalline silver-white veins, potted in a textured pumice planter within a humid greenhouse mist." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6riIcYkWTKW_EKlbt24opM6n70AuyM5ny5WBJl0QNqjXcPDu7lin9Va400PoNp-FuT6BiRnqS9eG43z0qs1Odc2OuuFjyUHyZYW3Xw7y2ER6dpP4m8m2vucEKGeErvFmgWJP0oQsvM2fVvnrEo8DyBI7pOWm2iAGvzscpgexJ8iTUQuaNnfLq2wnVP1ZTVVJ0SenDNjKunWkSgE1LzjxS-Kz4DOU2eTo855e1owQ4TaoqO3JFgJ8nnA"/>
+<span class="absolute top-3 left-3 bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm backdrop-blur-sm shadow-sm">
+                Rare Velvety Silver Veination
+              </span>
+<button aria-label="Bookmark cultivar" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-primary hover:bg-surface transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-2 left-2 right-2 flex items-center gap-1">
+<span class="bg-surface/90 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-semibold text-primary">Sphagnum Blend</span>
+<span class="bg-surface/90 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-semibold text-secondary">Sensor Linked</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between bg-surface">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-serif text-primary">Anthurium Regale</h3>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-space-sm">
+                  Neotropical Cardiocaule • Acc #AR-6102
+                </p>
+<!-- Microclimate Meters -->
+<div class="grid grid-cols-3 gap-1.5 p-2 rounded-lg bg-surface-container-low mb-space-sm text-center">
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Light</span>
+<span class="font-label-sm text-label-sm text-primary">Bright Ind.</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Humidity</span>
+<span class="font-label-sm text-label-sm text-primary">75% RH</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Substrate</span>
+<span class="font-label-sm text-label-sm text-primary">Sphag/Pumice</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+                  Exemplary cellular turgor and distinctive heart-shaped foliar geometry. Linked to telemetry disc #AR-90 with micro-climate alerts.
+                </p>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-sm pt-2">
+<span class="font-display-lg text-headline-sm text-primary font-serif font-bold">$320</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-fixed px-2 py-0.5 rounded">2 Specimens Available</span>
+</div>
+<button class="w-full py-2.5 px-4 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-2">
+<span>Customize &amp; Inspect</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 6: Zamioculcas Zamiifolia 'Raven' -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dramatic interior still life of a pristine Raven ZZ plant showing off dense clusters of ultra-glossy jet-black foliage in an ivory matte handcrafted ceramic pot, high contrast warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlJQO4CdcWRAFTvEOOMjSmYn4B8f6Xp7_jCRD_8HhzJdwd5O7xCBCbEmclVdNLI8npazWSLnPbe6lm20YotgUPJpDcgVhkRnQ6JxDzXzW74HqI8iZyGBpHZ9Vhlg15hMnJ4K9c2ghbSB0mYPmvqM0lNV39ioiynkUHhj4P0-4ezGQKH9u4Vkt1hj_-w2BTKE-ZkdWRLr2DYWq9SEHb7OclTSQ83_w7T8gba0bKRoSx_TAf_U-iXj71gQ"/>
+<span class="absolute top-3 left-3 bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-sm text-label-sm backdrop-blur-sm shadow-sm">
+                Ultra Resilient / Low Light
+              </span>
+<button aria-label="Bookmark cultivar" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface/80 backdrop-blur-md flex items-center justify-center text-primary hover:bg-surface transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-2 left-2 right-2 flex items-center gap-1">
+<span class="bg-surface/90 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-semibold text-primary">Drought Tolerant</span>
+<span class="bg-surface/90 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-semibold text-secondary">Clean Air Certified</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between bg-surface">
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-serif text-primary">Zamioculcas 'Raven'</h3>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-space-sm">
+                  Architectural Obsidian Cultivar • Acc #ZZ-0089
+                </p>
+<!-- Microclimate Meters -->
+<div class="grid grid-cols-3 gap-1.5 p-2 rounded-lg bg-surface-container-low mb-space-sm text-center">
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Light</span>
+<span class="font-label-sm text-label-sm text-primary">Low-Bright</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Humidity</span>
+<span class="font-label-sm text-label-sm text-primary">35% RH</span>
+</div>
+<div>
+<span class="block text-[10px] uppercase font-bold text-outline">Schedule</span>
+<span class="font-label-sm text-label-sm text-primary">Monthly</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+                  Deep obsidian mature petioles from healthy bulbous subterranean rhizomes. Thrives with minimal intervention and low ambient light.
+                </p>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-sm pt-2">
+<span class="font-display-lg text-headline-sm text-primary font-serif font-bold">$110</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container px-2 py-0.5 rounded">Ready to Dispatch</span>
+</div>
+<button class="w-full py-2.5 px-4 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-2">
+<span>Customize &amp; Inspect</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination & Results Summary Strip -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col md:flex-row items-center justify-between gap-space-md shadow-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">
+            Showing <span class="font-semibold text-primary">1–6</span> of <span class="font-semibold text-primary">84</span> Acclimated Nursery Specimens
+          </p>
+<div class="flex items-center gap-1">
+<button class="w-9 h-9 rounded-lg bg-surface flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors shadow-sm disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm shadow-sm">1</button>
+<button class="w-9 h-9 rounded-lg bg-surface text-on-surface hover:bg-surface-container font-label-sm text-label-sm shadow-sm">2</button>
+<button class="w-9 h-9 rounded-lg bg-surface text-on-surface hover:bg-surface-container font-label-sm text-label-sm shadow-sm">3</button>
+<span class="px-2 text-outline">...</span>
+<button class="w-9 h-9 rounded-lg bg-surface text-on-surface hover:bg-surface-container font-label-sm text-label-sm shadow-sm">14</button>
+<button class="w-9 h-9 rounded-lg bg-surface flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<!-- Diagnostic Booking Callout -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">psychology_alt</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Need custom pairing?</span>
+<button class="font-label-sm text-label-sm text-primary font-semibold underline underline-offset-4 hover:text-secondary">
+              Book Dr. Alvarez
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Nursery Guarantee & Provenance Banner -->
+<section class="w-full bg-primary text-on-primary py-space-xl px-margin-mobile md:px-margin mt-space-lg">
+<div class="max-w-[1320px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter items-start">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">thermostat_auto</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg font-serif mb-1">Thermal Transit Envelope</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+              Every shipment travels in pressurized, phase-change temperature controlled envelopes tailored specifically to regional frost lines and heat domes.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">token</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg font-serif mb-1">Cryptographic Plant Passport</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+              Permanent digital lineage ledger documenting tissue pedigree, parent plant accession history, and glasshouse phytosanitary inspection logs.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">support_agent</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg font-serif mb-1">Direct Arborist Diagnostic Hotline</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+              Ongoing post-dispatch horticultural counsel. Transmit foliar photographs or sensor readings directly to our glasshouse team for immediate intervention.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin py-space-xl"><div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-space-lg mb-space-lg"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-serif">Verdant Haven</span><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs max-w-md">Curated conservatory specimens, artisanal earthenware, and living acclimation records for discerning collectors.</p></div><div class="flex flex-wrap gap-space-md"><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Glasshouse Certified</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Organic Substrates</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Botanical Heritage</span></div></div><div class="flex flex-col md:flex-row justify-between items-center pt-space-md text-on-surface-variant font-body-sm text-body-sm"><p>© 2024 Verdant Haven Botanical Atelier. All rights reserved.</p><p class="mt-space-xs md:mt-0">Refined Living Plant Records &amp; Client Acclimation Portals</p></div></div></footer></body></html>

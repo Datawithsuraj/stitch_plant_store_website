@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#efeee9", "on-tertiary": "#ffffff", "outline-variant": "#c0c9c3", "surface-dim": "#dbdad5", "on-primary": "#ffffff", "on-primary-fixed": "#002117", "primary-container": "#1b4d3e", "error": "#ba1a1a", "tertiary-fixed": "#ffdbd0", "inverse-surface": "#30312e", "secondary": "#50652a", "outline": "#707974", "on-tertiary-fixed-variant": "#793019", "surface-container-high": "#e9e8e3", "on-secondary": "#ffffff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#1d4f40", "on-tertiary-container": "#fd9779", "on-tertiary-fixed": "#3a0a00", "primary": "#003629", "surface-container-highest": "#e3e3de", "on-secondary-container": "#546a2e", "surface-container-lowest": "#ffffff", "on-surface": "#1b1c19", "background": "#faf9f4", "surface-tint": "#376757", "inverse-on-surface": "#f2f1ec", "tertiary-container": "#762e17", "surface-variant": "#e3e3de", "secondary-container": "#cfe99f", "on-background": "#1b1c19", "on-primary-container": "#8abda9", "error-container": "#ffdad6", "surface-bright": "#faf9f4", "surface-container-low": "#f5f4ef", "surface": "#faf9f4", "primary-fixed-dim": "#9ed1bd", "on-secondary-fixed": "#131f00", "on-secondary-fixed-variant": "#394d14", "on-surface-variant": "#404945", "secondary-fixed": "#d2eca2", "inverse-primary": "#9ed1bd", "on-error": "#ffffff", "tertiary-fixed-dim": "#ffb59f", "tertiary": "#581904", "primary-fixed": "#baeed9", "secondary-fixed-dim": "#b6d088" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1.25rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xl": "2.5rem", "margin": "3rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1.5rem" }, "fontFamily": { "body-sm": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "headline-sm": [ "Playfair Display" ], "body-lg": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Playfair Display" ], "display-lg": [ "Playfair Display" ], "display-lg-mobile": [ "Playfair Display" ], "label-lg": [ "Plus Jakarta Sans" ], "headline-lg": [ "Playfair Display" ] }, "fontSize": { "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "title-lg": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "title-md": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "headline-lg-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "display-lg": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "display-lg-mobile": [ "38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "500" } ] } } } };</script><title>Living Plant Passport &amp; Digital Herbarium — Verdant Haven</title><script src="js/store.js"></script><script src="js/nav.js"></script><style>
+      html { scroll-behavior: smooth; }
+      .fade-in { animation: fadeIn 0.35s ease-in-out; }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+      .btn-hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+      .btn-hover-lift:hover { transform: translateY(-2px); box-shadow: 0 8px 20px -4px rgba(0,54,41,0.15); }
+      .glass-panel { background: rgba(250, 249, 244, 0.85); backdrop-filter: blur(12px); }
+    </style></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-md shadow-[0_1px_12px_rgba(27,45,38,0.04)]"><div class="h-20 max-w-[1320px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex flex-col" data-path="sanctuary" href="index.html"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-serif">Verdant Haven</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary -mt-1">Glasshouse &amp; Atelier</span></a></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary font-title-md"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-lg transition-colors" data-path="sanctuary" href="index.html">Sanctuary</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-lg transition-colors text-primary font-semibold border-b-2 border-primary" data-path="living-passport-digital-herbarium" href="passport.html">Living Passport &amp; Herbarium</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-lg transition-colors" data-path="plant-care-lab-provenance" href="care-lab.html">Plant Care Lab &amp; Provenance</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-lg transition-colors" data-path="botanical-reviews" href="reviews.html">Reviews &amp; Feedback</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-lg transition-colors" data-path="acclimation-journal" href="vitality-checkup.html">Acclimation Journal</a></nav><div class="flex items-center gap-space-md"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Archival Bar & Breadcrumbs -->
+<section class="w-full bg-surface-container-low py-space-md">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm tracking-wider uppercase">
+<a class="hover:text-primary transition-colors" href="catalog.html">Sanctuary Collections</a>
+<span>/</span>
+<a class="hover:text-primary transition-colors" href="catalog.html">Aroids &amp; Epiphytes</a>
+<span>/</span>
+<span class="text-primary font-semibold">MD-2025-V7</span>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container px-space-md py-1.5 rounded-full self-start md:self-auto">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface tracking-widest uppercase">NFC Medallion Synced • 2h Ago via Vessel Sensor</span>
+</div>
+</div>
+</section>
+<!-- Dossier Header Section -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col gap-space-md">
+<!-- Eyebrow Tagline with Archive Badge -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-space-sm py-1 bg-primary text-on-primary font-label-sm text-label-sm rounded-sm tracking-widest uppercase">
+            Official Sanctuary Ledger
+          </span>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-semibold">
+            Cryptographic Botanical Passport • Accession #MD-2025-V7
+          </span>
+</div>
+<!-- Main Title and Taxonomy Hierarchy -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="max-w-3xl">
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight font-serif italic">
+              Monstera Deliciosa <span class="not-italic text-on-surface font-light">Liebm.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+              Cultivated under Bay #04 microclimate, Sauvie Island Glasshouse. Precision potted in hand-thrown Tuscan Terracotta with substrate recipe A-7.
+            </p>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-2 px-space-md py-3 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Export Herbarium Dossier</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-3 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-all shadow-md">
+<span class="material-symbols-outlined text-[18px]">compost</span>
+<span>Order Tailored Nutrient Feed</span>
+</button>
+</div>
+</div>
+<!-- Verification Strip Badges -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-md">
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container">eco</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Vitality Status</p>
+<p class="font-title-md text-title-md text-primary font-serif">Vigorous Acclimation (98.4%)</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-fixed">nfc</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Sensor Telemetry</p>
+<p class="font-title-md text-title-md text-primary font-serif">NFC Mesh Active (2.4 GHz)</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">verified</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Lead Arborist Attestation</p>
+<p class="font-title-md text-title-md text-primary font-serif">Dr. Elena Alvarez, Ph.D.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Specimen Hero Showcase & Matrix -->
+<section class="w-full py-space-lg bg-surface">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left: Digital Specimen Herbarium Viewer (7 Columns) -->
+<div class="lg:col-span-7 flex flex-col bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-sm">
+<!-- Herbarium View Switcher Tabs -->
+<div class="flex flex-wrap items-center gap-space-xs pb-space-md mb-space-sm" id="view-tabs">
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg transition-colors tab-btn" onclick="switchSpecimenView('canopy', this)">
+              Current Canopy (Day 48)
+            </button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors tab-btn" onclick="switchSpecimenView('fenestration', this)">
+              Fenestration Analysis
+            </button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors tab-btn" onclick="switchSpecimenView('rootnet', this)">
+              Root System Audit
+            </button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors tab-btn" onclick="switchSpecimenView('lineage', this)">
+              Botanical Lineage (F1)
+            </button>
+</div>
+<!-- Main Imagery Stage -->
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center transition-all duration-500 relative" data-alt="High resolution botanical specimen photograph of a vigorous Monstera Deliciosa in a terracotta pot with large glossy fenestrated leaves. Natural daylight through glasshouse architecture casting soft highlights, editorial botanical luxury photography." id="specimen-display" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuChvYkunOOEVd-SSsdh7tWtQPCLADQecqR98ATlI2v5HybaDVCHqAEfQWL7WjPxI-I7HkDPhwincKGBjwewVjwpbVYStTDg-ezjui9B05HGUOSm48oketNy_IKtmQcFd7xA57BjsPK3dnrtpgXJ6bITqLiFfstnG0oo9U5nWieEt9zLo5DXK72qEglmC05OVzjWA_3eE85boa9YmxRL1ckKSNtiGTl8gStkI_DV35RMDdP0uC5QKSSfNQ')">
+<!-- Archival Annotation Overlay Floating Tags -->
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-md px-3 py-1.5 rounded-md shadow-sm">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Accession #MD-2025-V7</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Sauvie Island Lot #04</span>
+</div>
+<!-- Interactive Pinpoints -->
+<div class="absolute top-1/3 left-1/2 -translate-x-1/2 group cursor-pointer">
+<div class="w-7 h-7 rounded-full bg-primary/80 backdrop-blur text-on-primary flex items-center justify-center ring-4 ring-primary/20 animate-bounce">
+<span class="material-symbols-outlined text-[16px]">search</span>
+</div>
+<div class="opacity-0 group-hover:opacity-100 transition-opacity absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2 bg-inverse-surface text-inverse-on-surface rounded text-center font-label-sm text-label-sm pointer-events-none shadow-lg">
+                  6th Primary Fenestration unfurled Jan 31. Zero foliar browning.
+                </div>
+</div>
+<div class="absolute bottom-6 right-6 bg-surface-container-lowest/90 backdrop-blur-sm p-3 rounded-lg shadow-sm flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Optical Biometric Pass</p>
+<p class="font-title-md text-title-md text-primary font-serif">Grade AAA Exemplar</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Specimen Sub-Metadata Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-md text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">straighten</span>
+<span>Foliar Span: <strong class="text-on-surface">84 cm</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">potted_plant</span>
+<span>Petiole Height: <strong class="text-on-surface">62 cm</strong></span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">history_toggle_off</span>
+<span>Acclimation Cycle: <strong class="text-on-surface">Day 48 of 90</strong></span>
+</div>
+</div>
+</div>
+<!-- Right: Vitality Metrics Bento Matrix (5 Columns) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-primary font-serif">Vitality Matrix</h2>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold tracking-wider">Lab Validated</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              High-resolution diagnostics captured during quarterly arborist ultrasound and spectroscopic analysis.
+            </p>
+<div class="flex flex-col gap-space-md">
+<!-- Metric 1: Chlorophyll Density -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="font-label-lg text-label-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">local_florist</span>
+                    Chlorophyll Pigment Density
+                  </span>
+<span class="font-title-md text-title-md text-primary font-serif">46.2 SPAD</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 92%"></div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Baseline: 35.0</span>
+<span class="text-secondary font-semibold">Exemplary Vigour (+32%)</span>
+<span>Max: 50.0</span>
+</div>
+</div>
+<!-- Metric 2: Root Network -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="font-label-lg text-label-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">psychology</span>
+                    Root Mass &amp; Mycorrhizal Health
+                  </span>
+<span class="font-title-md text-title-md text-primary font-serif">Grade A+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Dense taproot network with dense mycorrhizal symbiosis. Zero taproot spiraling detected inside porous Tuscan clay.
+                </p>
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Primary &amp; secondary feeder roots uninhibited</span>
+</div>
+</div>
+<!-- Metric 3: Fenestration Architecture -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="font-label-lg text-label-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">spa</span>
+                    Fenestration Maturity
+                  </span>
+<span class="font-title-md text-title-md text-primary font-serif">Tier 4 Architectural</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="px-2.5 py-1 rounded bg-surface-container font-medium text-on-surface">6 Primary Splits</div>
+<div class="px-2.5 py-1 rounded bg-surface-container font-medium text-on-surface">2 Double Perforations</div>
+</div>
+</div>
+<!-- Metric 4: Transpiration Index -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Stomatal Transpiration</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Calibrated at 68% optimal gas exchange</span>
+</div>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-full font-semibold">
+                  Equilibrium
+                </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Microclimate Telemetry Dashboard (NFC Pot Sensor) -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold block">
+            Integrated Hardware Telemetry • Smart Sensor Pod #SP-882
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-serif mt-space-xs">
+            Substrate &amp; Ambient Microclimate
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Live telemetry streamed via the NFC base-station embedded inside the Tuscan earthenware vessel.
+          </p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">sync</span>
+<span>Automatic polling every 15 minutes • Battery 94%</span>
+</div>
+</div>
+<!-- Telemetry Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Sensor 1: Soil Moisture -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Substrate Moisture</span>
+<span class="material-symbols-outlined text-primary text-[20px]">water_drop</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-primary font-serif">42%</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Optimal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Target range: 35% – 55% VWC</p>
+</div>
+<!-- Micro Sparkline SVG -->
+<div class="mt-space-md pt-space-md">
+<svg class="w-full h-10 text-primary-container" fill="none" viewbox="0 0 160 40">
+<path d="M0 30 Q 30 15, 60 22 T 110 18 T 160 25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="160" cy="25" fill="currentColor" r="4"></circle>
+</svg>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-2">
+<span>Next rainwater flush:</span>
+<strong class="text-primary">In 3 Days</strong>
+</div>
+</div>
+</div>
+<!-- Sensor 2: Ambient Light -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Ambient Lux / Lumens</span>
+<span class="material-symbols-outlined text-primary text-[20px]">wb_sunny</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-primary font-serif">420</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Foot-Candles</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Bright Indirect Canopy Zone</p>
+</div>
+<div class="mt-space-md pt-space-md">
+<svg class="w-full h-10 text-secondary" fill="none" viewbox="0 0 160 40">
+<path d="M0 38 Q 40 35, 80 12 T 130 14 T 160 28" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="160" cy="28" fill="currentColor" r="4"></circle>
+</svg>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-2">
+<span>DLI Cumulative:</span>
+<strong class="text-primary">14.2 mol/m²/d</strong>
+</div>
+</div>
+</div>
+<!-- Sensor 3: Relative Humidity -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Canopy Humidity</span>
+<span class="material-symbols-outlined text-primary text-[20px]">humidity_percentage</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-primary font-serif">64%</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Tropic Safe</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Greenhouse threshold: &gt;55%</p>
+</div>
+<div class="mt-space-md pt-space-md">
+<svg class="w-full h-10 text-primary-container" fill="none" viewbox="0 0 160 40">
+<path d="M0 24 Q 40 28, 70 18 T 120 16 T 160 19" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="160" cy="19" fill="currentColor" r="4"></circle>
+</svg>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-2">
+<span>Vapour Pressure Deficit:</span>
+<strong class="text-primary">0.95 kPa</strong>
+</div>
+</div>
+</div>
+<!-- Sensor 4: Root Zone Temp -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Substrate Temperature</span>
+<span class="material-symbols-outlined text-primary text-[20px]">thermostat</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-primary font-serif">71.4°</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Fahrenheit</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Terracotta Thermal Buffering</p>
+</div>
+<div class="mt-space-md pt-space-md">
+<svg class="w-full h-10 text-tertiary-container" fill="none" viewbox="0 0 160 40">
+<path d="M0 20 Q 40 18, 80 22 T 120 20 T 160 21" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="160" cy="21" fill="currentColor" r="4"></circle>
+</svg>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-2">
+<span>Day/Night Drift:</span>
+<strong class="text-primary">± 3.2°F</strong>
+</div>
+</div>
+</div>
+</div>
+<!-- Arborist Telemetry Advisory Banner -->
+<div class="mt-space-lg bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined">psychology_alt</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-serif">Curator's Acclimation Note</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+              "Your specimen is thriving in its current east-facing placement. Ambient humidity at 64% is preventing leaf margin crisping. Continue current hydration rhythm with room-temperature rain or distilled water."
+            </p>
+</div>
+</div>
+<button class="px-space-md py-2.5 rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg hover:opacity-90 transition-opacity shrink-0">
+          Request Microclimate Review
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Provenance & Life Timeline (Botanical Herbarium Log) -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold block">
+            Verifiable Chronology &amp; Biometric Ledger
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-serif mt-space-xs">
+            Botanical Provenance Timeline
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            From initial F1 clonal selection at Sauvie Island Conservatory through collector acclimation.
+          </p>
+</div>
+<button class="flex items-center gap-2 px-space-md py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container transition-all shadow-md self-start md:self-auto">
+<span class="material-symbols-outlined text-[18px]">add_a_photo</span>
+<span>Log Growth Milestone</span>
+</button>
+</div>
+<!-- Vertical Timeline Track -->
+<div class="relative flex flex-col gap-space-lg pl-6 md:pl-10">
+<!-- Vertical Spine Line using subtle bg container -->
+<div class="absolute left-2.5 md:left-4 top-2 bottom-2 w-0.5 bg-surface-container-highest"></div>
+<!-- Milestone 1 -->
+<div class="relative flex items-start gap-space-md md:gap-space-lg">
+<div class="absolute -left-6 md:-left-10 mt-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm ring-4 ring-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+<div class="w-full bg-surface-container-low p-space-md md:p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Milestone 01 • Propagation Initiation</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">October 14, 2024</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif">Clonal Selection from 28-Year Conservatory Specimen</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-3xl">
+              Node petiole cutting obtained from verified mother plant 'Titan G-1' under controlled 82°F relative humidity chamber. Root induction stimulated via willow bark extract and kelp emulsion.
+            </p>
+<div class="mt-3 flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">badge</span>
+<span>Propagator: Master Horticulturist J. Brandt</span>
+</div>
+</div>
+</div>
+<!-- Milestone 2 -->
+<div class="relative flex items-start gap-space-md md:gap-space-lg">
+<div class="absolute -left-6 md:-left-10 mt-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm ring-4 ring-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+<div class="w-full bg-surface-container-low p-space-md md:p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Milestone 02 • Substrate Inoculation</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">November 28, 2024</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif">Mycorrhizal Fungal Colonization Complete</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-3xl">
+              Substrate infused with Glomus intraradices beneficial fungi to strengthen nutrient absorption. First subterranean root elongation observed past 18cm mark.
+            </p>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div class="relative flex items-start gap-space-md md:gap-space-lg">
+<div class="absolute -left-6 md:-left-10 mt-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm ring-4 ring-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+<div class="w-full bg-surface-container-low p-space-md md:p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Milestone 03 • Foliar Emergence</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">January 05, 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif">First Primary Fenestrated Blade</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-3xl">
+              Petiole length recorded at 32cm; unfurled leaf width 26cm featuring 4 symmetrical lateral splits. Deep emerald sheen with high cuticle wax density.
+            </p>
+</div>
+</div>
+<!-- Milestone 4 -->
+<div class="relative flex items-start gap-space-md md:gap-space-lg">
+<div class="absolute -left-6 md:-left-10 mt-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm ring-4 ring-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+<div class="w-full bg-surface-container-low p-space-md md:p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Milestone 04 • Pre-Dispatch Arborist Audit</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">January 18, 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif">Phytosanitary Clearance &amp; Ledger Minting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-3xl">
+              Spectrometric foliar scan and root-wash inspection passed with zero pathogenic organisms. Dr. Elena Alvarez affixed the physical NFC medallion to the clay base.
+            </p>
+</div>
+</div>
+<!-- Milestone 5 -->
+<div class="relative flex items-start gap-space-md md:gap-space-lg">
+<div class="absolute -left-6 md:-left-10 mt-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm ring-4 ring-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+<div class="w-full bg-surface-container-low p-space-md md:p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Milestone 05 • Earthenware Potting</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">January 22, 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif">Hand-Potted into Tuscan Terracotta Vessel</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-3xl">
+              Potted using Atelier formula A-7 with porous volcanic pumice and coconut coir. Sensor capsule seated at root-collar depth for precision soil moisture polling.
+            </p>
+</div>
+</div>
+<!-- Milestone 6 -->
+<div class="relative flex items-start gap-space-md md:gap-space-lg">
+<div class="absolute -left-6 md:-left-10 mt-1 w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm ring-4 ring-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+</div>
+<div class="w-full bg-surface-container-low p-space-md md:p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Milestone 06 • Climate-Controlled White Glove Dispatch</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">January 26, 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif">Courier Hand-Off &amp; Thermal Core Transit</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-3xl">
+              Specimen encased in biodegradable thermal cocoon holding continuous 68°F. Successfully delivered and unboxed in collector's botanical library.
+            </p>
+</div>
+</div>
+<!-- Milestone 7 (Present) -->
+<div class="relative flex items-start gap-space-md md:gap-space-lg">
+<div class="absolute -left-6 md:-left-10 mt-1 w-5 h-5 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-md ring-4 ring-surface">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="w-full bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-md border-l-4 border-secondary">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Current State • Day 48 Acclimation</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Logged 2 Hours Ago</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif">Sixth Fenestration Fully Hardened Off</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-3xl">
+              Two new vigorous aerial roots extending toward natural moss support pole. Zero pest sign; high turgor pressure maintained through regular hydration schedule.
+            </p>
+<div class="mt-4 flex flex-wrap items-center gap-space-sm">
+<span class="px-2.5 py-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded-md font-medium">Acclimation Score: 98/100</span>
+<span class="px-2.5 py-1 bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded-md">Sensor Poll: Nominal</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Organic Feed & Substrate Prescription Section -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Left: Substrate Recipe Formula Breakdown (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold block">
+            Botanical Formulation
+          </span>
+<h2 class="font-headline-md text-headline-md text-primary font-serif mt-space-xs">
+            Substrate Composition: Atelier Formula A-7
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Engineered exclusively for epiphytic aroids requiring high air pore volume (APV) and zero root rot susceptibility.
+          </p>
+<!-- Component Breakdown Progress Bars -->
+<div class="flex flex-col gap-space-md mt-space-lg">
+<div>
+<div class="flex justify-between font-label-lg text-label-lg text-on-surface mb-1">
+<span>New Zealand Pinus Radiata Orchid Bark</span>
+<span class="font-bold text-primary">35%</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 35%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-lg text-label-lg text-on-surface mb-1">
+<span>Coarse Horticultural Pumice &amp; Perlite</span>
+<span class="font-bold text-primary">25%</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 25%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-lg text-label-lg text-on-surface mb-1">
+<span>Activated Horticultural Bio-Char</span>
+<span class="font-bold text-primary">15%</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-inverse-surface h-full rounded-full" style="width: 15%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-lg text-label-lg text-on-surface mb-1">
+<span>Cold-Extracted Worm Castings (Microbiome)</span>
+<span class="font-bold text-primary">15%</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary-fixed-variant h-full rounded-full" style="width: 15%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-lg text-label-lg text-on-surface mb-1">
+<span>Peat-Free Coco Coir Fibre</span>
+<span class="font-bold text-primary">10%</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-outline-variant h-full rounded-full" style="width: 10%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Feed Scheduler & Quick Replenish (5 Cols) -->
+<div class="lg:col-span-5 bg-primary text-on-primary p-space-lg rounded-xl shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[18px]">science</span>
+<span>Prescription Nutrition Plan</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-serif mt-space-xs text-on-primary">
+              Verdant Elixir No. 3 (Aroid Foliar &amp; Root)
+            </h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-2">
+              Cold-pressed oceanic kelp, humic acids, and chelated iron formulated for deep leaf fenestration and waxy cuticle lustre.
+            </p>
+<div class="mt-space-lg p-space-md rounded-lg bg-primary-container text-on-primary flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase">Next Prescribed Feed</span>
+<span class="font-label-lg text-label-lg font-bold">February 15, 2025</span>
+</div>
+<div class="flex justify-between items-center text-on-primary-container font-body-sm text-body-sm">
+<span>Dosage:</span>
+<span class="text-on-primary">5ml per 1L Rainwater</span>
+</div>
+<div class="flex justify-between items-center text-on-primary-container font-body-sm text-body-sm">
+<span>Substrate Application:</span>
+<span class="text-on-primary">Soil Drench + Aerial Mist</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md">
+<button class="w-full py-3 rounded-lg bg-surface text-primary font-label-lg text-label-lg hover:bg-surface-bright transition-colors shadow-sm font-semibold flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">local_mall</span>
+<span>Reorder Custom A-7 Mix &amp; Nutrients ($38)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Guarantee, NFC Seal & Curator Attestation Footer -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin">
+<div class="bg-surface-container-low rounded-2xl p-space-lg md:p-space-xl shadow-sm relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Seal & Cert Info (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col md:flex-row items-start gap-space-lg">
+<!-- Archival Herbarium Emblem -->
+<div class="w-24 h-24 rounded-full bg-surface-container-lowest shadow-md p-2 flex items-center justify-center shrink-0">
+<div class="w-full h-full rounded-full border-2 border-dashed border-primary/40 flex flex-col items-center justify-center text-center p-1">
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+<span class="font-label-sm text-[9px] uppercase tracking-tighter text-primary font-bold mt-0.5">VERDANT HAVEN</span>
+<span class="font-label-sm text-[8px] text-secondary">ATELIER SEAL</span>
+</div>
+</div>
+<!-- Attestation Text -->
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container rounded font-label-sm text-label-sm font-semibold">
+                  Accession Sealed &amp; Verified
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">
+                  SHA256: e8b941...c4a179
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif mt-2">
+                Chief Horticulturist Cryptographic Attestation
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-2xl">
+                I hereby certify that Specimen #MD-2025-V7 exhibits complete botanical authenticity, zero chemical retardants, and pristine structural equilibrium under the Verdant Haven Conservatory Acclimation Guarantee.
+              </p>
+<div class="mt-4 flex flex-wrap items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm">
+<div>
+<span class="block text-primary font-serif italic text-lg leading-none">Dr. Elena Alvarez</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Curator &amp; Arborist (Ph.D. Hort.)</span>
+</div>
+<div class="h-8 w-px bg-surface-container-highest hidden sm:block"></div>
+<div>
+<span class="block text-primary font-semibold font-mono leading-none">REG # VH-8841-OR</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Botanical Registry Division</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Action: Booking Consultation (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-3 justify-center items-stretch lg:items-end">
+<button class="w-full lg:w-auto px-space-lg py-3.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container transition-all shadow-md text-center">
+              Book 30-Day Video Health Check
+            </button>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center lg:text-right">
+              Complimentary arborist consultation included with Accession #MD-2025-V7
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Client-side View Switcher Micro-Interaction Script -->
+<script>
+    const PASSPORT_VIEWS = {
+      canopy: {
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuChvYkunOOEVd-SSsdh7tWtQPCLADQecqR98ATlI2v5HybaDVCHqAEfQWL7WjPxI-I7HkDPhwincKGBjwewVjwpbVYStTDg-ezjui9B05HGUOSm48oketNy_IKtmQcFd7xA57BjsPK3dnrtpgXJ6bITqLiFfstnG0oo9U5nWieEt9zLo5DXK72qEglmC05OVzjWA_3eE85boa9YmxRL1ckKSNtiGTl8gStkI_DV35RMDdP0uC5QKSSfNQ',
+        tag: 'Accession #MD-2025-V7',
+        subtag: 'Sauvie Island Lot #04',
+        pinpoint: '6th Primary Fenestration unfurled Jan 31. Zero foliar browning.',
+        badgeTitle: 'Optical Biometric Pass',
+        badgeValue: 'Grade AAA Exemplar',
+        toast: 'Displaying Current Living Canopy (Day 48)'
+      },
+      fenestration: {
+        img: 'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=1200&q=80',
+        tag: 'Fenestration Analysis #FEN-992',
+        subtag: 'Double Perforated Apical Blade',
+        pinpoint: 'Double perforations confirmed across 4 mature leaves. Symmetry: 98.4%.',
+        badgeTitle: 'Cuticle Integrity Check',
+        badgeValue: 'Tier 1 Prime Fenestration',
+        toast: 'Displaying Biometric Leaf Fenestration Analysis'
+      },
+      rootnet: {
+        img: 'https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=1200&q=80',
+        tag: 'Substrate & Root Core #RC-402',
+        subtag: 'Porous Terracotta / A-7 Mix',
+        pinpoint: 'Mycorrhizae colonized at 87%. Non-encircling active feeder root network.',
+        badgeTitle: 'Root System Audit',
+        badgeValue: '99.2% Pristine Viability',
+        toast: 'Displaying Root Ball & Substrate Permeability Audit'
+      },
+      lineage: {
+        img: 'https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&w=1200&q=80',
+        tag: 'Botanical Lineage (F1 Clonal)',
+        subtag: 'Parent Stock #OAX-1894 • Bay A',
+        pinpoint: 'Clonally propagated from 130-year-old Pacific Northwest botanical matriarch vine.',
+        badgeTitle: 'Taxonomic Certificate',
+        badgeValue: 'F1 True Heritage Stock',
+        toast: 'Displaying Historic Glasshouse F1 Lineage Dossier'
+      }
+    };
+
+    function switchSpecimenView(viewType, btn) {
+      const display = document.getElementById('specimen-display');
+      const buttons = document.querySelectorAll('.tab-btn');
+      const view = PASSPORT_VIEWS[viewType] || PASSPORT_VIEWS.canopy;
+      
+      // Update Tab Styles
+      buttons.forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary');
+        b.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      btn.classList.add('bg-primary', 'text-on-primary');
+
+      // Animate Transition
+      display.style.opacity = '0.3';
+      display.style.transform = 'scale(0.99)';
+      setTimeout(() => {
+        display.style.backgroundImage = `url('${view.img}')`;
+        
+        // Update tags and pinpoints
+        const tagEl = display.querySelector('.font-label-sm.text-primary.uppercase');
+        const subtagEl = display.querySelector('.font-body-sm.text-on-surface-variant');
+        const pinpointEl = display.querySelector('.group .opacity-0');
+        const badgeTitleEl = display.querySelector('.font-label-sm.uppercase.font-semibold');
+        const badgeValEl = display.querySelector('.font-title-md.font-serif');
+
+        if (tagEl) tagEl.textContent = view.tag;
+        if (subtagEl) subtagEl.textContent = view.subtag;
+        if (pinpointEl) pinpointEl.textContent = view.pinpoint;
+        if (badgeTitleEl) badgeTitleEl.textContent = view.badgeTitle;
+        if (badgeValEl) badgeValEl.textContent = view.badgeValue;
+
+        display.style.opacity = '1';
+        display.style.transform = 'scale(1)';
+        VerdantStore.showToast('Herbarium View', view.toast, 'microbiology', 'success');
+      }, 150);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin py-space-xl"><div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-space-lg mb-space-lg"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-serif">Verdant Haven</span><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs max-w-md">Curated conservatory specimens, artisanal earthenware, and living acclimation records for discerning collectors.</p></div><div class="flex flex-wrap gap-space-md"><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Glasshouse Certified</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Organic Substrates</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Botanical Heritage</span></div></div><div class="flex flex-col md:flex-row justify-between items-center pt-space-md text-on-surface-variant font-body-sm text-body-sm"><p>© 2024 Verdant Haven Botanical Atelier. All rights reserved.</p><p class="mt-space-xs md:mt-0">Refined Living Plant Records &amp; Client Acclimation Portals</p></div></div></footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+          // Wire search or export buttons
+          document.querySelectorAll('button').forEach(btn => {
+            if (btn.textContent.includes('Export Herbarium Dossier')) {
+              btn.onclick = () => {
+                window.print();
+              };
+            } else if (btn.textContent.includes('Order Tailored Nutrient')) {
+              btn.onclick = () => {
+                VerdantStore.addToCart({
+                  id: 'formula-a7',
+                  name: 'Formula A-7 Organic Mycorrhizae Feed',
+                  binomial: 'Bio-Substrate Elixir 500ml',
+                  price: 28,
+                  quantity: 1,
+                  size: '500ml Bottle',
+                  vessel: 'Amber Glass Vessel',
+                  image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBFozqNo4T_xhfNVgAnqgnpcHzTwow7HxLwxOe0iJPti0ROf9HCuKvGGsqRJlwN-ki8FKaLYJYG5MoKfL0HEyLjRR8oaKcBHOH_ZwPZdR1CaIah049rfbj_g_Ov4cNqC34FkC8b1pNbj_ceYWG45QRsoMV3JJlmgu3bmQ2EPVj2P2W6jeU0Q3PTRxQ-iOuADPuoAcsQ1HBSjLMuEYB97ztA4xCZGTfFW6A0aC3eBv0sfwWFpDxojIHTCw'
+                });
+                openCartDrawer();
+              };
+            }
+          });
+        });
+      </script>
+</body></html>

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Live Root Health Audit &amp; Tele-Horticulture — Verdant Haven</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-container":"#546a2e","surface-container-low":"#f5f4ef","on-secondary-fixed":"#131f00","primary":"#003629","tertiary":"#581904","surface-container-highest":"#e3e3de","inverse-surface":"#30312e","surface-container-lowest":"#ffffff","on-surface":"#1b1c19","primary-container":"#1b4d3e","tertiary-container":"#762e17","tertiary-fixed":"#ffdbd0","inverse-on-surface":"#f2f1ec","on-primary-fixed-variant":"#1d4f40","on-tertiary-container":"#fd9779","on-error":"#ffffff","outline-variant":"#c0c9c3","error":"#ba1a1a","secondary-container":"#cfe99f","secondary-fixed-dim":"#b6d088","on-tertiary-fixed":"#3a0a00","primary-fixed":"#baeed9","outline":"#707974","surface-variant":"#e3e3de","on-secondary-fixed-variant":"#394d14","on-secondary":"#ffffff","on-error-container":"#93000a","on-tertiary":"#ffffff","error-container":"#ffdad6","surface-container":"#efeee9","primary-fixed-dim":"#9ed1bd","secondary":"#50652a","background":"#faf9f4","surface-tint":"#376757","surface-bright":"#faf9f4","on-surface-variant":"#404945","surface-dim":"#dbdad5","on-primary-container":"#8abda9","on-background":"#1b1c19","on-tertiary-fixed-variant":"#793019","on-primary-fixed":"#002117","on-primary":"#ffffff","tertiary-fixed-dim":"#ffb59f","surface-container-high":"#e9e8e3","secondary-fixed":"#d2eca2","inverse-primary":"#9ed1bd","surface":"#faf9f4"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem","space-md":"1rem","margin":"3rem","margin-mobile":"1.25rem","space-xl":"2.5rem","gutter-mobile":"1rem","space-lg":"1.5rem"},"fontFamily":{"display-lg-mobile":["Playfair Display"],"headline-lg":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"display-lg":["Playfair Display"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"headline-sm":["Playfair Display"],"body-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"]},"fontSize":{"display-lg-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"500"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-lg":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-sm":["22px",{"lineHeight":"30px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"500"}]}}}}</script><script src="js/store.js"></script><script src="js/nav.js"></script><style>
+      html { scroll-behavior: smooth; }
+      .fade-in { animation: fadeIn 0.35s ease-in-out; }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+      .btn-hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+      .btn-hover-lift:hover { transform: translateY(-2px); box-shadow: 0 8px 20px -4px rgba(0,54,41,0.15); }
+      .glass-panel { background: rgba(250, 249, 244, 0.85); backdrop-filter: blur(12px); }
+    </style></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-space-xs px-margin"><div class="max-w-[1320px] mx-auto flex items-center justify-between font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px]">eco</span><span>Complimentary greenhouse shipping on botanical orders over $75</span></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs cursor-pointer hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined text-[14px]">language</span><select aria-label="Currency Switcher" class="bg-transparent text-on-primary font-label-sm text-label-sm cursor-pointer focus:outline-none"><option class="text-on-surface bg-surface" value="USD">USD ($)</option><option class="text-on-surface bg-surface" value="EUR">EUR (€)</option><option class="text-on-surface bg-surface" value="GBP">GBP (£)</option></select></div><a class="hover:text-primary-fixed transition-colors" data-path="greenhouse-locations" href="catalog.html" title="Glasshouse Cultivars &amp; Nursery Locations">Our Nurseries</a><a class="hover:text-primary-fixed transition-colors" data-path="sustainability" href="passport.html" title="Sanctuary Botanical Guarantee &amp; Provenance">Botanical Guarantee</a></div></div></div><div class="h-24 max-w-[1320px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Botanical Boutique Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFozqNo4T_xhfNVgAnqgnpcHzTwow7HxLwxOe0iJPti0ROf9HCuKvGGsqRJlwN-ki8FKaLYJYG5MoKfL0HEyLjRR8oaKcBHOH_ZwPZdR1CaIah049rfbj_g_Ov4cNqC34FkC8b1pNbj_ceYWG45QRsoMV3JJlmgu3bmQ2EPVj2P2W6jeU0Q3PTRxQ-iOuADPuoAcsQ1HBSjLMuEYB97ztA4xCZGTfFW6A0aC3eBv0sfwWFpDxojIHTCw"/><a class="flex flex-col" data-path="shop-plants" href="catalog.html"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-semibold">Verdant Haven</span><span class="font-label-sm text-label-sm tracking-widest uppercase text-secondary font-medium">Botanical Atelier &amp; Nursery</span></a></div><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">search</span><input class="w-full pl-10 pr-space-md py-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" placeholder="Search rare aroids, ficus, artisanal terra cotta..." type="search"/></div></div><div class="flex items-center gap-space-lg"><a aria-label="Wishlist" class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="wishlist" href="#wishlist" onclick="VerdantStore.showToast('Botanical Wishlist', 'You have ' + VerdantStore.getWishlist().length + ' specimens saved in your sanctuary.', 'favorite', 'success'); return false;"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] flex items-center justify-center font-bold">3</span></a><a aria-label="Shopping Cart" class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="cart" href="#cart" onclick="openCartDrawer(); return false;"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-[10px] flex items-center justify-center font-bold">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="bg-surface-container-low/50"><div class="max-w-[1320px] mx-auto px-margin"><nav class="flex items-center justify-center gap-space-xl py-space-sm" data-active-classes="text-primary font-semibold border-b-2 border-primary"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="shop-plants" href="catalog.html">Shop Plants</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="rare-finds" href="product.html">Rare Finds</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="planters-and-care" href="catalog.html?category=vessels">Planters &amp; Care</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-open-quiz="true" data-path="plant-quiz" href="#quiz">Plant Quiz</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="workshops" href="consultation.html">Workshops</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="about" href="passport.html">About</a></nav></div></div></header><main class="w-full pt-44 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Tele-Horticulture Viewport Wrapper -->
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin w-full pb-space-xl">
+<!-- Top Consultation Context & Status Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md py-space-md mb-space-md border-b border-primary/10">
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm text-label-sm font-label-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold tracking-wide uppercase">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            Live Tele-Botanical Session
+          </span>
+<span class="text-outline">/</span>
+<span class="text-on-surface-variant font-medium">Order #VH-84920</span>
+<span class="text-outline">/</span>
+<span class="text-primary font-semibold">Specimen: #MD-2025-V7</span>
+<span class="hidden sm:inline-flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified</span>
+            Archival Provenance Authenticated
+          </span>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary tracking-tight">
+          Live Acclimation &amp; Root Health Audit: <span class="italic font-normal">Monstera Deliciosa Liebm.</span>
+</h1>
+</div>
+<!-- Session Indicators & Quick Utility Controls -->
+<div class="flex items-center flex-wrap gap-space-sm self-start lg:self-auto">
+<!-- Live Call Timer Counter -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-lg shadow-sm">
+<div class="flex items-center gap-2">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-tertiary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">REC</span>
+</div>
+<div class="h-4 w-px bg-outline-variant"></div>
+<div class="flex flex-col items-start leading-none">
+<span class="font-label-lg text-label-lg font-bold text-primary tracking-tight" id="session-timer">08:24</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant tracking-wider uppercase">Remaining / 15:00</span>
+</div>
+</div>
+<!-- Latency & Connection Metric -->
+<div class="hidden sm:flex items-center gap-1.5 bg-surface-container-low px-space-sm py-2 rounded-lg text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">wifi_tethering</span>
+<span>18ms HD Stream</span>
+</div>
+<!-- Quick Switch View Action -->
+<button class="flex items-center gap-1.5 bg-surface-container px-space-sm py-2 rounded-lg text-label-sm font-label-sm text-primary hover:bg-surface-container-high transition-colors" id="toggle-grid-btn">
+<span class="material-symbols-outlined text-[18px]">view_agenda</span>
+<span class="hidden md:inline">Layout</span>
+</button>
+</div>
+</div>
+<!-- Main Workspace Grid: 8 cols Video Stage / 4 cols Botanical Audit Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- ================= LEFT AREA: Interactive Tele-Horticulture Video Stage (8 Cols) ================= -->
+<div class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-md">
+<!-- Primary Video Stage Box -->
+<div class="relative w-full aspect-[16/10] md:aspect-[16/9.5] bg-inverse-surface rounded-xl overflow-hidden shadow-xl select-none group">
+<!-- Master Botanist Feed (Primary Viewport) -->
+<div class="absolute inset-0 w-full h-full">
+<img alt="Master botanist Dr Elena Alvarez consulting in her sunlit nursery greenhouse" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTy_ZHjEih0V5GJOqlh115NRmDxkaz45a0G8-s4nyCYAKTt73ykC3NZrqMsdclK_ZbkkrNeomS9w7imz4RTgjjz5xC3NGD784Z6ULlJiTE-IUy90quhr6xH8LNDKXy6DCjC56acfBJahlMaaLDNqRnonaLt0Yim-K6LIAiODeoOrKon2xKsyefY-78LllcIFJxwJV4FxyX4xMVWS0C11S261nEjAsLCsfx2j1D250uBk2caHvKmhPUtQ"/>
+<!-- Soft Film Grain & Scrim for legible HUD -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-primary/40 pointer-events-none"></div>
+</div>
+<!-- Top Video Badges / Header Overlays -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
+<div class="flex items-center gap-2 pointer-events-auto">
+<span class="px-3 py-1 bg-primary/85 backdrop-blur-md rounded-full text-on-primary font-label-sm text-label-sm flex items-center gap-2 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+                Dr. Elena Alvarez, Ph.D.
+                <span class="text-primary-fixed opacity-75 font-normal">| Greenhouse Atelier 4</span>
+</span>
+<span class="hidden md:inline-flex px-2 py-0.5 rounded bg-surface-container-lowest/80 text-primary font-label-sm text-[11px] backdrop-blur-sm">
+                Micro-Feed 4K
+              </span>
+</div>
+<!-- Photometer Floating Reading (Real-time HUD) -->
+<div class="pointer-events-auto flex items-center gap-2 bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface px-3 py-1.5 rounded-lg shadow-md font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">wb_sunny</span>
+<span class="text-inverse-on-surface/80">Window Sensor:</span>
+<span class="font-bold text-secondary-fixed">340 fc</span>
+<span class="px-1.5 py-0.2 rounded text-[10px] bg-secondary text-on-secondary font-medium uppercase tracking-wider">Optimal</span>
+</div>
+</div>
+<!-- Augmented Reality Diagnostic Reticle on Root Specimen -->
+<div class="absolute top-[48%] left-[28%] -translate-x-1/2 -translate-y-1/2 pointer-events-none hidden sm:flex flex-col items-start gap-1 animate-pulse">
+<div class="relative w-16 h-16 flex items-center justify-center">
+<div class="absolute inset-0 rounded-full border-2 border-dashed border-secondary-fixed opacity-70 animate-spin" style="animation-duration: 12s;"></div>
+<div class="w-4 h-4 rounded-full bg-secondary-fixed/40 flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></div>
+</div>
+<div class="absolute -top-1 -right-1 w-2 h-2 bg-secondary-fixed"></div>
+<div class="absolute -bottom-1 -left-1 w-2 h-2 bg-secondary-fixed"></div>
+</div>
+<div class="bg-primary-container/90 backdrop-blur-md text-on-primary-container px-2.5 py-1 rounded text-[11px] font-label-sm tracking-wide shadow-lg border-l-2 border-secondary-fixed">
+<div class="font-bold text-surface-bright flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">spa</span>
+                Root Turgor: 96% Healthy
+              </div>
+<span class="text-[10px] opacity-90">Hydrated mycorrhizae • Zero rot</span>
+</div>
+</div>
+<!-- Live Closed Captioning Transcription Bar -->
+<div class="absolute bottom-20 left-4 right-4 sm:left-6 sm:right-6 md:right-72 pointer-events-none">
+<div class="bg-inverse-surface/90 backdrop-blur-md text-inverse-on-surface px-4 py-2 rounded-lg text-body-sm font-body-sm shadow-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px] flex-shrink-0 animate-pulse">graphic_eq</span>
+<p class="leading-snug truncate">
+<span class="font-semibold text-secondary-fixed">Dr. Elena:</span>
+                "The white active root tips show zero shipping dormancy! You have magnificent lateral root volume."
+              </p>
+</div>
+</div>
+<!-- Customer Camera Feed: Picture-in-Picture Floating Window -->
+<div class="absolute bottom-20 right-4 sm:right-6 w-36 sm:w-56 md:w-64 aspect-[4/3] rounded-lg overflow-hidden shadow-2xl bg-surface-container-high transition-all transform hover:scale-[1.02] cursor-pointer" id="pip-container">
+<img alt="Clara Vance unboxing Monstera Deliciosa root ball on wooden table" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuTyCdoccC5SZ0ZNJbWu7ZkhYDC0-hXzMSfa3M4R9s11zcqw0c8OnWMzPVU2M7qjlQfKwmiq_kO64s5qipR_qB_YN5SGqt5WC56LmcYlB227H2p9ZNM-Q1bH036Cm_t0KFve8wMSpMoyRpZU6O8Yf8P-8RccxCH6hMzSvIUi5kBRWpdjTtptOMp0mvVT-QebaIoiLQCQ_q3NPB_Dl-N2LqqmYv25B2WvfSKAS66OuSdRVx2Qs1xGyizw"/>
+<!-- PIP Overlays -->
+<div class="absolute top-2 left-2 flex items-center gap-1 bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface px-2 py-0.5 rounded text-[11px] font-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-ping"></span>
+<span>Clara (Specimen Cam)</span>
+</div>
+<div class="absolute bottom-2 right-2 flex items-center gap-1">
+<button class="w-6 h-6 rounded bg-surface/90 hover:bg-surface text-primary flex items-center justify-center transition-colors shadow" title="Switch Macro Mode">
+<span class="material-symbols-outlined text-[14px]">macro_auto</span>
+</button>
+<button class="w-6 h-6 rounded bg-surface/90 hover:bg-surface text-primary flex items-center justify-center transition-colors shadow" title="Expand Feed">
+<span class="material-symbols-outlined text-[14px]">crop_free</span>
+</button>
+</div>
+<!-- Micro Light Level Readout -->
+<div class="absolute bottom-2 left-2 bg-primary-container/90 text-on-primary-container px-1.5 py-0.5 rounded text-[10px] font-label-sm">
+              380 fc
+            </div>
+</div>
+<!-- Interactive Video Call Controls Dock -->
+<div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2 sm:gap-3 bg-surface/95 backdrop-blur-xl px-4 py-2 rounded-full shadow-2xl">
+<!-- Mute Audio -->
+<button aria-label="Toggle Microphone" class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-all hover:scale-105 active:scale-95 shadow-sm" id="btn-mic">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<!-- Toggle Camera -->
+<button aria-label="Toggle Video Camera" class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-all hover:scale-105 active:scale-95 shadow-sm" id="btn-cam">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+</button>
+<!-- Macro Specimen Focus Mode -->
+<button class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed transition-all hover:scale-105 active:scale-95 flex items-center justify-center shadow-sm" id="btn-macro" title="Switch to 5x Macro Specimen Lens">
+<span class="material-symbols-outlined text-[20px]">macro_off</span>
+</button>
+<!-- Calibrate Light Photometer Tool -->
+<button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-all hover:scale-105 active:scale-95 shadow-sm" id="btn-lux" title="Calibrate Photometer">
+<span class="material-symbols-outlined text-[20px]">light_mode</span>
+</button>
+<!-- Snapshot for Specimen Dossier -->
+<button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-all hover:scale-105 active:scale-95 shadow-sm" id="btn-snap" title="Capture Root Diagnostic Snapshot">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</button>
+<div class="h-6 w-px bg-outline-variant mx-1"></div>
+<!-- Leave Consultation -->
+<button class="px-4 py-2 rounded-full bg-tertiary-container hover:bg-tertiary text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-all hover:scale-105 active:scale-95 shadow-sm" id="btn-leave">
+<span class="material-symbols-outlined text-[18px]">call_end</span>
+<span class="hidden sm:inline">End Session</span>
+</button>
+</div>
+</div>
+<!-- Secondary Feed Control & Interactive Botanical Tools Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<!-- Light Spectrum Gauge Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">wb_twilight</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Natural Daylight</span>
+<span class="font-title-md text-title-md text-primary font-bold">340 Foot-Candles</span>
+<span class="font-body-sm text-[12px] text-secondary">Optimal Window Gradient</span>
+</div>
+</div>
+<!-- Ambient Humidity Gauge Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">water_drop</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Relative Room Humidity</span>
+<span class="font-title-md text-title-md text-primary font-bold">58% RH</span>
+<span class="font-body-sm text-[12px] text-secondary">Safe for Acclimation</span>
+</div>
+</div>
+<!-- Leaf Stomata / Temp Gauge Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">device_thermostat</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Leaf Epidermis Temp</span>
+<span class="font-title-md text-title-md text-primary font-bold">71.4°F (21.8°C)</span>
+<span class="font-body-sm text-[12px] text-primary">Active Transpiration</span>
+</div>
+</div>
+</div>
+<!-- Client & Specimen Metadata Quick Drawer -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary font-bold text-title-md">
+<span class="material-symbols-outlined text-[28px] text-primary">potted_plant</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-serif">Monstera Deliciosa (Liebm.)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Archived 8" Earthenware Specimen • 6 Prime Fronds • Origin: Oaxaca Tier II</span>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-auto">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+              Specimen Pedigree
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">qr_code_scanner</span>
+              Scan NFC Tag
+            </button>
+</div>
+</div>
+</div>
+<!-- ================= RIGHT SIDEBAR: Live Botanical Diagnostic & Acclimation Workspace (4-5 Cols) ================= -->
+<div class="lg:col-span-5 xl:col-span-4 flex flex-col gap-space-md">
+<!-- Workspace Panel Header -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="bg-primary p-space-md text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed">assignment_turned_in</span>
+<div>
+<h2 class="font-title-md text-title-md leading-tight">Consultation Log &amp; Rx</h2>
+<p class="font-label-sm text-[11px] text-primary-fixed opacity-90">Dr. Alvarez live audit notes &amp; protocol</p>
+</div>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed animate-ping" title="Syncing in real time"></span>
+</div>
+<div class="flex items-center border-b border-outline-variant/30 bg-surface-container-low px-2 pt-2 gap-1" id="call-sidebar-tabs">
+<button class="call-tab active px-3 py-2 text-xs font-bold border-b-2 border-primary text-primary flex items-center gap-1.5 transition-all" id="call-tab-rx" onclick="switchCallTab('rx')">
+<span class="material-symbols-outlined text-[15px]">clinical_notes</span>
+<span>Clinical Rx</span>
+</button>
+<button class="call-tab px-3 py-2 text-xs font-semibold text-on-surface-variant hover:text-primary flex items-center gap-1.5 transition-all" id="call-tab-pedigree" onclick="switchCallTab('pedigree')">
+<span class="material-symbols-outlined text-[15px]">history_edu</span>
+<span>Pedigree</span>
+</button>
+<button class="call-tab px-3 py-2 text-xs font-semibold text-on-surface-variant hover:text-primary flex items-center gap-1.5 transition-all" id="call-tab-chat" onclick="switchCallTab('chat')">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+<span>Live Chat</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</button>
+</div>
+
+<!-- Section A: 4-Point Root & Specimen Diagnostic Checklist -->
+<div class_="flex flex-col" id="call-panel-rx"><div class="p-space-md flex flex-col gap-space-sm border-b border-surface-container">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+                Specimen Acclimation Audit
+              </span>
+<span class="font-label-sm text-[11px] font-bold text-secondary bg-secondary-container/50 px-2 py-0.5 rounded-full">
+                Step 3 of 4 Active
+              </span>
+</div>
+<!-- Item 1: Complete -->
+<div class="flex items-start gap-3 p-2.5 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-primary">1. Root Micro-Hair Integrity</span>
+<span class="font-label-sm text-[10px] text-secondary font-bold uppercase">Passed</span>
+</div>
+<p class="font-body-sm text-[13px] text-on-surface-variant leading-snug">
+                  Optimal mycorrhizae. Zero shipping dormancy or transit root rot detected.
+                </p>
+</div>
+</div>
+<!-- Item 2: Complete -->
+<div class="flex items-start gap-3 p-2.5 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-primary">2. Foliage &amp; Fenestrations</span>
+<span class="font-label-sm text-[10px] text-secondary font-bold uppercase">Passed</span>
+</div>
+<p class="font-body-sm text-[13px] text-on-surface-variant leading-snug">
+                  5 prime fenestrated leaves. Leaf #3 has minor shipping bend; will self-correct in 48h.
+                </p>
+</div>
+</div>
+<!-- Item 3: In Progress (Live Reticle Active) -->
+<div class="flex items-start gap-3 p-2.5 rounded-lg bg-secondary-container/30 ring-1 ring-secondary/30">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 animate-spin" style="animation-duration: 4s;">sync</span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-primary">3. Window Perimeter Light Match</span>
+<span class="font-label-sm text-[10px] text-on-secondary-container font-bold uppercase bg-secondary-container px-1.5 py-0.2 rounded">Auditing</span>
+</div>
+<p class="font-body-sm text-[13px] text-on-surface leading-snug">
+                  Clara's East-facing exposure measured at 340 fc. Safe from scorched leaf margins.
+                </p>
+</div>
+</div>
+<!-- Item 4: Pending Action -->
+<div class="flex items-start gap-3 p-2.5 rounded-lg bg-surface opacity-75">
+<span class="material-symbols-outlined text-outline text-[20px] mt-0.5">radio_button_unchecked</span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">4. First Deep Soak Timing</span>
+<span class="font-label-sm text-[10px] text-outline font-bold uppercase">Scheduled</span>
+</div>
+<p class="font-body-sm text-[13px] text-on-surface-variant leading-snug">
+                  Prescribed: Saturday 9:00 AM (Allow 48h resting in grower pot first).
+                </p>
+</div>
+</div>
+</div><div class="p-space-md flex flex-col gap-space-md bg-surface-container-low/50">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+                Live Botanical Prescription (Rx)
+              </span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-serif italic">
+<span class="material-symbols-outlined text-[16px]">edit_note</span> Dr. Elena
+              </span>
+</div>
+<div class="flex flex-col gap-space-sm font-body-sm text-[13px]">
+<!-- Protocol Card 1 -->
+<div class="p-3 bg-surface-container-lowest rounded-lg shadow-sm flex flex-col gap-1">
+<div class="flex items-center gap-1.5 font-label-lg text-label-sm font-bold text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary">water_drop</span>
+                  Hydration Rule (48h Lockdown)
+                </div>
+<p class="text-on-surface-variant leading-relaxed">
+                  Wait 48 hours before initial bottom-watering soak. Mix 50% diluted Organic Aroid Elixir into room-temp filtered water.
+                </p>
+</div>
+<!-- Protocol Card 2 -->
+<div class="p-3 bg-surface-container-lowest rounded-lg shadow-sm flex flex-col gap-1">
+<div class="flex items-center gap-1.5 font-label-lg text-label-sm font-bold text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary">nest_cam_stand</span>
+                  Potting Acclimation Staging
+                </div>
+<p class="text-on-surface-variant leading-relaxed">
+                  Keep in plastic grower pot slotted inside the handcrafted terracotta vessel for <strong class="text-on-surface">14 full days</strong> before final potting to minimize root shock.
+                </p>
+</div>
+<!-- Live Botanist Direct Dictation Note -->
+<div class="p-3 bg-primary-fixed/30 rounded-lg shadow-sm flex flex-col gap-1 border-l-2 border-primary">
+<div class="flex items-center justify-between text-label-sm font-bold text-primary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">stylus</span>
+                    Botanist's Direct Advisory:
+                  </span>
+<span class="text-[10px] text-on-primary-fixed-variant uppercase">Updated Just Now</span>
+</div>
+<p class="text-primary italic leading-relaxed">
+                  "Clara: Set plant exactly 3.5 ft back from that morning East window. Do not mist or wipe leaves until tomorrow afternoon to allow stomata acclimation."
+                </p>
+</div>
+</div>
+</div></div>
+<!-- Section B: Live Acclimation Prescription & Care Protocol -->
+
+<!-- Section C: Immediate Call Actions & Continuity Perks -->
+<div class="p-space-md flex flex-col gap-space-sm bg-surface-container-lowest">
+<button class="w-full py-2.5 px-4 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 transition-all shadow-sm" id="btn-generate-pdf">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+              Generate 12-Month Acclimation PDF
+            </button>
+<div class="flex items-center justify-between text-label-sm text-on-surface-variant px-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">mark_email_read</span>
+                Auto-syncs to Clara's account &amp; email
+              </span>
+<span class="font-bold text-primary">Included</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 border-t border-surface-container">
+<button class="py-2 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">more_time</span>
+                +15 Min Extension ($20)
+              </button>
+<button class="py-2 px-3 rounded-lg bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+                Book 30-Day Check
+              </button>
+</div>
+</div>
+
+<!-- PANEL PEDIGREE -->
+<div class="hidden p-space-md flex flex-col gap-space-sm text-xs text-on-surface-variant" id="call-panel-pedigree">
+<div class="p-3 bg-surface-container-low rounded-xl border border-primary/10">
+<span class="font-label-sm uppercase tracking-wider text-secondary font-bold block mb-1">Archival Accession Record</span>
+<h4 class="font-headline-sm text-sm text-primary font-serif italic">Monstera Deliciosa Liebm. (Batch #MD-2025-V7)</h4>
+<div class="mt-2 space-y-1 font-mono text-[11px]">
+<div>Lineage: <strong>Sauvie Island F1 Clonal Line</strong></div>
+<div>Substrate: <strong>Formula A-7 (Pine Bark, Perlite, Worm Castings)</strong></div>
+<div>Vessel: <strong>8-Inch Breathable Tuscan Terracotta</strong></div>
+<div>Hardened: <strong>28 Days in Glasshouse Bay 04</strong></div>
+<div>NFC Brass Tag: <strong>#MD-772 (Verified Active)</strong></div>
+</div>
+</div>
+<a class="w-full py-2.5 bg-primary text-on-primary text-center rounded-xl font-bold hover:bg-primary-container transition-colors" href="passport.html">Open Full Living Passport</a>
+</div>
+<!-- PANEL LIVE CHAT -->
+<div class="hidden flex flex-col h-[380px] p-space-md" id="call-panel-chat">
+<div class="flex-1 overflow-y-auto space-y-2.5 pr-1 text-xs" id="chatMessages">
+<div class="flex items-start gap-2">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[10px] shrink-0">EA</div>
+<div class="bg-surface-container-low p-2.5 rounded-xl rounded-tl-none text-on-surface">
+<strong>Dr. Elena:</strong> Welcome Clara! I can see your Monstera's canopy clearly. Leaf 3 shows great turgor. Could you tilt the camera toward the pot rim?
+          </div>
+</div>
+<div class="flex items-start gap-2 justify-end">
+<div class="bg-primary text-on-primary p-2.5 rounded-xl rounded-tr-none text-right">
+<strong>You:</strong> Just did! Is the soil moisture level looking okay?
+          </div>
+</div>
+<div class="flex items-start gap-2">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[10px] shrink-0">EA</div>
+<div class="bg-surface-container-low p-2.5 rounded-xl rounded-tl-none text-on-surface">
+<strong>Dr. Elena:</strong> Yes! Top 2 inches are perfectly drying. We will schedule your next deep soak for Saturday morning.
+          </div>
+</div>
+</div>
+<div class="pt-2 border-t border-primary/10 flex items-center gap-1.5 mt-2">
+<input class="flex-1 px-3 py-1.5 text-xs bg-surface-container-low border border-outline-variant rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" id="chatInput" placeholder="Message Dr. Elena..." type="text"/>
+<button class="px-3 py-1.5 bg-primary text-on-primary hover:bg-primary-container rounded-lg text-xs font-bold" onclick="sendConsultChatMessage()">Send</button>
+</div>
+</div>
+</div>
+<!-- Chat / Interactive Specimen Question Prompt -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center gap-space-sm shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm">
+            CV
+          </div>
+<div class="flex-1 relative">
+<input class="w-full pl-3 pr-9 py-2 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary shadow-xs" placeholder="Type quick query to Dr. Elena..." type="text"/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 text-primary hover:text-primary-container p-1 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Micro-interactions Script -->
+<script>
+    (function initVideoSession() {
+      // Live Countdown Simulation
+      let secondsRemaining = 8 * 60 + 24;
+      const timerEl = document.getElementById('session-timer');
+      
+      setInterval(() => {
+        if (secondsRemaining > 0) {
+          secondsRemaining--;
+          const m = Math.floor(secondsRemaining / 60).toString().padStart(2, '0');
+          const s = (secondsRemaining % 60).toString().padStart(2, '0');
+          if (timerEl) {
+            timerEl.textContent = `${m}:${s}`;
+          }
+        }
+      }, 1000);
+
+      // Button toggle feedback
+      const micBtn = document.getElementById('btn-mic');
+      const camBtn = document.getElementById('btn-cam');
+      const macroBtn = document.getElementById('btn-macro');
+      const pdfBtn = document.getElementById('btn-generate-pdf');
+      
+      if (micBtn) {
+        micBtn.addEventListener('click', () => {
+          const icon = micBtn.querySelector('.material-symbols-outlined');
+          if (icon.textContent === 'mic') {
+            icon.textContent = 'mic_off';
+            micBtn.classList.replace('bg-surface-container-low', 'bg-tertiary-container');
+            micBtn.classList.replace('text-on-surface', 'text-on-primary');
+          } else {
+            icon.textContent = 'mic';
+            micBtn.classList.replace('bg-tertiary-container', 'bg-surface-container-low');
+            micBtn.classList.replace('text-on-primary', 'text-on-surface');
+          }
+        });
+      }
+
+      if (camBtn) {
+        camBtn.addEventListener('click', () => {
+          const icon = camBtn.querySelector('.material-symbols-outlined');
+          if (icon.textContent === 'videocam') {
+            icon.textContent = 'videocam_off';
+            camBtn.classList.replace('bg-surface-container-low', 'bg-tertiary-container');
+            camBtn.classList.replace('text-on-surface', 'text-on-primary');
+          } else {
+            icon.textContent = 'videocam';
+            camBtn.classList.replace('bg-tertiary-container', 'bg-surface-container-low');
+            camBtn.classList.replace('text-on-primary', 'text-on-surface');
+          }
+        });
+      }
+
+      if (macroBtn) {
+        macroBtn.addEventListener('click', () => {
+          const icon = macroBtn.querySelector('.material-symbols-outlined');
+          if (icon.textContent === 'macro_off') {
+            icon.textContent = 'macro_auto';
+            macroBtn.classList.replace('bg-secondary-container', 'bg-primary');
+            macroBtn.classList.replace('text-on-secondary-container', 'text-on-primary');
+          } else {
+            icon.textContent = 'macro_off';
+            macroBtn.classList.replace('bg-primary', 'bg-secondary-container');
+            macroBtn.classList.replace('text-on-primary', 'text-on-secondary-container');
+          }
+        });
+      }
+
+      if (pdfBtn) {
+        pdfBtn.addEventListener('click', () => {
+          const originalText = pdfBtn.innerHTML;
+          pdfBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span> Generating Archive Rx...';
+          setTimeout(() => {
+            pdfBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span> Specimen Rx Dispatched!';
+            setTimeout(() => {
+              pdfBtn.innerHTML = originalText;
+            }, 2500);
+          }, 1200);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-xl pb-space-lg mt-space-xl"><div class="max-w-[1320px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md pr-space-lg"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-primary font-serif">Verdant Haven</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">An artisanal boutique greenhouse nurturing healthy, resilient botanical specimens, handcrafted earthenware pots, and organic plant nutrition. Sourced responsibly, shipped sustainably in plastic-free packaging.</p><div class="flex flex-col gap-space-xs mt-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-semibold">The Conservatory Letter</span><p class="font-body-sm text-body-sm text-on-surface-variant">Bi-weekly horticultural advice, rare drop announcements, and indoor cultivation insights.</p><div class="flex items-center gap-space-xs mt-space-xs"><input class="flex-1 px-space-md py-space-sm bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Your email address..." type="email"/><button class="px-space-md py-space-sm bg-primary text-on-primary font-label-lg text-label-lg rounded-lg hover:bg-primary-container transition-colors">Subscribe</button></div></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Plant Care Guides</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="care-light-levels" href="care-lab.html">Assessing Natural Light</a></li><li><a class="hover:text-primary transition-colors" data-path="care-watering" href="care-lab.html">The Art of Root Hydration</a></li><li><a class="hover:text-primary transition-colors" data-path="care-repotting" href="care-lab.html">Substrates &amp; Repotting</a></li><li><a class="hover:text-primary transition-colors" data-path="care-pest-management" href="care-lab.html">Organic Pest Defense</a></li><li><a class="hover:text-primary transition-colors" data-path="care-pet-friendly" href="catalog.html?filter=pet-safe">Pet-Friendly Houseplants</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Sustainability</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="sustainability-pledge" href="passport.html" title="Sanctuary Botanical Guarantee &amp; Provenance">Our Botanical Pledge</a></li><li><a class="hover:text-primary transition-colors" data-path="sustainable-packaging" href="mailing-label.html">Zero-Plastic Packaging</a></li><li><a class="hover:text-primary transition-colors" data-path="ethical-sourcing" href="passport.html">Ethical Grower Network</a></li><li><a class="hover:text-primary transition-colors" data-path="carbon-neutral" href="order-confirmation.html">Carbon-Neutral Delivery</a></li><li><a class="hover:text-primary transition-colors" data-path="pot-recycling" href="product.html">Vessel Reuse Initiative</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Guest Concierge</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="botanical-guarantee" href="passport.html">30-Day Plant Guarantee</a></li><li><a class="hover:text-primary transition-colors" data-path="shipping-and-tracking" href="order-confirmation.html">Shipping &amp; Greenhouse Transit</a></li><li><a class="hover:text-primary transition-colors" data-path="virtual-consultation" href="consultation.html">Book a Plant Doctor</a></li><li><a class="hover:text-primary transition-colors" data-path="corporate-gifting" href="consultation.html">Atelier &amp; Office Design</a></li><li><a class="hover:text-primary transition-colors" data-path="contact" href="consultation.html">Customer Inquiries</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><span>© 2025 Verdant Haven Botanical Co. All rights reserved.</span><a class="hover:text-primary transition-colors" data-path="privacy-policy" href="javascript:void(0)" onclick="openPolicyModal('Sanctuary Privacy &amp; Telemetry Protocol'); return false;">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="terms-of-service" href="javascript:void(0)" onclick="openPolicyModal('Sanctuary Terms &amp; Horticultural Assurance'); return false;">Terms of Service</a></div><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Follow The Conservatory</span><div class="flex items-center gap-space-sm text-on-surface-variant"><a aria-label="Instagram Journal" class="p-space-xs hover:text-primary transition-colors flex items-center" href="https://instagram.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a aria-label="Pinterest Boards" class="p-space-xs hover:text-primary transition-colors flex items-center" href="https://pinterest.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">nature</span></a><a aria-label="Horticultural Video Channel" class="p-space-xs hover:text-primary transition-colors flex items-center" href="https://youtube.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">smart_display</span></a></div></div></div></div></footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+          // Live Timer Countdown
+          let seconds = 504; // 8:24
+          const timerEl = document.getElementById('session-timer');
+          if (timerEl) {
+            setInterval(() => {
+              if (seconds > 0) {
+                seconds--;
+                const m = Math.floor(seconds / 60);
+                const s = seconds % 60;
+                timerEl.textContent = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+              }
+            }, 1000);
+          }
+
+          // Mic and Camera Toggles
+          document.querySelectorAll('.material-symbols-outlined').forEach(icon => {
+            if (icon.textContent === 'mic') {
+              const btn = icon.closest('button');
+              if (btn) {
+                btn.onclick = () => {
+                  const isMuted = icon.textContent === 'mic_off';
+                  icon.textContent = isMuted ? 'mic' : 'mic_off';
+                  btn.classList.toggle('bg-error', !isMuted);
+                  btn.classList.toggle('text-white', !isMuted);
+                  VerdantStore.showToast(isMuted ? 'Microphone On' : 'Microphone Muted', '', isMuted ? 'mic' : 'mic_off');
+                };
+              }
+            } else if (icon.textContent === 'videocam') {
+              const btn = icon.closest('button');
+              if (btn) {
+                btn.onclick = () => {
+                  const isOff = icon.textContent === 'videocam_off';
+                  icon.textContent = isOff ? 'videocam' : 'videocam_off';
+                  btn.classList.toggle('bg-error', !isOff);
+                  btn.classList.toggle('text-white', !isOff);
+                  VerdantStore.showToast(isOff ? 'Camera On' : 'Camera Off', '', isOff ? 'videocam' : 'videocam_off');
+                };
+              }
+            } else if (icon.textContent === 'photo_camera') {
+              const btn = icon.closest('button');
+              if (btn) {
+                btn.onclick = () => {
+                  VerdantStore.showToast('Leaf Snapshot Captured', 'Saved 4K high-res specimen frame to clinical dossier.', 'camera');
+                };
+              }
+            }
+          });
+
+          // End call button
+          const endBtn = Array.from(document.querySelectorAll('button')).find(b => 
+            b.textContent.includes('End Session') || b.textContent.includes('Leave') || b.textContent.includes('End Call')
+          );
+          if (endBtn) {
+            endBtn.onclick = () => {
+              if (confirm('Conclude the tele-horticulture audit with Dr. Elena?')) {
+                window.location.href = 'dashboard.html';
+              }
+            };
+          }
+        });
+      </script>
+
+<script>
+      function switchCallTab(tabId) {
+        document.querySelectorAll('.call-tab').forEach(b => {
+          b.classList.remove('border-b-2', 'border-primary', 'text-primary', 'font-bold');
+          b.classList.add('text-on-surface-variant', 'font-semibold');
+        });
+
+        const activeBtn = document.getElementById(`call-tab-${tabId}`);
+        if (activeBtn) {
+          activeBtn.classList.remove('text-on-surface-variant', 'font-semibold');
+          activeBtn.classList.add('border-b-2', 'border-primary', 'text-primary', 'font-bold');
+        }
+
+        ['call-panel-rx', 'call-panel-pedigree', 'call-panel-chat'].forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.classList.add('hidden');
+        });
+
+        const activePanel = document.getElementById(`call-panel-${tabId}`);
+        if (activePanel) activePanel.classList.remove('hidden');
+      }
+
+      function sendConsultChatMessage() {
+        const input = document.getElementById('chatInput');
+        const box = document.getElementById('chatMessages');
+        if (!input || !box || !input.value.trim()) return;
+
+        const userMsg = input.value.trim();
+        input.value = '';
+
+        const userDiv = document.createElement('div');
+        userDiv.className = 'flex items-start gap-2 justify-end';
+        userDiv.innerHTML = `<div class="bg-primary text-on-primary p-2.5 rounded-xl rounded-tr-none text-right"><strong>You:</strong> ${userMsg}</div>`;
+        box.appendChild(userDiv);
+        box.scrollTop = box.scrollHeight;
+
+        setTimeout(() => {
+          const botDiv = document.createElement('div');
+          botDiv.className = 'flex items-start gap-2';
+          botDiv.innerHTML = `<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-[10px] shrink-0">EA</div><div class="bg-surface-container-low p-2.5 rounded-xl rounded-tl-none text-on-surface"><strong>Dr. Elena:</strong> Recorded that observation into your acclimation log, Clara! Turgor index is responding favorably.</div>`;
+          box.appendChild(botDiv);
+          box.scrollTop = box.scrollHeight;
+        }, 1200);
+      }
+
+      // Mic & Cam toggles
+      document.addEventListener('DOMContentLoaded', () => {
+        const micBtn = document.querySelector('button[aria-label="Toggle Microphone"]');
+        let micActive = true;
+        if (micBtn) {
+          micBtn.onclick = () => {
+            micActive = !micActive;
+            const icon = micBtn.querySelector('.material-symbols-outlined');
+            if (icon) icon.textContent = micActive ? 'mic' : 'mic_off';
+            micBtn.classList.toggle('bg-error/20');
+            micBtn.classList.toggle('text-error');
+            VerdantStore.showToast('Microphone', micActive ? 'Microphone unmuted.' : 'Microphone muted.', 'mic', 'info');
+          };
+        }
+
+        const camBtn = document.querySelector('button[aria-label="Toggle Video Camera"]');
+        let camActive = true;
+        if (camBtn) {
+          camBtn.onclick = () => {
+            camActive = !camActive;
+            const icon = camBtn.querySelector('.material-symbols-outlined');
+            if (icon) icon.textContent = camActive ? 'videocam' : 'videocam_off';
+            camBtn.classList.toggle('bg-error/20');
+            camBtn.classList.toggle('text-error');
+            VerdantStore.showToast('Camera', camActive ? 'Video stream enabled.' : 'Video stream paused.', 'videocam', 'info');
+          };
+        }
+
+        const snapBtn = document.querySelector('button span.material-symbols-outlined:contains("photo_camera")')?.parentElement || document.querySelectorAll('button')[3];
+        if (snapBtn) {
+          snapBtn.addEventListener('click', () => {
+            document.body.classList.add('flash-effect');
+            setTimeout(() => document.body.classList.remove('flash-effect'), 200);
+            VerdantStore.showToast('Foliar Macro Snapshot', 'High-res image captured and pinned to Dr. Alvarez clinical dossier.', 'camera', 'success');
+          });
+        }
+      });
+    </script>
+</body></html>

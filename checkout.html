@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Greenhouse Dispatch &amp; Settlement — Verdant Haven</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-container":"#546a2e","surface-container-low":"#f5f4ef","on-secondary-fixed":"#131f00","primary":"#003629","tertiary":"#581904","surface-container-highest":"#e3e3de","inverse-surface":"#30312e","surface-container-lowest":"#ffffff","on-surface":"#1b1c19","primary-container":"#1b4d3e","tertiary-container":"#762e17","tertiary-fixed":"#ffdbd0","inverse-on-surface":"#f2f1ec","on-primary-fixed-variant":"#1d4f40","on-tertiary-container":"#fd9779","on-error":"#ffffff","outline-variant":"#c0c9c3","error":"#ba1a1a","secondary-container":"#cfe99f","secondary-fixed-dim":"#b6d088","on-tertiary-fixed":"#3a0a00","primary-fixed":"#baeed9","outline":"#707974","surface-variant":"#e3e3de","on-secondary-fixed-variant":"#394d14","on-secondary":"#ffffff","on-error-container":"#93000a","on-tertiary":"#ffffff","error-container":"#ffdad6","surface-container":"#efeee9","primary-fixed-dim":"#9ed1bd","secondary":"#50652a","background":"#faf9f4","surface-tint":"#376757","surface-bright":"#faf9f4","on-surface-variant":"#404945","surface-dim":"#dbdad5","on-primary-container":"#8abda9","on-background":"#1b1c19","on-tertiary-fixed-variant":"#793019","on-primary-fixed":"#002117","on-primary":"#ffffff","tertiary-fixed-dim":"#ffb59f","surface-container-high":"#e9e8e3","secondary-fixed":"#d2eca2","inverse-primary":"#9ed1bd","surface":"#faf9f4"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem","space-md":"1rem","margin":"3rem","margin-mobile":"1.25rem","space-xl":"2.5rem","gutter-mobile":"1rem","space-lg":"1.5rem"},"fontFamily":{"display-lg-mobile":["Playfair Display"],"headline-lg":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"display-lg":["Playfair Display"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"headline-sm":["Playfair Display"],"body-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"]},"fontSize":{"display-lg-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"500"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-lg":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-sm":["22px",{"lineHeight":"30px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"500"}]}}}}</script><script src="js/store.js"></script><script src="js/nav.js"></script><style>
+      html { scroll-behavior: smooth; }
+      .fade-in { animation: fadeIn 0.35s ease-in-out; }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+      .btn-hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+      .btn-hover-lift:hover { transform: translateY(-2px); box-shadow: 0 8px 20px -4px rgba(0,54,41,0.15); }
+      .glass-panel { background: rgba(250, 249, 244, 0.85); backdrop-filter: blur(12px); }
+    </style></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-space-xs px-margin"><div class="max-w-[1320px] mx-auto flex items-center justify-between font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px]">eco</span><span>Complimentary greenhouse shipping on botanical orders over $75</span></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs cursor-pointer hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined text-[14px]">language</span><select aria-label="Currency Switcher" class="bg-transparent text-on-primary font-label-sm text-label-sm cursor-pointer focus:outline-none"><option class="text-on-surface bg-surface" value="USD">USD ($)</option><option class="text-on-surface bg-surface" value="EUR">EUR (€)</option><option class="text-on-surface bg-surface" value="GBP">GBP (£)</option></select></div><a class="hover:text-primary-fixed transition-colors" data-path="greenhouse-locations" href="catalog.html" title="Glasshouse Cultivars &amp; Nursery Locations">Our Nurseries</a><a class="hover:text-primary-fixed transition-colors" data-path="sustainability" href="passport.html" title="Sanctuary Botanical Guarantee &amp; Provenance">Botanical Guarantee</a></div></div></div><div class="h-24 max-w-[1320px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Botanical Boutique Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFozqNo4T_xhfNVgAnqgnpcHzTwow7HxLwxOe0iJPti0ROf9HCuKvGGsqRJlwN-ki8FKaLYJYG5MoKfL0HEyLjRR8oaKcBHOH_ZwPZdR1CaIah049rfbj_g_Ov4cNqC34FkC8b1pNbj_ceYWG45QRsoMV3JJlmgu3bmQ2EPVj2P2W6jeU0Q3PTRxQ-iOuADPuoAcsQ1HBSjLMuEYB97ztA4xCZGTfFW6A0aC3eBv0sfwWFpDxojIHTCw"/><a class="flex flex-col" data-path="shop-plants" href="catalog.html"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-semibold">Verdant Haven</span><span class="font-label-sm text-label-sm tracking-widest uppercase text-secondary font-medium">Botanical Atelier &amp; Nursery</span></a></div><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">search</span><input class="w-full pl-10 pr-space-md py-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" placeholder="Search rare aroids, ficus, artisanal terra cotta..." type="search"/></div></div><div class="flex items-center gap-space-lg"><a aria-label="Wishlist" class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="wishlist" href="#wishlist" onclick="VerdantStore.showToast('Botanical Wishlist', 'You have ' + VerdantStore.getWishlist().length + ' specimens saved in your sanctuary.', 'favorite', 'success'); return false;"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] flex items-center justify-center font-bold">3</span></a><a aria-label="Shopping Cart" class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="cart" href="#cart" onclick="openCartDrawer(); return false;"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-[10px] flex items-center justify-center font-bold">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="bg-surface-container-low/50"><div class="max-w-[1320px] mx-auto px-margin"><nav class="flex items-center justify-center gap-space-xl py-space-sm" data-active-classes="text-primary font-semibold border-b-2 border-primary"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="shop-plants" href="catalog.html">Shop Plants</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="rare-finds" href="product.html">Rare Finds</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="planters-and-care" href="catalog.html?category=vessels">Planters &amp; Care</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-open-quiz="true" data-path="plant-quiz" href="#quiz">Plant Quiz</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="workshops" href="consultation.html">Workshops</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="about" href="passport.html">About</a></nav></div></div></header><main class="w-full pt-44 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="max-w-[1320px] mx-auto px-margin-mobile md:px-margin py-space-xl w-full">
+<!-- Stepper Navigation Bar -->
+<nav aria-label="Checkout Progress" class="mb-space-xl">
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low px-space-lg py-space-md rounded-xl" id="checkout-stepper">
+<div class="stepper-pill flex items-center gap-space-sm bg-primary/10 p-space-xs px-space-sm rounded-xl font-semibold text-primary cursor-pointer" onclick="goToStep(1)">
+<div class="stepper-num w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm shadow-sm">1</div>
+<div class="flex flex-col">
+<span class="font-label-lg tracking-wide">Sanctuary Shipping</span>
+<span class="font-label-sm text-secondary hidden sm:inline text-xs">Courier Protocol</span>
+</div>
+</div>
+<div class="h-[2px] w-8 sm:w-16 bg-primary-fixed-dim/40 rounded-full"></div>
+<div class="stepper-pill flex items-center gap-space-sm p-space-xs px-space-sm rounded-xl opacity-60 text-on-surface-variant cursor-pointer" onclick="goToStep(2)">
+<div class="stepper-num w-7 h-7 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-sm">2</div>
+<div class="flex flex-col">
+<span class="font-label-lg font-medium">Payment Settlement</span>
+<span class="font-label-sm text-outline hidden sm:inline text-xs">Sanctuary Vault</span>
+</div>
+</div>
+<div class="h-[2px] w-8 sm:w-16 bg-surface-container-highest rounded-full"></div>
+<div class="stepper-pill flex items-center gap-space-sm p-space-xs px-space-sm rounded-xl opacity-60 text-on-surface-variant cursor-pointer" onclick="goToStep(3)">
+<div class="stepper-num w-7 h-7 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-sm">3</div>
+<div class="flex flex-col">
+<span class="font-label-lg font-medium">Review &amp; Custody</span>
+<span class="font-label-sm text-outline hidden sm:inline text-xs">Final Transfer</span>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Two-Column Structure -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Checkout Forms & Logistics (approx 62%) -->
+<section class="lg:col-span-7 flex flex-col gap-space-xl" id="checkout-step-1">
+<!-- Express Botanical Dispatch Options -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Expedited Checkout</span>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Encrypted SSL 256-Bit</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<button class="h-11 rounded-lg bg-[#5A31F4] text-white font-label-lg text-label-lg flex items-center justify-center hover:opacity-95 transition-opacity shadow-sm cursor-pointer" type="button">
+<span class="tracking-tight italic font-bold">Shop<span class="font-normal not-italic ml-0.5">Pay</span></span>
+</button>
+<button class="h-11 rounded-lg bg-black text-white font-label-lg text-label-lg flex items-center justify-center hover:opacity-90 transition-opacity shadow-sm cursor-pointer" type="button">
+<span class="flex items-center gap-1 font-medium tracking-tight">
+<span class="material-symbols-outlined text-[18px]">phone_iphone</span> Pay
+              </span>
+</button>
+<button class="h-11 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg flex items-center justify-center hover:bg-surface-container-high transition-colors shadow-sm cursor-pointer" type="button">
+<span class="font-medium tracking-tight flex items-center gap-1">
+<span class="font-bold text-[#4285F4]">G</span> Pay
+              </span>
+</button>
+</div>
+<div class="relative flex items-center justify-center my-space-xs">
+<div class="w-full h-[1px] bg-outline-variant/50 absolute"></div>
+<span class="relative bg-surface-container-low px-space-md font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
+              or continue with botanical dispatch
+            </span>
+</div>
+</div>
+<!-- Contact & Specimen Birth Certificate Info -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">contact_mail</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Contact &amp; Provenance Tracking</h2>
+</div>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="login.html">Already have a sanctuary account?</a>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1.5 font-medium" for="contact-email">
+              Email Address for Transit Telemetry &amp; Specimen Passport
+            </label>
+<input class="w-full h-12 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="contact-email" placeholder="clara.vance@conservatory.org" type="email"/>
+<p class="font-body-sm text-label-sm text-outline mt-1.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+              You will receive greenhouse humidity logs &amp; courier sensor readings.
+            </p>
+</div>
+<div class="flex items-start gap-space-xs pt-space-xs">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" id="marketing-consent" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer select-none" for="marketing-consent">
+              Enroll in botanical drop dispatches, propagation guides, and rare conservatory cuttings.
+            </label>
+</div>
+</div>
+<!-- Sanctuary Shipping Address -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">nest_eco_leaf</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Living Sanctuary Destination</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-medium" for="first-name">Caregiver First Name</label>
+<input class="w-full h-12 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="first-name" type="text" value="Clara"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-medium" for="last-name">Last Name</label>
+<input class="w-full h-12 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="last-name" type="text" value="Vance"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-medium" for="street-address">Sanctuary Street Address</label>
+<input class="w-full h-12 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="street-address" placeholder="742 Evergreen Conservatory Row" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-medium" for="suite-apt">Apt, Suite, Greenhouse Bay (Optional)</label>
+<input class="w-full h-12 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="suite-apt" placeholder="Apartment 4B — South Facing Windows" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-medium" for="city">City</label>
+<input class="w-full h-12 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="city" placeholder="Portland" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-medium" for="state-region">State / Region</label>
+<select class="w-full h-12 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all cursor-pointer" id="state-region">
+<option selected="" value="OR">Oregon (OR)</option>
+<option value="WA">Washington (WA)</option>
+<option value="CA">California (CA)</option>
+<option value="NY">New York (NY)</option>
+<option value="IL">Illinois (IL)</option>
+<option value="CO">Colorado (CO)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-medium" for="postal-code">ZIP Code</label>
+<input class="w-full h-12 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="postal-code" placeholder="97201" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-medium" for="phone-courier">Phone for Courier Delivery SMS</label>
+<input class="w-full h-12 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="phone-courier" placeholder="+1 (503) 555-0194" type="tel"/>
+<span class="font-body-sm text-label-sm text-outline mt-1 inline-block">Used strictly to coordinate live specimen handoff and freeze-warning notifications.</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" id="save-address" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface font-medium cursor-pointer select-none" for="save-address">
+              Save this botanical delivery address to my Verdant Haven profile
+            </label>
+</div>
+</div>
+<!-- Climate & Thermal Transit Selection -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">thermostat</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Thermal Insulation &amp; Root Seal</h2>
+</div>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-full font-semibold">Climate-Safe Protocol</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live tropical specimens are sensitive to cold drafts and cargo holds. Choose your transit insulation packaging layer:</p>
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<!-- Option 1: Thermal Shield (Active) -->
+<label class="relative flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer">
+<input checked="" class="mt-1 w-5 h-5 text-primary accent-primary cursor-pointer" name="thermal-packaging" type="radio" value="shield"/>
+<div class="flex-1 flex flex-col gap-1">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-primary font-semibold">Thermal Climate-Shield Transit</span>
+<span class="bg-primary text-on-primary font-label-sm text-[11px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Recommended</span>
+</div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-label-sm text-label-sm line-through text-outline">$6.00</span>
+<span class="font-title-md text-title-md text-secondary font-bold">Complimentary</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Engineered breathable thermal fleece insulation blanket + 72-hour UniHeat plant warmer pack + moisture-sealed moss collar around earthenware soil. Full arrive-alive live guarantee even in frosty weather.
+                </p>
+<div class="flex items-center gap-space-md mt-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">ac_unit</span> Sub-50°F Resilient</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">verified_user</span> 100% Replacement Warranty</span>
+</div>
+</div>
+</label>
+<!-- Option 2: Standard Eco Corrugated Transit -->
+<label class="relative flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all cursor-pointer">
+<input class="mt-1 w-5 h-5 text-primary accent-primary cursor-pointer" name="thermal-packaging" type="radio" value="standard"/>
+<div class="flex-1 flex flex-col gap-1">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Standard Greenhouse Express Packaging</span>
+<span class="font-title-md text-title-md text-on-surface-variant font-semibold">Included</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Plastic-free custom die-cut honeycomb cardboard buffer + bamboo stabilizing stakes. Suitable if ambient temperatures in your destination exceed 55°F during day &amp; night.
+                </p>
+</div>
+</label>
+</div>
+</div>
+<!-- Greenhouse Dispatch Date Window -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">calendar_month</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Optimal Greenhouse Dispatch Window</h2>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">info</span>
+<div class="text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+<strong class="font-semibold text-primary">Greenhouse Transit Mandate:</strong> To ensure live specimens never sit dormant in cold weekend freight depots, our nursery only releases boxed plants between Monday morning and Wednesday 2:00 PM.
+            </div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm mt-space-xs">
+<label class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 text-primary accent-primary cursor-pointer" name="dispatch-date" type="radio" value="mon-next"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-primary">Monday Morning Dispatch</span>
+<span class="font-body-sm text-label-sm text-outline">Departing May 19 • Expected Delivery Wed-Thu</span>
+</div>
+</div>
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">Recommended</span>
+</label>
+<label class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 text-primary accent-primary cursor-pointer" name="dispatch-date" type="radio" value="tue-next"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Tuesday Morning Dispatch</span>
+<span class="font-body-sm text-label-sm text-outline">Departing May 20 • Expected Delivery Thu-Fri</span>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Gift Note & Concierge Instructions (Interactive Accordion) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col">
+<button class="flex items-center justify-between w-full text-left cursor-pointer group" onclick="document.getElementById('gift-accordion').classList.toggle('hidden'); document.getElementById('gift-chevron').classList.toggle('rotate-180');" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-container text-[22px]">featured_seasonal_and_gifts</span>
+<span class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors">Gift Inscription &amp; Hand-Calligraphy Card</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200" id="gift-chevron">expand_more</span>
+</button>
+<div class="hidden flex flex-col gap-space-md pt-space-md mt-space-md" id="gift-accordion">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-medium" for="gift-recipient">Card Recipient Name</label>
+<input class="w-full h-11 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="gift-recipient" placeholder="e.g. Julian Montgomery" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-medium" for="gift-message">Handwritten Botanical Note (Inscribed on seed-embedded cotton paper)</label>
+<textarea class="w-full p-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="gift-message" placeholder="May this Monstera grow alongside your new sunlit space. With warmth..." rows="3"></textarea>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 font-medium" for="concierge-notes">Courier Placement Instructions</label>
+<input class="w-full h-11 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="concierge-notes" placeholder="e.g. Please leave under shaded covered porch, out of direct sun" type="text"/>
+</div>
+</div>
+</div>
+<!-- Navigation Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md pb-space-lg">
+<a class="font-label-lg text-label-lg text-primary hover:text-secondary transition-colors flex items-center gap-space-xs order-2 sm:order-1 font-medium" href="catalog.html">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+            Return to Botanical Bag
+          </a>
+<button class="w-full sm:w-auto px-space-xl py-3.5 bg-primary text-on-primary font-label-lg text-label-lg rounded-lg hover:bg-primary-container shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-space-sm order-1 sm:order-2 cursor-pointer font-semibold" type="button">
+<span>Continue to Botanical Payment</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<a class="flex items-center gap-1 text-sm text-on-surface-variant hover:text-primary transition-colors" href="catalog.html">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span> Return to Catalog
+          </a>
+<button class="px-8 py-4 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-xl shadow-md hover:shadow-lg transition-all flex items-center gap-2" id="to-step-2" onclick="goToStep(2)" type="button">
+<span>Continue to Payment Settlement</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Right Column: Order Summary & Specimen Details (Sticky Sidebar, approx 38%) -->
+<aside class="lg:col-span-5 sticky top-28 flex flex-col gap-space-lg">
+<!-- Summary Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-baseline gap-2">
+<h2 class="font-headline-sm text-headline-sm text-primary font-serif">Greenhouse Order Summary</h2>
+<span class="font-label-sm text-label-sm text-outline font-medium">(2 items)</span>
+</div>
+<span class="font-label-sm text-label-sm bg-primary/10 text-primary px-2.5 py-0.5 rounded-full font-semibold">Reserved 18:42</span>
+</div>
+<!-- Specimen Item 1 -->
+<div class="flex gap-space-md py-space-sm">
+<div class="relative w-24 h-28 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Exquisite Monstera Deliciosa with large glossy fenestrated split leaves potted in an artisanal raw natural earthenware terracotta vessel, soft morning light in an airy botanical conservatory, high-end editorial styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB73Mk_oqPuQrWniDt68cBZLmsKGg6Jm31O__m8D2VReLSRmzKygxQfyu2k__ExQ4TPuWJMlZxC-u0XKRbMdlUBYg_XFjrgZMNUYCRu-1yvDN6xJD9DYB5vBjMgI08bYOwAjLxGqBoHhgscTH_9Tv8egJYTa4fYEyA-CdfO7BVsF6hVi677uloHvkgLMfO27ZW2XELsqBIfUqN8cNre4bXCZxaZlTFQW_RZYP7GVTUlv3vKGT5VEhUSw"/>
+<span class="absolute top-1.5 left-1.5 bg-primary/90 text-on-primary font-label-sm text-[10px] px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Live</span>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-title-md text-title-md text-primary font-semibold leading-tight">Monstera Deliciosa</h3>
+<span class="font-title-md text-title-md text-primary font-bold ml-2">$94.00</span>
+</div>
+<p class="font-body-sm text-label-sm text-on-surface-variant mt-1 leading-snug">Medium 8" Nursery Specimen • Earthenware Terracotta Planter included</p>
+<div class="inline-flex items-center gap-1 mt-1.5 px-2 py-0.5 bg-secondary/10 text-secondary rounded font-label-sm text-[11px] font-medium">
+<span class="material-symbols-outlined text-[13px]">filter_vintage</span> Fenestrated • 5-6 Mature Leaves
+                </div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm pt-1">
+<span>Qty: 1</span>
+<span class="text-primary font-medium">Pot: Warm Terracotta</span>
+</div>
+</div>
+</div>
+<!-- Care Item 2 -->
+<div class="flex gap-space-md py-space-sm">
+<div class="relative w-24 h-28 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Amber glass apothecary bottle with dropper filled with organic golden green seaweed kelp botanical plant elixir, minimalist linen label, placed on raw porous stone in natural diffuse daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLeFGB7qUo4UbqTAcBpM-gSlBMkm3jTp0aadrphJR3x2k8Lr3NP71PHH_ThNUdyIIp0SEdrB_p7Z99jnVVEO8vKWR_vcJ8iwzO4tBtOgg3MLEKAYlSWjBX-_vnUa6_aPrIxKcEeHlgAAai9cDh5iEVvC05GmK5VT8NtL6GtrW9vY2mFLTyhdxpYCXp9DN2cwImfZfSDDZk5f4iKQAmhZOCZDo0rLru0pFdqIT-eEoxgiqTJC8jYgw17w"/>
+<span class="absolute top-1.5 left-1.5 bg-secondary text-on-secondary font-label-sm text-[10px] px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Care</span>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<h3 class="font-title-md text-title-md text-primary font-semibold leading-tight">Organic Aroid Elixir (8 oz)</h3>
+<span class="font-title-md text-title-md text-primary font-bold ml-2">$16.00</span>
+</div>
+<p class="font-body-sm text-label-sm text-on-surface-variant mt-1 leading-snug">Cold-pressed deep-sea kelp &amp; micronutrient foliage mist</p>
+<div class="inline-flex items-center gap-1 mt-1.5 px-2 py-0.5 bg-surface-container-high text-on-surface-variant rounded font-label-sm text-[11px] font-medium">
+<span class="material-symbols-outlined text-[13px]">science</span> Bio-Dynamic Formula
+                </div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm pt-1">
+<span>Qty: 1</span>
+<span class="text-primary font-medium">Amber Glass Vessel</span>
+</div>
+</div>
+</div>
+<!-- Promo Code Input -->
+<div class="pt-space-xs">
+<div class="flex gap-space-xs">
+<input class="flex-1 h-11 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary uppercase tracking-wider text-xs placeholder:normal-case" placeholder="Promo Code or Nursery Certificate" type="text"/>
+<button class="px-space-lg h-11 bg-surface-container text-primary font-label-lg text-label-lg rounded-lg hover:bg-surface-container-high transition-colors font-semibold cursor-pointer" type="button">
+                Apply
+              </button>
+</div>
+</div>
+<!-- Ledger Cost Breakdown -->
+<div class="flex flex-col gap-space-xs pt-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex justify-between">
+<span>Sanctuary Subtotal</span>
+<span class="font-medium text-on-surface">$110.00</span>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-1">
+<span>Greenhouse Express Shipping</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">eco</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="line-through text-outline text-label-sm">$14.00</span>
+<span class="text-secondary font-semibold font-label-sm uppercase">Free ($75+ Order)</span>
+</div>
+</div>
+<div class="flex justify-between items-center">
+<span>Thermal Shield Packaging</span>
+<span class="text-secondary font-semibold font-label-sm uppercase">Complimentary Perk</span>
+</div>
+<div class="flex justify-between">
+<span>Horticultural Inspection &amp; Offset</span>
+<span class="text-primary font-medium">$0.00</span>
+</div>
+<div class="flex justify-between">
+<span>Estimated Sales Tax (Portland, OR)</span>
+<span class="text-on-surface">$8.80</span>
+</div>
+<div class="h-[1px] bg-outline-variant/40 my-space-xs"></div>
+<div class="flex justify-between items-baseline pt-space-xs text-primary">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-serif">Total Due</span>
+<span class="font-label-sm text-label-sm text-outline">Includes transit insurance &amp; live guarantee</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-label-sm text-label-sm text-outline font-semibold">USD</span>
+<span class="font-headline-md text-headline-md font-bold text-primary font-serif">$118.80</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust & Guarantee Badge Box -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+<span class="font-title-md text-title-md text-primary font-semibold">The Verdant Haven Botanical Pledge</span>
+</div>
+<div class="grid grid-cols-1 gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">sentiment_very_satisfied</span>
+<div>
+<strong class="font-semibold text-on-surface">30-Day Arrive-Alive Guarantee:</strong>
+                If weather stress or transit issues affect your foliage, we replace your plant or issue a zero-hassle refund immediately.
+              </div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">compost</span>
+<div>
+<strong class="font-semibold text-on-surface">100% Biodegradable Unboxing:</strong>
+                No styrofoam, no plastic bubble wrap. Dissolvable cornstarch pellets and FSC-certified natural kraft paper.
+              </div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">support_agent</span>
+<div>
+<strong class="font-semibold text-on-surface">Resident Horticulturist On-Call:</strong>
+                Each unboxing includes an NFC chip &amp; QR link for live direct messaging with our nursery care doctors.
+              </div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center justify-between text-outline font-label-sm text-label-sm mt-space-xs">
+<span class="flex items-center gap-1 font-mono">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block animate-pulse"></span>
+              BATCH #MD-2025-V7
+            </span>
+<span>Inspected by Nursery Lead Sarah L.</span>
+</div>
+</div>
+</aside>
+<section class="lg:col-span-7 flex flex-col gap-space-xl hidden" id="checkout-step-2"><div class="lg:col-span-7 flex flex-col gap-space-xl">
+<!-- Express Payment Section -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary tracking-wide uppercase">Express Botanical Checkout</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Instant Allocation
+              </span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<!-- Apple Pay -->
+<button class="h-12 rounded-lg bg-on-surface text-surface flex items-center justify-center gap-2 hover:opacity-90 transition-transform active:scale-[0.98] shadow-sm">
+<svg class="h-5 w-auto fill-current" viewbox="0 0 170 82">
+<path d="M48.24 37.15c-.15-7.46 6.08-11.08 6.36-11.26-3.48-5.07-8.87-5.77-10.79-5.85-4.59-.47-8.98 2.71-11.31 2.71-2.33 0-5.96-2.65-9.77-2.58-5.03.07-9.67 2.93-12.26 7.44-5.23 9.07-1.34 22.48 3.75 29.83 2.49 3.59 5.46 7.62 9.36 7.48 3.75-.15 5.17-2.42 9.7-2.42 4.53 0 5.81 2.42 9.75 2.34 4.01-.07 6.55-3.66 9-7.26 2.85-4.16 4.02-8.19 4.09-8.39-.09-.04-7.88-3.03-7.97-12.08zM41.87 13.9c2.06-2.51 3.46-5.99 3.08-9.48-2.98.12-6.59 1.99-8.73 4.49-1.88 2.18-3.53 5.73-3.08 9.14 3.32.26 6.67-1.64 8.73-4.15z"></path>
+<path d="M68.64 56.4V26.24h7.84v4.54c1.8-3.4 5.44-5.04 8.92-5.04 6.72 0 11.72 5.28 11.72 13.44 0 8.16-5.04 13.44-11.76 13.44-3.44 0-6.96-1.64-8.8-4.96v8.74h-7.92zm7.84-17.24c0 4.64 2.8 7.68 6.64 7.68 3.84 0 6.64-3.04 6.64-7.68s-2.8-7.68-6.64-7.68c-3.84 0-6.64 3.04-6.64 7.68zM116.1 48.72c.4 5.36 4.72 8.08 9.36 8.08 3.76 0 6.56-1.52 7.76-4h7.04c-1.84 5.28-7.36 8.56-14.88 8.56-9.6 0-16.72-6.48-16.72-16.8 0-10.08 7.04-16.8 16.48-16.8 9.68 0 16.4 6.72 16.4 16.64 0 .8-.08 1.6-.16 2.32h-25.28zm17.6-6.16c-.32-4.16-3.6-7.36-8.72-7.36-4.96 0-8.24 3.2-8.72 7.36h17.44z"></path>
+</svg>
+</button>
+<!-- Google Pay -->
+<button class="h-12 rounded-lg bg-surface-container-high hover:bg-surface-variant transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="font-title-md text-title-md font-bold text-on-surface">G</span>
+<span class="font-title-md text-title-md font-medium text-on-surface-variant">Pay</span>
+</button>
+<!-- Shop Pay -->
+<button class="h-12 rounded-lg bg-[#5a31f4] text-white flex items-center justify-center hover:opacity-95 transition-opacity shadow-sm">
+<span class="font-title-md text-title-md tracking-tight font-extrabold italic">shop<span class="text-white font-normal">pay</span></span>
+</button>
+<!-- PayPal -->
+<button class="h-12 rounded-lg bg-[#ffc439] text-[#003087] flex items-center justify-center hover:brightness-105 transition-all shadow-sm">
+<span class="font-title-md text-title-md font-black italic tracking-tighter">Pay<span class="text-[#0079c1]">Pal</span></span>
+</button>
+</div>
+<!-- Stylized Divider -->
+<div class="relative flex items-center justify-center my-space-xs">
+<div class="w-full h-[1px] bg-outline-variant/60"></div>
+<span class="absolute bg-surface-container-lowest px-space-md font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">
+                Or Pay With Secure Botanical Settlement
+              </span>
+</div>
+</div>
+<!-- Payment Options Accordion / Tabs -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px]">account_balance_wallet</span>
+                Payment Instrument
+              </h2>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-space-sm py-1 rounded">
+                Tier-1 Horticultural Vault
+              </span>
+</div>
+<!-- Radio Selection Container -->
+<div class="flex flex-col gap-space-md" id="payment-options">
+<!-- OPTION A: Credit/Debit Card (Selected) -->
+<div class="bg-surface-container-low p-space-md rounded-xl transition-all">
+<label class="flex items-start justify-between cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-5 h-5 text-primary accent-primary cursor-pointer mt-0.5" name="payment_method" type="radio"/>
+<div>
+<span class="font-title-md text-title-md text-on-surface block">Botanical Charge / Credit Card</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All major greenhouse credit protocols accepted</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 opacity-90">
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded text-on-surface font-label-sm text-[10px] font-bold tracking-wider">VISA</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded text-on-surface font-label-sm text-[10px] font-bold tracking-wider">MC</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded text-on-surface font-label-sm text-[10px] font-bold tracking-wider">AMEX</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded text-on-surface font-label-sm text-[10px] font-bold tracking-wider">DISC</span>
+</div>
+</label>
+<!-- Nested Card Form Fields -->
+<div class="mt-space-md pt-space-md grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Card Number -->
+<div class="sm:col-span-2 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Card Number</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">credit_card</span>
+<input class="w-full h-12 pl-10 pr-10 rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-inner" type="text" value="4829 •••• •••• 9104"/>
+<span class="material-symbols-outlined absolute right-3 text-secondary text-[20px]" title="Encrypted Card">verified_user</span>
+</div>
+</div>
+<!-- Name on Card -->
+<div class="sm:col-span-2 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Name on Card</label>
+<input class="w-full h-12 px-space-sm rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-inner" type="text" value="Clara Vance"/>
+</div>
+<!-- Expiry Date -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Expiration</label>
+<input class="w-full h-12 px-space-sm rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-inner text-center" placeholder="MM / YY" type="text" value="09 / 28"/>
+</div>
+<!-- CVV with Tooltip Info -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Security Code</label>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-0.5 cursor-help" title="3-digit verification number on signature strip">
+<span class="material-symbols-outlined text-[14px]">info</span> CVV
+                      </span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full h-12 px-space-sm rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-inner tracking-widest text-center" maxlength="4" type="password" value="842"/>
+<span class="material-symbols-outlined absolute right-3 text-outline text-[18px]">lock</span>
+</div>
+</div>
+<!-- Save Card Vault Checkbox -->
+<div class="sm:col-span-2 pt-space-xs">
+<label class="flex items-start gap-space-sm cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary mt-1" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                        Save instrument to <strong class="text-primary font-semibold">Sanctuary Vault™</strong> for rapid priority allocation during future rare cultivar drops.
+                      </span>
+</label>
+</div>
+</div>
+</div>
+<!-- OPTION B: Flexible Financing -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl hover:bg-surface-container-low/50 transition-colors">
+<label class="flex items-start justify-between cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input class="w-5 h-5 text-primary accent-primary cursor-pointer mt-0.5" name="payment_method" type="radio"/>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Flexible Nursery Financing</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] font-bold">0% APR</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">4 bi-weekly interest-free tranches of <strong>$56.75</strong> via Klarna or Affirm</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[22px]">calendar_month</span>
+</label>
+</div>
+<!-- OPTION C: House Credit / Botanist Gift Certificate -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl hover:bg-surface-container-low/50 transition-colors">
+<label class="flex items-start justify-between cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input class="w-5 h-5 text-primary accent-primary cursor-pointer mt-0.5" name="payment_method" type="radio"/>
+<div>
+<span class="font-title-md text-title-md text-on-surface">Conservatory House Credit &amp; Gift Certificate</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Redeem member dividends, botanical grants, or digital vouchers</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[22px]">card_giftcard</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Billing Address Module -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<h2 class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px]">home_pin</span>
+              Billing Address
+            </h2>
+<div class="space-y-space-sm">
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low cursor-pointer">
+<input checked="" class="w-4 h-4 text-primary accent-primary mt-1" name="billing_address" type="radio"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Same as greenhouse dispatch address</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Clara Vance • 2840 SW Periander St, Portland, OR 97201</span>
+</div>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg hover:bg-surface-container-low/60 transition-colors cursor-pointer">
+<input class="w-4 h-4 text-primary accent-primary" name="billing_address" type="radio"/>
+<span class="font-body-md text-body-md text-on-surface">Specify an alternative botanical entity or commercial invoicing address</span>
+</label>
+</div>
+</div>
+<!-- Botanical Transit Assurance Add-ons -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[24px]">thermostat</span>
+                Transit &amp; Climate Assurance
+              </h2>
+<span class="font-label-sm text-label-sm uppercase font-semibold text-secondary tracking-wider">Atelier Covered</span>
+</div>
+<!-- Guarantee 1: Climate-Proof -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-low/80">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">dew_point</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Climate-Proof Transit Guarantee</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">INCLUDED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Embedded thermal sensor tag #TS-994 monitors ambient humidity and root warmth. Guaranteed immediate nursery specimen replacement if temperatures fall below 50°F during Pacific transit.
+                </p>
+</div>
+</div>
+<!-- Guarantee 2: Reforestation -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-low/80">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">forest</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Pacific Northwest Douglas Fir Offset</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">INCLUDED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  100% neutralized dispatch emissions supporting native woodland canopy conservation in Clackamas County, Oregon.
+                </p>
+</div>
+</div>
+</div>
+<!-- Escrow & Security Callout -->
+<div class="bg-surface-container-high/60 p-space-md rounded-xl flex items-center justify-between gap-space-md flex-wrap sm:flex-nowrap">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[32px]">shield_lock</span>
+<div>
+<p class="font-title-md text-title-md text-primary font-headline-sm">Verdant Haven Nursery Escrow Protection</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Your funds are retained securely in escrow and only released once your plant arrives safely and passes your visual inspection.</p>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<span class="px-2 py-1 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm rounded shadow-sm">256-Bit SSL</span>
+<span class="px-2 py-1 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm rounded shadow-sm">Stripe Verified</span>
+</div>
+</div>
+<!-- Primary Submit Button & Allocations -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<button class="w-full h-16 bg-primary-container text-on-primary font-headline-sm text-headline-sm rounded-xl shadow-lg hover:shadow-xl hover:bg-primary transition-all flex items-center justify-center gap-space-sm group active:scale-[0.99]">
+<span>Authorize Payment &amp; Reserve Specimen ($227.00)</span>
+<span class="material-symbols-outlined text-[24px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center max-w-xl mx-auto">
+              By authorizing settlement, specimen <strong class="text-primary font-mono">#MD-2025-V7</strong> is instantly earmarked in Bay 4 of the Conservatory. Custom breathable packaging and root conditioning commence immediately.
+            </p>
+</div>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<button class="flex items-center gap-1 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="goToStep(1)" type="button">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span> Back to Shipping
+            </button>
+<button class="px-8 py-4 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-xl shadow-md hover:shadow-lg transition-all flex items-center gap-2" id="to-step-3" onclick="goToStep(3)" type="button">
+<span>Review Botanical Dispatch Order</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section><section class="lg:col-span-7 flex flex-col gap-space-xl hidden" id="checkout-step-3">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-3">
+<h2 class="font-headline-sm text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+              Review Specimen Custody &amp; Dispatch
+            </h2>
+<span class="text-xs uppercase tracking-wider font-semibold text-secondary">Ready for Authorization</span>
+</div>
+<!-- Items list -->
+<div class="flex flex-col gap-3 py-2" id="step3-cart-items">
+<!-- Dynamic Cart Items -->
+</div>
+<!-- Address & Method Recap -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-surface-container-low rounded-xl">
+<div>
+<span class="text-xs uppercase font-bold text-outline">Dispatch Address</span>
+<p class="text-sm font-semibold text-on-surface mt-0.5">Clara Vance</p>
+<p class="text-xs text-on-surface-variant">742 Evergreen Conservatory Row, Portland, OR 97201</p>
+<button class="text-xs text-primary underline mt-1" onclick="goToStep(1)">Edit Address</button>
+</div>
+<div>
+<span class="text-xs uppercase font-bold text-outline">Payment Instrument</span>
+<p class="text-sm font-semibold text-on-surface mt-0.5">Visa ending in •••• 9104</p>
+<p class="text-xs text-on-surface-variant">Sanctuary Vault Encrypted</p>
+<button class="text-xs text-primary underline mt-1" onclick="goToStep(2)">Edit Payment</button>
+</div>
+</div>
+<!-- Pricing Recap -->
+<div class="space-y-2 pt-2 text-sm border-t border-outline-variant/30">
+<div class="flex justify-between">
+<span>Specimens Subtotal</span>
+<span class="font-semibold text-on-surface" id="step3-subtotal">$0.00</span>
+</div>
+<div class="flex justify-between">
+<span>Greenhouse Climate Courier</span>
+<span class="font-semibold text-secondary" id="step3-shipping">Complimentary</span>
+</div>
+<div class="flex justify-between text-base font-bold text-primary font-serif pt-2 border-t border-outline-variant/30">
+<span>Total Settlement</span>
+<span id="step3-total">$0.00</span>
+</div>
+</div>
+<!-- Authorize Button -->
+<div class="pt-4 flex items-center justify-between">
+<button class="flex items-center gap-1 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="goToStep(2)" type="button">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span> Back to Payment
+            </button>
+<button class="px-8 py-4 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2" id="place-order-btn" onclick="goToStep(4)" type="button">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span>Authorize &amp; Place Botanical Order</span>
+</button>
+</div>
+</div>
+</section><section class="lg:col-span-12 flex flex-col gap-space-xl hidden" id="checkout-step-4">
+<div class="max-w-3xl mx-auto w-full bg-surface-container-lowest p-8 md:p-12 rounded-2xl shadow-xl text-center flex flex-col items-center gap-6 border border-primary/10">
+<div class="w-20 h-20 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[42px] animate-pulse">eco</span>
+</div>
+<div class="space-y-2">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs uppercase tracking-widest font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+              Living Specimen Custody Secured
+            </div>
+<h2 class="font-headline-lg text-primary font-serif">Botanical Order Authorized!</h2>
+<p class="font-body-lg text-on-surface-variant max-w-lg mx-auto">
+              Your order <strong class="order-id-display text-primary font-semibold">#VH-84920</strong> has been recorded in the Sauvie Island Glasshouse ledger. Specimen harvest &amp; biometric preparation is underway.
+            </p>
+</div>
+<!-- Milestones Card -->
+<div class="w-full bg-surface-container-low p-6 rounded-xl text-left space-y-4">
+<h4 class="font-title-md text-primary font-serif flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+              Provenance &amp; Courier Protocol Active
+            </h4>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+<div class="p-3 bg-surface-container-lowest rounded-lg">
+<span class="text-outline uppercase font-bold block">Specimen Tag</span>
+<span class="font-semibold text-primary text-sm">#MD-2025-V7</span>
+<span class="text-secondary block mt-0.5">Biometric Root Scan OK</span>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-lg">
+<span class="text-outline uppercase font-bold block">Climate Courier</span>
+<span class="font-semibold text-primary text-sm">Greenhouse Express</span>
+<span class="text-secondary block mt-0.5">72h Thermal Casing</span>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-lg">
+<span class="text-outline uppercase font-bold block">Target Delivery</span>
+<span class="font-semibold text-primary text-sm">Thursday, 2:00 PM</span>
+<span class="text-secondary block mt-0.5">Optimal 68°F Window</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+<a class="px-8 py-3.5 bg-primary text-on-primary rounded-xl font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all flex items-center gap-2" href="order-confirmation.html">
+<span>Track Live Specimen Dispatch</span>
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+</a>
+<a class="px-6 py-3.5 bg-surface text-primary border border-primary/20 rounded-xl font-label-lg text-label-lg hover:bg-surface-container transition-all flex items-center gap-2" href="invoice.html">
+<span>View Certificate &amp; Invoice</span>
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</a>
+<a class="px-6 py-3.5 bg-surface-container text-on-surface rounded-xl font-label-lg text-label-lg hover:bg-surface-container-high transition-all flex items-center gap-2" href="consultation.html">
+<span>Schedule Unboxing Consult</span>
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+</a>
+</div>
+</div>
+</section></div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-xl pb-space-lg mt-space-xl"><div class="max-w-[1320px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md pr-space-lg"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-primary font-serif">Verdant Haven</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">An artisanal boutique greenhouse nurturing healthy, resilient botanical specimens, handcrafted earthenware pots, and organic plant nutrition. Sourced responsibly, shipped sustainably in plastic-free packaging.</p><div class="flex flex-col gap-space-xs mt-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-semibold">The Conservatory Letter</span><p class="font-body-sm text-body-sm text-on-surface-variant">Bi-weekly horticultural advice, rare drop announcements, and indoor cultivation insights.</p><div class="flex items-center gap-space-xs mt-space-xs"><input class="flex-1 px-space-md py-space-sm bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Your email address..." type="email"/><button class="px-space-md py-space-sm bg-primary text-on-primary font-label-lg text-label-lg rounded-lg hover:bg-primary-container transition-colors">Subscribe</button></div></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Plant Care Guides</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="care-light-levels" href="care-lab.html">Assessing Natural Light</a></li><li><a class="hover:text-primary transition-colors" data-path="care-watering" href="care-lab.html">The Art of Root Hydration</a></li><li><a class="hover:text-primary transition-colors" data-path="care-repotting" href="care-lab.html">Substrates &amp; Repotting</a></li><li><a class="hover:text-primary transition-colors" data-path="care-pest-management" href="care-lab.html">Organic Pest Defense</a></li><li><a class="hover:text-primary transition-colors" data-path="care-pet-friendly" href="catalog.html?filter=pet-safe">Pet-Friendly Houseplants</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Sustainability</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="sustainability-pledge" href="passport.html" title="Sanctuary Botanical Guarantee &amp; Provenance">Our Botanical Pledge</a></li><li><a class="hover:text-primary transition-colors" data-path="sustainable-packaging" href="mailing-label.html">Zero-Plastic Packaging</a></li><li><a class="hover:text-primary transition-colors" data-path="ethical-sourcing" href="passport.html">Ethical Grower Network</a></li><li><a class="hover:text-primary transition-colors" data-path="carbon-neutral" href="order-confirmation.html">Carbon-Neutral Delivery</a></li><li><a class="hover:text-primary transition-colors" data-path="pot-recycling" href="product.html">Vessel Reuse Initiative</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Guest Concierge</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="botanical-guarantee" href="passport.html">30-Day Plant Guarantee</a></li><li><a class="hover:text-primary transition-colors" data-path="shipping-and-tracking" href="order-confirmation.html">Shipping &amp; Greenhouse Transit</a></li><li><a class="hover:text-primary transition-colors" data-path="virtual-consultation" href="consultation.html">Book a Plant Doctor</a></li><li><a class="hover:text-primary transition-colors" data-path="corporate-gifting" href="consultation.html">Atelier &amp; Office Design</a></li><li><a class="hover:text-primary transition-colors" data-path="contact" href="consultation.html">Customer Inquiries</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><span>© 2025 Verdant Haven Botanical Co. All rights reserved.</span><a class="hover:text-primary transition-colors" data-path="privacy-policy" href="javascript:void(0)" onclick="openPolicyModal('Sanctuary Privacy &amp; Telemetry Protocol'); return false;">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="terms-of-service" href="javascript:void(0)" onclick="openPolicyModal('Sanctuary Terms &amp; Horticultural Assurance'); return false;">Terms of Service</a></div><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Follow The Conservatory</span><div class="flex items-center gap-space-sm text-on-surface-variant"><a aria-label="Instagram Journal" class="p-space-xs hover:text-primary transition-colors flex items-center" href="https://instagram.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a aria-label="Pinterest Boards" class="p-space-xs hover:text-primary transition-colors flex items-center" href="https://pinterest.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">nature</span></a><a aria-label="Horticultural Video Channel" class="p-space-xs hover:text-primary transition-colors flex items-center" href="https://youtube.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">smart_display</span></a></div></div></div></div></footer><div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-surface/40 backdrop-blur-md" id="split-card-modal"><div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden border border-outline-variant/40 animate-in fade-in zoom-in-95"><div class="bg-surface-container-low px-space-lg py-space-md border-b border-outline-variant/40 flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">payments</span></div><div><h3 class="font-headline-sm text-headline-sm text-primary">Instrument &amp; Settlement Allocation</h3><p class="font-label-sm text-label-sm text-on-surface-variant">Configure alternative botanical card or distribute order balance</p></div></div><button class="w-9 h-9 rounded-full hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" onclick="document.getElementById('split-card-modal').classList.add('hidden')" type="button"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="flex border-b border-outline-variant/30 bg-surface-container-lowest px-space-lg pt-space-xs"><button class="py-space-sm px-space-md font-label-lg text-on-surface-variant hover:text-on-surface border-b-2 border-transparent flex items-center gap-1.5 transition-all" id="tab-btn-newcard" onclick="document.getElementById('tab-content-newcard').classList.remove('hidden'); document.getElementById('tab-content-split').classList.add('hidden'); this.className='py-space-sm px-space-md font-label-lg font-semibold text-primary border-b-2 border-primary flex items-center gap-1.5 transition-all'; document.getElementById('tab-btn-split').className='py-space-sm px-space-md font-label-lg text-on-surface-variant hover:text-on-surface border-b-2 border-transparent flex items-center gap-1.5 transition-all';" type="button"><span class="material-symbols-outlined text-[18px]">credit_card</span><span>Add New Card</span></button><button class="py-space-sm px-space-md font-label-lg font-semibold text-primary border-b-2 border-primary flex items-center gap-1.5 transition-all" id="tab-btn-split" onclick="document.getElementById('tab-content-split').classList.remove('hidden'); document.getElementById('tab-content-newcard').classList.add('hidden'); this.className='py-space-sm px-space-md font-label-lg font-semibold text-primary border-b-2 border-primary flex items-center gap-1.5 transition-all'; document.getElementById('tab-btn-newcard').className='py-space-sm px-space-md font-label-lg text-on-surface-variant hover:text-on-surface border-b-2 border-transparent flex items-center gap-1.5 transition-all';" type="button"><span class="material-symbols-outlined text-[18px]">call_split</span><span>Split Settlement ($227.00)</span><span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-wider">Multi-Pay</span></button></div><div class="p-space-lg max-h-[75vh] overflow-y-auto"><div class="hidden flex flex-col gap-space-md" id="tab-content-newcard"><div class="bg-surface-container-low/70 p-space-sm rounded-xl flex items-center gap-space-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><span>Credentials encrypted and secured under Tier-1 Botanical Escrow standards.</span></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md"><div class="sm:col-span-2 flex flex-col gap-1"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Cardholder Legal Name</label><input class="w-full h-11 px-space-sm rounded-lg bg-surface-container-low font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="e.g. Clara Vance" type="text" value="Clara Vance"/></div><div class="sm:col-span-2 flex flex-col gap-1"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Card Number</label><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">credit_card</span><input class="w-full h-11 pl-10 pr-space-sm rounded-lg bg-surface-container-low font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="•••• •••• •••• ••••" type="text" value=""/></div></div><div class="flex flex-col gap-1"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Expiration</label><input class="w-full h-11 px-space-sm rounded-lg bg-surface-container-low font-body-md text-on-surface text-center focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="MM / YY" type="text"/></div><div class="flex flex-col gap-1"><label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Security Code (CVV)</label><input class="w-full h-11 px-space-sm rounded-lg bg-surface-container-low font-body-md text-on-surface text-center focus:outline-none focus:ring-2 focus:ring-primary/20" maxlength="4" placeholder="CVC / CVV" type="password"/></div><div class="sm:col-span-2 flex flex-col gap-space-xs pt-1"><label class="flex items-center gap-space-sm cursor-pointer"><input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/><span class="font-body-sm text-body-sm text-on-surface-variant">Billing address matches dispatch destination (2840 SW Periander St, Portland, OR)</span></label><label class="flex items-center gap-space-sm cursor-pointer"><input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/><span class="font-body-sm text-body-sm text-on-surface-variant">Save to Sanctuary Vault™ for future botanical drops</span></label></div></div></div><div class="flex flex-col gap-space-md" id="tab-content-split"><div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl"><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm uppercase text-secondary font-semibold">Total Settlement Balance</span></div><span class="font-headline-sm text-headline-sm text-primary font-bold">$227.00</span></div><div class="p-space-md rounded-xl bg-surface-container-low/60 border border-outline-variant/30 flex flex-col gap-space-sm"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">credit_card</span><span class="font-title-md text-title-md text-on-surface font-semibold">1st Instrument: Botanical Card (*9104)</span></div><div class="flex items-center gap-1"><span class="font-headline-sm text-title-lg text-primary font-bold">$150.00</span></div></div><div class="flex items-center gap-3"><input class="w-full accent-primary h-2 bg-surface-container-highest rounded-lg cursor-pointer" max="217" min="10" type="range" value="150"/><span class="font-label-sm text-label-sm font-mono text-on-surface-variant min-w-[50px] text-right">66%</span></div><p class="font-body-sm text-[12px] text-on-surface-variant">Charge $150.00 to Clara Vance's primary encrypted Visa ending in 9104.</p></div><div class="p-space-md rounded-xl bg-surface-container-low/60 border border-outline-variant/30 flex flex-col gap-space-sm"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">card_giftcard</span><span class="font-title-md text-title-md text-on-surface font-semibold">2nd Instrument: Secondary or Credit</span></div><span class="font-headline-sm text-title-lg text-secondary font-bold">$77.00</span></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-1"><label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/40 cursor-pointer"><input checked="" class="accent-primary w-4 h-4" name="split_second_method" type="radio"/><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">Conservatory Member Credit</span><span class="font-body-sm text-[11px] text-on-surface-variant">Available: $120.00</span></div></label><label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-lowest border border-outline-variant/40 cursor-pointer"><input class="accent-primary w-4 h-4" name="split_second_method" type="radio"/><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">New Secondary Card</span><span class="font-body-sm text-[11px] text-on-surface-variant">Amex, Mastercard, Discover</span></div></label></div></div><div class="p-space-sm rounded-lg bg-secondary-container/40 flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-secondary-container flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">task_alt</span> Remaining Balance to Allocate:</span><span class="font-bold font-mono text-secondary">$0.00 (Balanced)</span></div></div></div><div class="bg-surface-container-low px-space-lg py-space-md border-t border-outline-variant/40 flex items-center justify-between"><button class="px-space-md py-2.5 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-lg font-medium transition-colors" onclick="document.getElementById('split-card-modal').classList.add('hidden')" type="button">Cancel</button><div class="flex items-center gap-space-sm"><button class="px-space-lg py-2.5 rounded-xl bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-lg font-semibold shadow-md transition-all flex items-center gap-1.5 active:scale-[0.98]" onclick="document.getElementById('split-card-modal').classList.add('hidden')" type="button"><span class="material-symbols-outlined text-[18px]">check</span><span>Apply Split Allocation</span></button></div></div></div></div>
+<script>
+        let currentCheckoutStep = 1;
+
+        function goToStep(step) {
+          currentCheckoutStep = step;
+
+          // Toggle visibility of step sections
+          document.getElementById('checkout-step-1')?.classList.toggle('hidden', step !== 1);
+          document.getElementById('checkout-step-2')?.classList.toggle('hidden', step !== 2);
+          document.getElementById('checkout-step-3')?.classList.toggle('hidden', step !== 3);
+          document.getElementById('checkout-step-4')?.classList.toggle('hidden', step !== 4);
+
+          // Update Stepper Navigation Indicators
+          const stepper = document.getElementById('checkout-stepper');
+          if (stepper) {
+            stepper.querySelectorAll('.stepper-pill').forEach((pill, idx) => {
+              const pillStep = idx + 1;
+              const num = pill.querySelector('.stepper-num');
+              if (pillStep === step) {
+                pill.className = 'stepper-pill flex items-center gap-space-sm bg-primary/10 p-space-xs px-space-sm rounded-xl font-semibold text-primary';
+                if (num) num.className = 'stepper-num w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm shadow-sm';
+              } else if (pillStep < step) {
+                pill.className = 'stepper-pill flex items-center gap-space-sm p-space-xs px-space-sm rounded-xl text-secondary';
+                if (num) {
+                  num.className = 'stepper-num w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-sm';
+                  num.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span>';
+                }
+              } else {
+                pill.className = 'stepper-pill flex items-center gap-space-sm p-space-xs px-space-sm rounded-xl opacity-60 text-on-surface-variant';
+                if (num) {
+                  num.className = 'stepper-num w-7 h-7 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-sm';
+                  num.textContent = pillStep;
+                }
+              }
+            });
+          }
+
+          // Scroll to top
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+
+          // If step 4 (Success), start animation and generate order
+          if (step === 4) {
+            initSettlementSuccess();
+          }
+        }
+
+        function initSettlementSuccess() {
+          const cart = VerdantStore.getCart();
+          const subtotal = VerdantStore.getCartSubtotal();
+          const orderId = 'VH-' + Math.floor(10000 + Math.random() * 90000);
+          
+          // Save order to history
+          const order = {
+            orderId: orderId,
+            date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
+            items: cart,
+            subtotal: subtotal,
+            shipping: subtotal >= 120 ? 0 : 15,
+            total: subtotal + (subtotal >= 120 ? 0 : 15),
+            status: 'Reserved in Glasshouse Bay 4G'
+          };
+          sessionStorage.setItem('verdant_latest_order', JSON.stringify(order));
+          VerdantStore.clearCart();
+
+          // Update order id badges
+          document.querySelectorAll('.order-id-display').forEach(el => el.textContent = orderId);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+          // Wire Step 1 -> Step 2
+          const step1Btn = document.querySelector('#checkout-step-1 button[type="submit"], #checkout-step-1 button:has-text("Continue to Payment"), #checkout-step-1 a[href*="payment"], #to-step-2');
+          if (step1Btn) {
+            step1Btn.addEventListener('click', (e) => {
+              e.preventDefault();
+              goToStep(2);
+            });
+          }
+
+          // Wire Step 2 -> Step 3
+          const step2Btn = document.querySelector('#to-step-3');
+          if (step2Btn) {
+            step2Btn.addEventListener('click', (e) => {
+              e.preventDefault();
+              goToStep(3);
+            });
+          }
+
+          // Wire Step 3 -> Step 4
+          const placeOrderBtn = document.querySelector('#place-order-btn');
+          if (placeOrderBtn) {
+            placeOrderBtn.addEventListener('click', (e) => {
+              e.preventDefault();
+              goToStep(4);
+            });
+          }
+
+          // Populate Step 3 Cart Items
+          const reviewItemsContainer = document.getElementById('step3-cart-items');
+          if (reviewItemsContainer) {
+            const cart = VerdantStore.getCart();
+            reviewItemsContainer.innerHTML = cart.map(item => `
+              <div class="flex items-center gap-space-md py-space-sm border-b border-outline-variant/30">
+                <img src="${item.image}" class="w-16 h-20 rounded-lg object-cover" />
+                <div class="flex-1 min-w-0">
+                  <h4 class="font-title-md text-primary font-serif">${item.name}</h4>
+                  <p class="font-body-sm text-[12px] text-on-surface-variant">${item.size || 'Medium'} • ${item.vessel || 'Terracotta Natural'}</p>
+                  <span class="text-xs text-secondary font-semibold">Qty: ${item.quantity}</span>
+                </div>
+                <span class="font-title-md text-primary font-bold">${VerdantStore.formatPrice(item.price * item.quantity)}</span>
+              </div>
+            `).join('');
+
+            const subtotal = VerdantStore.getCartSubtotal();
+            const ship = subtotal >= 120 ? 0 : 15;
+            document.getElementById('step3-subtotal').textContent = VerdantStore.formatPrice(subtotal);
+            document.getElementById('step3-shipping').textContent = ship === 0 ? 'Complimentary' : VerdantStore.formatPrice(ship);
+            document.getElementById('step3-total').textContent = VerdantStore.formatPrice(subtotal + ship);
+          }
+        });
+      </script>
+</body></html>

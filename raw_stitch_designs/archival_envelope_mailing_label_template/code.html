@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@media print{.no-print{display:none!important;}body{background:#ffffff!important;}.parchment-sheet{box-shadow:none!important;margin:0!important;padding:0!important;max-width:100%!important;}}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "tertiary": "#581904",
+        "on-secondary-container": "#546a2e",
+        "primary": "#003629",
+        "on-secondary-fixed-variant": "#394d14",
+        "outline": "#707974",
+        "surface-variant": "#e3e3de",
+        "on-primary-fixed-variant": "#1d4f40",
+        "on-tertiary-fixed-variant": "#793019",
+        "tertiary-fixed": "#ffdbd0",
+        "on-secondary": "#ffffff",
+        "primary-container": "#1b4d3e",
+        "surface-bright": "#faf9f4",
+        "surface-container-lowest": "#ffffff",
+        "on-background": "#1b1c19",
+        "on-tertiary-container": "#fd9779",
+        "inverse-primary": "#9ed1bd",
+        "secondary-fixed": "#d2eca2",
+        "error": "#ba1a1a",
+        "on-error": "#ffffff",
+        "on-surface-variant": "#404945",
+        "inverse-surface": "#30312e",
+        "background": "#faf9f4",
+        "on-tertiary-fixed": "#3a0a00",
+        "tertiary-container": "#762e17",
+        "secondary": "#50652a",
+        "primary-fixed": "#baeed9",
+        "surface-container": "#efeee9",
+        "on-error-container": "#93000a",
+        "on-primary-container": "#8abda9",
+        "outline-variant": "#c0c9c3",
+        "primary-fixed-dim": "#9ed1bd",
+        "surface-container-low": "#f5f4ef",
+        "secondary-fixed-dim": "#b6d088",
+        "surface-dim": "#dbdad5",
+        "on-primary-fixed": "#002117",
+        "error-container": "#ffdad6",
+        "surface-container-high": "#e9e8e3",
+        "on-surface": "#1b1c19",
+        "surface-container-highest": "#e3e3de",
+        "inverse-on-surface": "#f2f1ec",
+        "surface": "#faf9f4",
+        "tertiary-fixed-dim": "#ffb59f",
+        "on-secondary-fixed": "#131f00",
+        "on-primary": "#ffffff",
+        "secondary-container": "#cfe99f",
+        "on-tertiary": "#ffffff",
+        "surface-tint": "#376757"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-md": "1rem",
+        "gutter": "1.5rem",
+        "space-lg": "1.5rem",
+        "space-xl": "2.5rem",
+        "margin": "3rem",
+        "space-sm": "0.5rem",
+        "space-xs": "0.25rem",
+        "gutter-mobile": "1rem",
+        "margin-mobile": "1.25rem"
+      },
+      "fontFamily": {
+        "headline-lg": ["Playfair Display"],
+        "label-lg": ["Plus Jakarta Sans"],
+        "headline-md": ["Playfair Display"],
+        "headline-lg-mobile": ["Playfair Display"],
+        "headline-sm": ["Playfair Display"],
+        "body-sm": ["Plus Jakarta Sans"],
+        "display-lg-mobile": ["Playfair Display"],
+        "body-md": ["Plus Jakarta Sans"],
+        "label-sm": ["Plus Jakarta Sans"],
+        "display-lg": ["Playfair Display"],
+        "title-md": ["Plus Jakarta Sans"],
+        "body-lg": ["Plus Jakarta Sans"],
+        "title-lg": ["Plus Jakarta Sans"]
+      },
+      "fontSize": {
+        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "500"}],
+        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+        "headline-md": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+        "headline-lg-mobile": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+        "headline-sm": ["22px", {"lineHeight": "30px", "fontWeight": "600"}],
+        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+        "display-lg-mobile": ["38px", {"lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+        "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+        "title-md": ["18px", {"lineHeight": "26px", "fontWeight": "600"}],
+        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+        "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="no-print fixed top-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-sm border-b border-surface-variant"><div class="max-w-[1520px] mx-auto px-4 py-2.5 flex flex-wrap items-center justify-between gap-3"><div class="flex items-center gap-3"><a class="inline-flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg py-1 px-2.5 rounded-lg hover:bg-surface-container" href="#"><span class="material-symbols-outlined text-[18px]">arrow_back</span><span>Return to Record</span></a><div class="h-5 w-px bg-surface-variant hidden sm:block"></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[22px]">qr_code_2</span><div><div class="flex items-center gap-2"><span class="font-headline-sm text-[16px] text-primary tracking-tight font-serif font-bold">Print Preview Inspection</span><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-bold uppercase tracking-wide">Archival Simulation</span></div><span class="text-[11px] text-on-surface-variant block leading-none mt-0.5">US Letter / Archival A4 160gsm Cotton Rag Sheet</span></div></div></div><div class="flex flex-wrap items-center gap-2.5 bg-surface-container-low px-3 py-1.5 rounded-xl border border-outline-variant/50 text-label-sm"><div class="flex items-center gap-1.5 text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary">description</span><label class="font-medium" for="paperSizeSelect">Paper:</label><select class="bg-surface-bright text-primary font-semibold text-xs rounded border border-outline-variant/60 py-1 px-2 focus:ring-1 focus:ring-primary focus:outline-none" id="paperSizeSelect"><option selected="">US Letter (8.5 × 11 in)</option><option>Archival A4 (210 × 297 mm)</option></select></div><div class="h-4 w-px bg-outline-variant/50 hidden sm:block"></div><div class="flex items-center gap-1.5 text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary">crop_free</span><label class="font-medium" for="marginSelect">Margins:</label><select class="bg-surface-bright text-primary font-semibold text-xs rounded border border-outline-variant/60 py-1 px-2 focus:ring-1 focus:ring-primary focus:outline-none" id="marginSelect"><option selected="">Archival (0.5 in / 12mm)</option><option>Narrow (0.25 in)</option><option>Full Bleed (0 mm)</option></select></div><div class="h-4 w-px bg-outline-variant/50 hidden md:block"></div><div class="flex items-center gap-1.5 text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary">palette</span><label class="font-medium" for="colorProfileSelect">Color:</label><select class="bg-surface-bright text-primary font-semibold text-xs rounded border border-outline-variant/60 py-1 px-2 focus:ring-1 focus:ring-primary focus:outline-none" id="colorProfileSelect"><option selected="">Esko Pantone CMYK (Rich Foliage)</option><option>Archival Monochromatic / Gray</option></select></div><div class="h-4 w-px bg-outline-variant/50 hidden lg:block"></div><div class="flex items-center gap-1.5"><input checked="" class="rounded border-outline-variant text-primary focus:ring-primary h-3.5 w-3.5" id="bgGraphicsToggle" type="checkbox"/><label class="text-xs text-on-surface select-none font-medium cursor-pointer" for="bgGraphicsToggle">Print Backgrounds &amp; Watermark</label></div></div><div class="flex items-center gap-2"><button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-sm font-semibold transition-all" type="button"><span class="material-symbols-outlined text-[16px]">picture_as_pdf</span><span class="hidden sm:inline">Download Archival PDF</span></button><button class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-sm font-bold shadow-md transition-all active:scale-95" onclick="window.print()" type="button"><span class="material-symbols-outlined text-[18px]">print</span><span>Confirm &amp; Print Folio</span></button></div></div></header><main class="relative w-full pt-16 bg-surface-variant min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Canvas & Fabrication Workshop -->
+<div class="w-full max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-8">
+<!-- Top Inspection Navigation & Hardware Diagnostic Bar -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-4 sm:p-5 flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+<div class="flex flex-col sm:flex-row sm:items-center gap-4">
+<a class="inline-flex items-center gap-2 text-primary hover:text-primary-container font-label-lg text-label-lg transition-colors py-1.5 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Return to Print Folio</span>
+</a>
+<div class="h-6 w-px bg-surface-variant hidden sm:block"></div>
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Print &amp; Fabrication Template Studio</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase font-semibold">Dual-Surface Archival Suite</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Physical print calibration, cutting registration marks &amp; direct thermal raster verification</p>
+</div>
+</div>
+<!-- Quick Actions & Export Switcher -->
+<div class="flex flex-wrap items-center gap-2.5">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container text-primary font-label-lg text-label-sm font-semibold hover:bg-surface-container-high transition-colors" id="toggleDieLinesBtn" onclick="toggleDieLines()">
+<span class="material-symbols-outlined text-[18px]">grid_4x4</span>
+<span id="dieLineBtnText">Hide Vector Die-Lines</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container text-primary font-label-lg text-label-sm font-semibold hover:bg-surface-container-high transition-colors" title="Export Scalable Vector Packaging Template">
+<span class="material-symbols-outlined text-[18px]">architecture</span>
+<span>Export Vector Die-Lines (.AI / .PDF)</span>
+</button>
+<button class="inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-primary text-on-primary font-label-lg text-label-sm font-bold shadow-md hover:bg-primary-container transition-transform active:scale-95" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Print Envelope &amp; Die-Cut Label</span>
+</button>
+</div>
+</div>
+<!-- Fabrication Hardware Setup & Media Options Strip -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 bg-surface-container-low p-3.5 rounded-xl">
+<div class="flex items-center gap-3 bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">layers</span>
+</div>
+<div class="min-w-0 flex-1">
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Substrate &amp; Stock</label>
+<select class="w-full bg-transparent font-title-md text-body-sm font-bold text-primary focus:outline-none cursor-pointer truncate">
+<option>260gsm Handmade Wildflower Seed Rag</option>
+<option>320gsm Heavy Unbleached Cotton Parchment</option>
+<option>180gsm Post-Consumer Forest Kraft</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">aspect_ratio</span>
+</div>
+<div class="min-w-0 flex-1">
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Envelope &amp; Label Specs</label>
+<select class="w-full bg-transparent font-title-md text-body-sm font-bold text-primary focus:outline-none cursor-pointer truncate">
+<option>A7 Folio (5.25" × 7.25") + 4" × 6" Thermal</option>
+<option>Baronial 6 (4.75" × 6.5") + 4" × 6" Thermal</option>
+<option>A9 Grand Folio (5.75" × 8.75") + 4" × 7" Label</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">colorize</span>
+</div>
+<div class="min-w-0 flex-1">
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Inking &amp; Finishes</label>
+<select class="w-full bg-transparent font-title-md text-body-sm font-bold text-primary focus:outline-none cursor-pointer truncate">
+<option>Soy CMYK + Blind Deboss + Wax Seal</option>
+<option>Pure Mineral Carbon Monochromatic</option>
+<option>Spot Pine Green Foil + Terracotta Pigment</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">fact_check</span>
+</div>
+<div class="min-w-0 flex-1">
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Courier Calibration</label>
+<div class="flex items-center justify-between">
+<span class="font-title-md text-body-sm font-bold text-primary truncate">Direct Courier Van Pass</span>
+<span class="text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 300 DPI
+            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Template Switcher Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 border-b border-surface-variant">
+<button class="view-tab flex items-center gap-2 px-4 py-2.5 rounded-t-lg bg-surface-container-lowest text-primary font-label-lg text-label-sm font-bold shadow-sm transition-all border-b-2 border-primary" id="tab-all" onclick="switchView('all')">
+<span class="material-symbols-outlined text-[18px]">view_quilt</span>
+<span>All Templates (Dual Stage View)</span>
+</button>
+<button class="view-tab flex items-center gap-2 px-4 py-2.5 rounded-t-lg text-on-surface-variant hover:text-primary font-label-lg text-label-sm font-semibold transition-all" id="tab-envelope" onclick="switchView('envelope')">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>Archival Folio Envelope (Front &amp; Flap)</span>
+</button>
+<button class="view-tab flex items-center gap-2 px-4 py-2.5 rounded-t-lg text-on-surface-variant hover:text-primary font-label-lg text-label-sm font-semibold transition-all" id="tab-label" onclick="switchView('label')">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+<span>Climate Dispatch Direct Label (4" × 6")</span>
+</button>
+<button class="view-tab flex items-center gap-2 px-4 py-2.5 rounded-t-lg text-on-surface-variant hover:text-primary font-label-lg text-label-sm font-semibold transition-all" id="tab-medallion" onclick="switchView('medallion')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>NFC Medallion Enclosure &amp; Wax Die</span>
+</button>
+</div>
+<!-- MAIN DUAL-STAGE ARCHITECTURAL SIMULATION -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start">
+<!-- LEFT & CENTER STAGE: Botanical Folio Presentation Envelope (7 Cols) -->
+<section class="xl:col-span-7 flex flex-col space-y-4" id="envelope-section">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">drafts</span>
+<h2 class="font-headline-md text-headline-sm text-primary font-serif font-bold">A7 Botanical Specimen Folio Envelope</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Substrate: 260gsm Botanical Wildflower Seed Rag</span>
+</div>
+<!-- Envelope Realistic Physical Paper Simulation -->
+<div class="relative w-full bg-[#f6f3eb] rounded-2xl shadow-xl overflow-hidden p-8 sm:p-12 transition-all duration-300 transform" id="envelope-canvas">
+<!-- Realistic paper texture grain overlay & faint blind deboss margin -->
+<div class="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-amber-950/5 pointer-events-none"></div>
+<div class="absolute inset-4 rounded-xl border border-primary/10 pointer-events-none"></div>
+<div class="absolute inset-5 rounded-lg border border-primary/5 pointer-events-none"></div>
+<!-- Scalable Vector Die-Lines Overlay (Toggled via JS) -->
+<div class="absolute inset-0 pointer-events-none transition-opacity duration-300" id="envelope-dielines">
+<!-- Cut Line Guide -->
+<div class="absolute inset-2 border-2 border-dashed border-red-500/40 rounded-xl"></div>
+<!-- Crease / Fold Lines -->
+<div class="absolute top-24 left-2 right-2 border-t-2 border-dashed border-emerald-600/40"></div>
+<!-- Registration Marks Crosshairs -->
+<div class="absolute top-3 left-3 w-4 h-4 flex items-center justify-center text-red-600/60 font-mono text-[10px]">+</div>
+<div class="absolute top-3 right-3 w-4 h-4 flex items-center justify-center text-red-600/60 font-mono text-[10px]">+</div>
+<div class="absolute bottom-3 left-3 w-4 h-4 flex items-center justify-center text-red-600/60 font-mono text-[10px]">+</div>
+<div class="absolute bottom-3 right-3 w-4 h-4 flex items-center justify-center text-red-600/60 font-mono text-[10px]">+</div>
+<!-- Bleed Margin Spec Marker -->
+<span class="absolute top-3 right-10 font-mono text-[10px] text-red-600/60 uppercase">Bleed 3.0mm • Safety Zone 5.0mm</span>
+</div>
+<!-- Top Foldable Flap Simulation with Terracotta Wax Seal & Gold Pull Tab -->
+<div class="relative w-full pb-8 mb-6 border-b border-primary/15 flex flex-col items-center justify-center">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-[10px] font-mono tracking-widest text-on-surface-variant uppercase">ARCHIVAL WATERMARK FLAP • DIE-CUT TONGUE</span>
+</div>
+<div class="flex flex-col items-center group cursor-pointer relative">
+<!-- Physical Terracotta Embossed Wax Seal Graphic -->
+<div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#9e472a] via-[#7d321b] to-[#581904] shadow-md flex items-center justify-center text-white relative transform group-hover:scale-105 transition-transform duration-300">
+<!-- Inner Stamp Circle -->
+<div class="w-13 h-13 rounded-full border border-amber-200/30 flex flex-col items-center justify-center p-2 text-center">
+<span class="material-symbols-outlined text-[24px] text-amber-100">potted_plant</span>
+<span class="text-[7px] font-mono tracking-widest uppercase text-amber-200">VERDANT</span>
+</div>
+<!-- Glossy Wax Highlight Rim -->
+<div class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-white/20 blur-[1px]"></div>
+</div>
+<!-- Peel-and-Seal Gold Foil Tab -->
+<div class="mt-2.5 px-3 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300 text-[10px] font-mono font-bold tracking-wider flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[12px] text-amber-700">lock</span>
+<span>PEEL &amp; SEAL GOLD ARCHIVAL TAB</span>
+</div>
+</div>
+</div>
+<!-- Envelope Header: Atelier Return Address & Botanical Crest -->
+<div class="flex flex-col sm:flex-row justify-between items-start gap-4 mb-10">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">yard</span>
+</div>
+<div>
+<span class="font-headline-sm text-title-md text-primary font-serif font-bold tracking-tight block">VERDANT HAVEN</span>
+<span class="font-label-sm text-[11px] text-secondary font-bold uppercase tracking-widest block">Glasshouse Atelier &amp; Botanical Nursery</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant block leading-tight mt-1">Conservation Pavilion 04 • Sauvie Island Sanctuary</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant block leading-tight">Portland, Oregon 97231 • United States</span>
+</div>
+</div>
+<!-- Archival Postage & Registration Block -->
+<div class="flex flex-col items-end text-right">
+<div class="px-3 py-1.5 rounded bg-surface-container border border-primary/20 text-center">
+<span class="block font-mono text-[9px] font-bold text-primary tracking-widest uppercase">POSTAGE PRE-CLEARED</span>
+<span class="block font-headline-sm text-[13px] font-bold text-primary font-serif">CLIMATE PRIORITY #01</span>
+<span class="block font-mono text-[8px] text-on-surface-variant">USPS ARCHIVAL ESCROW</span>
+</div>
+<span class="font-mono text-[9px] text-on-surface-variant mt-1">LIC-OR-BOT-884920</span>
+</div>
+</div>
+<!-- Recipient Addressee Block: Hand-Calligraphed Luxe Styling -->
+<div class="my-8 pl-8 sm:pl-16 pr-4 sm:pr-8 border-l-2 border-secondary/40 space-y-1">
+<span class="text-[10px] font-mono tracking-widest uppercase text-secondary font-bold block mb-1">REGISTERED BOTANICAL RECIPIENT</span>
+<div class="font-headline-lg text-headline-md sm:text-headline-lg text-primary font-serif italic tracking-wide">
+              Clara Vance
+            </div>
+<div class="font-body-lg text-body-md text-on-surface font-medium leading-snug">
+              2840 SW Periander Street
+            </div>
+<div class="font-body-lg text-body-md text-on-surface font-medium leading-snug">
+              Portland, Oregon 97201
+            </div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-semibold pt-1">
+              United States of America
+            </div>
+</div>
+<!-- Bottom Provenance Banner & Intelligent Postal Routing Strip -->
+<div class="mt-8 pt-6 border-t border-primary/10 flex flex-col md:flex-row items-center justify-between gap-4">
+<!-- Living Specimen Warning Badge -->
+<div class="flex items-center gap-2.5 bg-secondary-container/40 p-2.5 rounded-lg border border-secondary/20 max-w-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0">spa</span>
+<div>
+<span class="font-label-sm text-[10px] font-bold text-on-secondary-container tracking-wider uppercase block">CONTAINS LIVING SPECIMEN ARCHIVAL FOLIO</span>
+<span class="font-body-sm text-[11px] text-primary font-medium block">Specimen #MD-2025-V7 (Monstera Deliciosa Liebm.) • Escrow Protected</span>
+</div>
+</div>
+<!-- Intelligent Postal Barcode -->
+<div class="flex flex-col items-end">
+<svg class="h-8 w-44 text-primary" fill="currentColor" viewbox="0 0 160 30">
+<rect height="28" width="3" x="0" y="0"></rect>
+<rect height="28" width="2" x="5" y="0"></rect>
+<rect height="28" width="4" x="9" y="0"></rect>
+<rect height="28" width="2" x="15" y="0"></rect>
+<rect height="28" width="6" x="19" y="0"></rect>
+<rect height="28" width="2" x="27" y="0"></rect>
+<rect height="28" width="3" x="31" y="0"></rect>
+<rect height="28" width="5" x="36" y="0"></rect>
+<rect height="28" width="2" x="43" y="0"></rect>
+<rect height="28" width="4" x="47" y="0"></rect>
+<rect height="28" width="2" x="53" y="0"></rect>
+<rect height="28" width="5" x="57" y="0"></rect>
+<rect height="28" width="3" x="64" y="0"></rect>
+<rect height="28" width="2" x="69" y="0"></rect>
+<rect height="28" width="4" x="73" y="0"></rect>
+<rect height="28" width="6" x="79" y="0"></rect>
+<rect height="28" width="2" x="87" y="0"></rect>
+<rect height="28" width="4" x="91" y="0"></rect>
+<rect height="28" width="2" x="97" y="0"></rect>
+<rect height="28" width="5" x="101" y="0"></rect>
+<rect height="28" width="3" x="108" y="0"></rect>
+<rect height="28" width="2" x="113" y="0"></rect>
+<rect height="28" width="6" x="117" y="0"></rect>
+<rect height="28" width="3" x="125" y="0"></rect>
+<rect height="28" width="4" x="130" y="0"></rect>
+<rect height="28" width="2" x="136" y="0"></rect>
+<rect height="28" width="5" x="140" y="0"></rect>
+<rect height="28" width="2" x="147" y="0"></rect>
+<rect height="28" width="4" x="151" y="0"></rect>
+<rect height="28" width="3" x="157" y="0"></rect>
+</svg>
+<span class="font-mono text-[9px] text-on-surface-variant tracking-wider mt-0.5">420 97201 9205 9214 8849 2011 04</span>
+</div>
+</div>
+</div>
+<!-- Envelope Stock Physical Specs Indicator -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-[12px] px-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">eco</span>
+<span>Contains 12 varieties of Pacific Northwest native pollinator wildflower seeds</span>
+</div>
+<span class="font-mono text-primary font-semibold">SOY INK NON-TOXIC • PLANTABLE PACKAGING</span>
+</div>
+</section>
+<!-- RIGHT STAGE: 4" × 6" Direct Thermal Climate Courier Shipping Label (5 Cols) -->
+<section class="xl:col-span-5 flex flex-col space-y-4" id="label-section">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">label_important</span>
+<h2 class="font-headline-md text-headline-sm text-primary font-serif font-bold">Direct Thermal Courier Label</h2>
+</div>
+<span class="font-mono text-[11px] text-primary font-bold px-2 py-0.5 bg-surface-container rounded">4.0" × 6.0" (101.6 × 152.4 mm)</span>
+</div>
+<!-- Thermal Label Physical Simulation (Crisp High-Contrast Direct Thermal Paper) -->
+<div class="relative w-full bg-white rounded-xl shadow-xl overflow-hidden p-6 sm:p-7 border border-stone-300 text-black flex flex-col justify-between" id="thermal-canvas">
+<!-- Die-Cut Thermal Label Perforation Border -->
+<div class="absolute inset-1.5 rounded-lg border border-dashed border-stone-300 pointer-events-none"></div>
+<!-- Label Top Routing Strip -->
+<div class="space-y-3 pb-3 border-b-2 border-black">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 bg-black text-white font-mono font-bold text-xs tracking-wider">PRIORITY CLIMATE</span>
+<span class="font-mono font-bold text-xs text-black">PDX-EXPRESS-04</span>
+</div>
+<span class="font-mono font-bold text-sm text-black">ZONE 01</span>
+</div>
+<!-- Big Routing Hub Indicator -->
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-lg text-headline-lg font-black tracking-tight leading-none text-black">PDX-AROMA</span>
+<span class="block font-mono text-xs font-bold text-stone-700 mt-0.5">DEDICATED CLIMATE COURIER VAN #08</span>
+</div>
+<!-- 2D DataMatrix Routing Matrix -->
+<div class="w-12 h-12 bg-black p-1 flex items-center justify-center shrink-0">
+<svg class="w-full h-full text-white" fill="currentColor" viewbox="0 0 40 40">
+<path d="M0 0h8v8H0zm10 0h6v4h-6zm8 0h6v8h-6zm8 0h8v8h-8zm6 10h6v6h-6zm-16 0h8v6h-8zm-8 0h6v6H8zm-8 0h6v8H0zm0 10h8v6H0zm10 0h4v6h-4zm6 0h8v4h-8zm10 0h6v8h-6zm8 0h6v6h-6zm0 10h6v6h-6zm-10 0h8v4h-8zm-8 0h6v8h-6zm-8 0h6v6H8zm-8 0h6v8H0z"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Critical Live Botanical Indicators Strip -->
+<div class="py-2.5 my-2 border-y-2 border-black bg-stone-100 -mx-6 px-6">
+<div class="flex items-center justify-between font-mono font-black text-xs tracking-tight">
+<span class="flex items-center gap-1 text-black">
+<span class="material-symbols-outlined text-[16px]">thermostat</span> 68°F – 74°F / 20°C – 23°C
+              </span>
+<span class="flex items-center gap-1 text-black">
+<span class="material-symbols-outlined text-[16px]">air</span> OXYGEN PERMEABLE
+              </span>
+</div>
+<div class="flex items-center justify-between font-mono text-[10px] text-stone-800 font-bold mt-1">
+<span>DO NOT FREEZE</span>
+<span>NO DIRECT SOLAR HEAT</span>
+<span>HANDLE WITH HORTICULTURAL CARE</span>
+</div>
+</div>
+<!-- Recipient Shipping Address with Custom Delivery Code -->
+<div class="py-2 space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-mono text-[10px] font-bold text-stone-600 uppercase">DELIVER LIVING CARGO TO:</span>
+<span class="font-mono text-[10px] font-bold text-black">DISPATCH: TOMORROW 08:00 - 11:30 AM</span>
+</div>
+<div class="font-headline-md text-headline-sm font-black text-black">
+              CLARA VANCE
+            </div>
+<div class="font-mono text-sm font-bold text-stone-900 leading-snug">
+              2840 SW PERIANDER ST<br/>
+              PORTLAND, OR 97201
+            </div>
+<!-- Specific Care & Gate Delivery Instructions Box -->
+<div class="mt-2 p-2 bg-stone-100 rounded border border-black/30 font-mono text-[11px] text-stone-900 leading-tight">
+<span class="font-bold">COURIER NOTE:</span> Rear Conservatory Gate Code provided (#4821). Hand-deliver directly to shaded porch vestibule. Do NOT leave under direct noon sun.
+            </div>
+</div>
+<!-- Prominent High-Density Courier Barcode -->
+<div class="my-3 flex flex-col items-center">
+<svg class="h-14 w-full text-black" fill="currentColor" viewbox="0 0 280 60">
+<!-- High-density direct barcode representation -->
+<rect height="52" width="4" x="0" y="0"></rect>
+<rect height="52" width="2" x="6" y="0"></rect>
+<rect height="52" width="6" x="10" y="0"></rect>
+<rect height="52" width="2" x="18" y="0"></rect>
+<rect height="52" width="4" x="22" y="0"></rect>
+<rect height="52" width="8" x="28" y="0"></rect>
+<rect height="52" width="2" x="38" y="0"></rect>
+<rect height="52" width="5" x="42" y="0"></rect>
+<rect height="52" width="3" x="49" y="0"></rect>
+<rect height="52" width="6" x="54" y="0"></rect>
+<rect height="52" width="2" x="62" y="0"></rect>
+<rect height="52" width="8" x="66" y="0"></rect>
+<rect height="52" width="3" x="76" y="0"></rect>
+<rect height="52" width="4" x="81" y="0"></rect>
+<rect height="52" width="2" x="87" y="0"></rect>
+<rect height="52" width="6" x="91" y="0"></rect>
+<rect height="52" width="2" x="99" y="0"></rect>
+<rect height="52" width="7" x="103" y="0"></rect>
+<rect height="52" width="3" x="112" y="0"></rect>
+<rect height="52" width="5" x="117" y="0"></rect>
+<rect height="52" width="2" x="124" y="0"></rect>
+<rect height="52" width="8" x="128" y="0"></rect>
+<rect height="52" width="4" x="138" y="0"></rect>
+<rect height="52" width="2" x="144" y="0"></rect>
+<rect height="52" width="6" x="148" y="0"></rect>
+<rect height="52" width="3" x="156" y="0"></rect>
+<rect height="52" width="7" x="161" y="0"></rect>
+<rect height="52" width="2" x="170" y="0"></rect>
+<rect height="52" width="5" x="174" y="0"></rect>
+<rect height="52" width="2" x="181" y="0"></rect>
+<rect height="52" width="8" x="185" y="0"></rect>
+<rect height="52" width="3" x="195" y="0"></rect>
+<rect height="52" width="6" x="200" y="0"></rect>
+<rect height="52" width="2" x="208" y="0"></rect>
+<rect height="52" width="7" x="212" y="0"></rect>
+<rect height="52" width="3" x="221" y="0"></rect>
+<rect height="52" width="5" x="226" y="0"></rect>
+<rect height="52" width="2" x="233" y="0"></rect>
+<rect height="52" width="8" x="237" y="0"></rect>
+<rect height="52" width="4" x="247" y="0"></rect>
+<rect height="52" width="2" x="253" y="0"></rect>
+<rect height="52" width="6" x="257" y="0"></rect>
+<rect height="52" width="3" x="265" y="0"></rect>
+<rect height="52" width="6" x="270" y="0"></rect>
+<rect height="52" width="2" x="278" y="0"></rect>
+</svg>
+<span class="font-mono text-xs font-black tracking-widest text-black mt-1">#VH-LOG-712-48HR</span>
+</div>
+<!-- Certified Arborist Pre-Dispatch Clearance Seal -->
+<div class="pt-3 border-t-2 border-black flex items-center justify-between text-[10px] font-mono">
+<div class="space-y-0.5">
+<div class="flex items-center gap-1 font-bold text-black">
+<span class="material-symbols-outlined text-[14px] text-black">verified</span>
+<span>ARBORIST HEALTH CLEARANCE: PASSED</span>
+</div>
+<div class="text-stone-700">Dr. Elena Alvarez, Ph.D. • Foliar Turgor: 98.4%</div>
+</div>
+<!-- Courier NFC Handshake Quick-Code -->
+<div class="flex items-center gap-1.5 bg-stone-100 p-1.5 rounded border border-black/20">
+<span class="material-symbols-outlined text-[18px]">nfc</span>
+<span class="font-bold text-[9px] uppercase">TAP NFC POD</span>
+</div>
+</div>
+</div>
+<!-- Direct Thermal Label Adhesive Specs -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-[12px] px-2">
+<span>Compostable Pressure-Sensitive Sugarcane Emulsion Adhesive</span>
+<span class="font-mono text-primary font-bold">ZEBRA ZPL COMPATIBLE</span>
+</div>
+</section>
+</div>
+<!-- NFC MEDALLION & WAX SEAL DIE-LINE SHOWCASE (Collapsible/Preview Unit) -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-6 sm:p-8 shadow-sm space-y-6" id="medallion-section">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider block">Physical Enclosure Unit</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif font-bold">NFC Specimen Medallion Pouch &amp; Wax Stamp Die-Line</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Archival envelope enclosure holding the tamper-evident NFC provenance tag and living foliar metadata.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Die Cut Ready: 0.5pt Rule</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">NFC Chip: NTAG216 (888 Bytes)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Item 1: NFC Seed Packet Pouch -->
+<div class="bg-surface-container-low p-5 rounded-xl border border-outline-variant/30 flex flex-col items-center text-center">
+<div class="w-20 h-28 rounded-lg bg-surface border-2 border-dashed border-secondary/50 p-2 flex flex-col items-center justify-between shadow-inner mb-4">
+<span class="text-[8px] font-mono text-secondary uppercase font-bold">Glassine Pouch</span>
+<span class="material-symbols-outlined text-[32px] text-primary">contactless</span>
+<span class="text-[8px] font-mono text-on-surface-variant">45mm × 65mm</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">NFC Glassine Sachet</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Translucent glassine pouch stitched into the envelope interior containing the encrypted provenance chip.</p>
+</div>
+<!-- Item 2: Terracotta Custom Wax Matrix -->
+<div class="bg-surface-container-low p-5 rounded-xl border border-outline-variant/30 flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-surface border-2 border-dashed border-tertiary/50 p-2 flex flex-col items-center justify-center shadow-inner mb-4">
+<div class="w-14 h-14 rounded-full bg-tertiary-container/20 flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[28px]">token</span>
+</div>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Terracotta Brass Seal Matrix</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">32mm circular solid brass seal with 1.8mm engraving relief. Heated to 110°C with organic dammar resin.</p>
+</div>
+<!-- Item 3: Vector Cutting & Scoring Guide -->
+<div class="bg-surface-container-low p-5 rounded-xl border border-outline-variant/30 flex flex-col items-center text-center">
+<div class="w-28 h-20 bg-surface border-2 border-dashed border-primary/50 rounded-lg p-2 flex flex-col items-center justify-center shadow-inner mb-4">
+<div class="w-full flex items-center justify-between text-[9px] font-mono text-primary font-bold">
+<span>CUT: 100% K</span>
+<span>CREASE: 100% C</span>
+</div>
+<div class="w-full border-t border-dashed border-blue-500 my-2"></div>
+<span class="text-[8px] font-mono text-on-surface-variant">Angle: 45° Diamond Fold</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Laser / Rotary Die Specifications</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dual-rule laser cutlines with perforation bridges every 40mm to ensure effortless tearing by the client.</p>
+</div>
+</div>
+</section>
+<!-- BOTTOM DIAGNOSTIC & FABRICATION SPECIFICATIONS PANEL -->
+<div class="w-full bg-surface-container rounded-xl p-6 sm:p-8">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 pb-6 border-b border-surface-variant">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider block">Production Diagnostics</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif font-bold">Substrate Ecology &amp; Press Clearances</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Physical print tolerances verified for high-volume horticultural dispatches.</p>
+</div>
+<!-- Quick Download Buttons for Press Operators -->
+<div class="flex flex-wrap items-center gap-3">
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-bright font-label-lg text-label-sm font-semibold transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download SVG Die-Lines</span>
+</button>
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-bright font-label-lg text-label-sm font-semibold transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Export Thermal ZPL Code (Zebra)</span>
+</button>
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-secondary text-on-secondary hover:bg-secondary-fixed-dim font-label-lg text-label-sm font-bold transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Print Calibration Target</span>
+</button>
+</div>
+</div>
+<!-- 4-Column Detailed Metrics -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Sheet Bleed &amp; Crease</span>
+<span class="font-title-md text-title-md text-primary font-bold block mt-1">3.00 mm (0.118 in)</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Safe margin: 5.00mm inside trim</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Envelope Tensile Strength</span>
+<span class="font-title-md text-title-md text-primary font-bold block mt-1">14.2 kN/m (ISO 1924)</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Burst resistance for live roots</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Botanical Inks Formulations</span>
+<span class="font-title-md text-title-md text-primary font-bold block mt-1">Organic Soy &amp; Mineral</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">VOC rating: 0.00% Zero synthetic solvents</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Direct Thermal Lifespan</span>
+<span class="font-title-md text-title-md text-primary font-bold block mt-1">24 Months UV-Stable</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Resistant to high greenhouse humidity</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script for Die-line Toggle & View Switcher -->
+<script>
+    let showDieLines = true;
+    function toggleDieLines() {
+      showDieLines = !showDieLines;
+      const dielines = document.getElementById('envelope-dielines');
+      const btnText = document.getElementById('dieLineBtnText');
+      if (showDieLines) {
+        dielines.style.opacity = '1';
+        btnText.innerText = 'Hide Vector Die-Lines';
+      } else {
+        dielines.style.opacity = '0';
+        btnText.innerText = 'Show Vector Die-Lines';
+      }
+    }
+
+    function switchView(tabKey) {
+      const envelopeSection = document.getElementById('envelope-section');
+      const labelSection = document.getElementById('label-section');
+      const medallionSection = document.getElementById('medallion-section');
+      const tabs = document.querySelectorAll('.view-tab');
+
+      tabs.forEach(tab => {
+        tab.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'border-b-2', 'border-primary', 'font-bold');
+        tab.classList.add('text-on-surface-variant', 'font-semibold');
+      });
+
+      const activeTab = document.getElementById('tab-' + tabKey);
+      if (activeTab) {
+        activeTab.classList.remove('text-on-surface-variant', 'font-semibold');
+        activeTab.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'border-b-2', 'border-primary', 'font-bold');
+      }
+
+      if (tabKey === 'all') {
+        envelopeSection.style.display = 'flex';
+        envelopeSection.className = 'xl:col-span-7 flex flex-col space-y-4';
+        labelSection.style.display = 'flex';
+        labelSection.className = 'xl:col-span-5 flex flex-col space-y-4';
+        medallionSection.style.display = 'block';
+      } else if (tabKey === 'envelope') {
+        envelopeSection.style.display = 'flex';
+        envelopeSection.className = 'xl:col-span-12 flex flex-col space-y-4';
+        labelSection.style.display = 'none';
+        medallionSection.style.display = 'none';
+      } else if (tabKey === 'label') {
+        envelopeSection.style.display = 'none';
+        labelSection.style.display = 'flex';
+        labelSection.className = 'xl:col-span-12 max-w-2xl mx-auto w-full flex flex-col space-y-4';
+        medallionSection.style.display = 'none';
+      } else if (tabKey === 'medallion') {
+        envelopeSection.style.display = 'none';
+        labelSection.style.display = 'none';
+        medallionSection.style.display = 'block';
+      }
+    }
+  </script>
+</div></main><footer class="no-print w-full bg-surface-container-lowest border-t border-surface-variant py-3"><div class="max-w-[1520px] mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-on-surface-variant text-xs"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">verified</span><span class="font-medium">Print Preview Active: All interactive elements suppressed during window.print() execution.</span></div><div class="flex items-center gap-4 text-label-sm"><span class="font-mono text-on-surface-variant/80">Folio Ref: #VH-INV-2025-84920</span><span class="font-mono text-secondary font-bold">CALIBRATION: PASSED</span></div></div></footer></body></html>

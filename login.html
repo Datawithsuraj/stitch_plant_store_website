@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Sanctuary Portal — Sign In &amp; Account Minting — Verdant Haven</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-container":"#546a2e","surface-container-low":"#f5f4ef","on-secondary-fixed":"#131f00","primary":"#003629","tertiary":"#581904","surface-container-highest":"#e3e3de","inverse-surface":"#30312e","surface-container-lowest":"#ffffff","on-surface":"#1b1c19","primary-container":"#1b4d3e","tertiary-container":"#762e17","tertiary-fixed":"#ffdbd0","inverse-on-surface":"#f2f1ec","on-primary-fixed-variant":"#1d4f40","on-tertiary-container":"#fd9779","on-error":"#ffffff","outline-variant":"#c0c9c3","error":"#ba1a1a","secondary-container":"#cfe99f","secondary-fixed-dim":"#b6d088","on-tertiary-fixed":"#3a0a00","primary-fixed":"#baeed9","outline":"#707974","surface-variant":"#e3e3de","on-secondary-fixed-variant":"#394d14","on-secondary":"#ffffff","on-error-container":"#93000a","on-tertiary":"#ffffff","error-container":"#ffdad6","surface-container":"#efeee9","primary-fixed-dim":"#9ed1bd","secondary":"#50652a","background":"#faf9f4","surface-tint":"#376757","surface-bright":"#faf9f4","on-surface-variant":"#404945","surface-dim":"#dbdad5","on-primary-container":"#8abda9","on-background":"#1b1c19","on-tertiary-fixed-variant":"#793019","on-primary-fixed":"#002117","on-primary":"#ffffff","tertiary-fixed-dim":"#ffb59f","surface-container-high":"#e9e8e3","secondary-fixed":"#d2eca2","inverse-primary":"#9ed1bd","surface":"#faf9f4"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem","space-md":"1rem","margin":"3rem","margin-mobile":"1.25rem","space-xl":"2.5rem","gutter-mobile":"1rem","space-lg":"1.5rem"},"fontFamily":{"display-lg-mobile":["Playfair Display"],"headline-lg":["Playfair Display"],"label-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"display-lg":["Playfair Display"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"headline-sm":["Playfair Display"],"body-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"]},"fontSize":{"display-lg-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"500"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"title-lg":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-sm":["22px",{"lineHeight":"30px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"500"}]}}}}</script><script src="js/store.js"></script><script src="js/nav.js"></script><style>
+      html { scroll-behavior: smooth; }
+      .fade-in { animation: fadeIn 0.35s ease-in-out; }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+      .btn-hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+      .btn-hover-lift:hover { transform: translateY(-2px); box-shadow: 0 8px 20px -4px rgba(0,54,41,0.15); }
+      .glass-panel { background: rgba(250, 249, 244, 0.85); backdrop-filter: blur(12px); }
+    </style></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-space-xs px-margin"><div class="max-w-[1320px] mx-auto flex items-center justify-between font-label-sm text-label-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[16px]">eco</span><span>Complimentary greenhouse shipping on botanical orders over $75</span></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs cursor-pointer hover:text-primary-fixed transition-colors"><span class="material-symbols-outlined text-[14px]">language</span><select aria-label="Currency Switcher" class="bg-transparent text-on-primary font-label-sm text-label-sm cursor-pointer focus:outline-none"><option class="text-on-surface bg-surface" value="USD">USD ($)</option><option class="text-on-surface bg-surface" value="EUR">EUR (€)</option><option class="text-on-surface bg-surface" value="GBP">GBP (£)</option></select></div><a class="hover:text-primary-fixed transition-colors" data-path="greenhouse-locations" href="catalog.html" title="Glasshouse Cultivars &amp; Nursery Locations">Our Nurseries</a><a class="hover:text-primary-fixed transition-colors" data-path="sustainability" href="passport.html" title="Sanctuary Botanical Guarantee &amp; Provenance">Botanical Guarantee</a></div></div></div><div class="h-24 max-w-[1320px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Botanical Boutique Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFozqNo4T_xhfNVgAnqgnpcHzTwow7HxLwxOe0iJPti0ROf9HCuKvGGsqRJlwN-ki8FKaLYJYG5MoKfL0HEyLjRR8oaKcBHOH_ZwPZdR1CaIah049rfbj_g_Ov4cNqC34FkC8b1pNbj_ceYWG45QRsoMV3JJlmgu3bmQ2EPVj2P2W6jeU0Q3PTRxQ-iOuADPuoAcsQ1HBSjLMuEYB97ztA4xCZGTfFW6A0aC3eBv0sfwWFpDxojIHTCw"/><a class="flex flex-col" data-path="shop-plants" href="catalog.html"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-semibold">Verdant Haven</span><span class="font-label-sm text-label-sm tracking-widest uppercase text-secondary font-medium">Botanical Atelier &amp; Nursery</span></a></div><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">search</span><input class="w-full pl-10 pr-space-md py-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" placeholder="Search rare aroids, ficus, artisanal terra cotta..." type="search"/></div></div><div class="flex items-center gap-space-lg"><a aria-label="Wishlist" class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="wishlist" href="#wishlist" onclick="VerdantStore.showToast('Botanical Wishlist', 'You have ' + VerdantStore.getWishlist().length + ' specimens saved in your sanctuary.', 'favorite', 'success'); return false;"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] flex items-center justify-center font-bold">3</span></a><a aria-label="Shopping Cart" class="relative p-space-xs text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" data-path="cart" href="#cart" onclick="openCartDrawer(); return false;"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-[10px] flex items-center justify-center font-bold">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="bg-surface-container-low/50"><div class="max-w-[1320px] mx-auto px-margin"><nav class="flex items-center justify-center gap-space-xl py-space-sm" data-active-classes="text-primary font-semibold border-b-2 border-primary"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="shop-plants" href="catalog.html">Shop Plants</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="rare-finds" href="product.html">Rare Finds</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="planters-and-care" href="catalog.html?category=vessels">Planters &amp; Care</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-open-quiz="true" data-path="plant-quiz" href="#quiz">Plant Quiz</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="live-horticulturist-video-consultation-root-health-audit" href="consultation.html">Plant Doctor</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="30-day-root-vitality-checkup-booking" href="vitality-checkup.html">30-Day Root Checkup</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="workshops" href="consultation.html">Workshops</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="about" href="passport.html">About</a></nav></div></div></header><main class="w-full pt-44 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Main Sanctuary Portal Container -->
+<div class="max-w-[1320px] mx-auto w-full px-margin-mobile md:px-margin pb-space-xl">
+<!-- Editorial Eyebrow & Context Marker -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Archival Client Sanctuary</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant font-normal">Vault Encrypted SSL-256</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Botanical Sanctuary Portal</h1>
+</div>
+<div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface-variant bg-surface-container-low px-space-md py-space-xs rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span>Horticultural Telemetry Network Online</span>
+</div>
+</div>
+<!-- Asymmetric 12-Column Layout Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- LEFT COLUMN: Botanical Passport & Specimen Heritage Showcase (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col justify-between rounded-xl bg-surface-container-low p-space-lg md:p-space-xl relative overflow-hidden shadow-sm">
+<!-- Subtle Organic Ambient Radial Glow -->
+<div class="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-secondary-container/25 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-lg">
+<!-- Passport Header Badge -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">token</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary uppercase tracking-wider font-semibold">The Botanical Passport</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Client Ledger &amp; Specimen Vitality Dossier</span>
+</div>
+</div>
+<span class="px-space-sm py-1 bg-surface-container-lowest text-primary font-label-sm text-label-sm rounded-md shadow-sm">
+              Edition 2025
+            </span>
+</div>
+<!-- Featured Specimen Showcase Image with Scrim -->
+<div class="relative w-full h-56 rounded-lg overflow-hidden shadow-sm group">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Sun-drenched conservatory greenhouse interior with rare variegated Monstera Deliciosa, handcrafted terracotta vessels, morning light filtering through humid botanical glass, editorial aesthetic in deep forest green and cream tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRn79SA2ysVxivLeGqbcQDEa8g_xxOC6WFfom3VfrL8_JOQ8kPIjdTlHJVANfBd_7R1PZpUYRMvuftl2ZA3SGAoHZfdyi5WrPE41lkRaelIOW7Amrbk1XDBr6NSHbTf_EHSii0QO9bP031IA4utFiISyNDNnZAquSiiNPZWpF_DitVP7FWbp1nHuMNIza7p2YPzR0YnfWh5Y78pYXBIjoQbNUj-Gye9U21-YssTbM8jGclYGpKLqzEUw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-on-primary">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Active Conservatory Specimen</p>
+<p class="font-headline-sm text-headline-sm italic">Monstera deliciosa var. Borsigiana</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest/20 backdrop-blur-md flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-on-primary">spa</span>
+</div>
+</div>
+</div>
+<!-- Value Pillars List -->
+<div class="flex flex-col gap-space-md">
+<!-- Pillar 1 -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-lowest/70 backdrop-blur-sm transition-all hover:bg-surface-container-lowest">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/40 flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-title-md text-on-surface">Archival Specimen Registry</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Trace horticultural lineage, soil microbiome biometrics, repotting calendars, and real-time lux thresholds.
+                </p>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-lowest/70 backdrop-blur-sm transition-all hover:bg-surface-container-lowest">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-title-md text-on-surface">1:1 Tele-Horticulturist Concierge</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Priority video root audits with Dr. Elena Alvarez and our master greenhouse fellows whenever foliage hesitates.
+                </p>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-lowest/70 backdrop-blur-sm transition-all hover:bg-surface-container-lowest">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed/60 flex items-center justify-center shrink-0 text-tertiary">
+<span class="material-symbols-outlined text-[20px]">published_with_changes</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-title-md text-on-surface">90-Day Living Guarantee Protocol</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Automated warranty extension from 30 to 90 days once botanical acclimatization checkups are logged.
+                </p>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-lowest/70 backdrop-blur-sm transition-all hover:bg-surface-container-lowest">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">nature_people</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-md text-title-md text-on-surface">Private Greenhouse Reserve Drops</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Member-first allocations of tissue-cultured variegated aroids and hand-thrown Tuscan clay planters.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Curated Member Testimonial Card -->
+<div class="relative z-10 mt-space-lg p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Passport #VH-9182</span>
+</div>
+<p class="font-headline-sm text-headline-sm italic text-on-surface leading-snug">
+            “My Philodendron Spiritus Sancti health telemetry has been effortless from transit acclimatization through first seasonal leaf emergence.”
+          </p>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-lg text-label-lg font-semibold text-primary">Siddharth N. — Seattle Atelier</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Specimen Parent (14 Plants)</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Authentication Interface & State Switcher (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-md relative">
+<div>
+<!-- Tab Switcher: Sign In vs. Create Conservatory Account -->
+<div class="flex items-center p-1 bg-surface-container-low rounded-lg mb-space-lg">
+<button class="flex-1 py-space-sm px-space-md text-center font-label-lg text-label-lg rounded-md transition-all duration-200 bg-primary text-on-primary shadow-sm" id="tab-btn-signin" onclick="switchAuthTab('signin')">
+              Sign In to Sanctuary
+            </button>
+<button class="flex-1 py-space-sm px-space-md text-center font-label-lg text-label-lg rounded-md transition-all duration-200 text-on-surface-variant hover:text-on-surface" id="tab-btn-signup" onclick="switchAuthTab('signup')">
+              Create Account
+            </button>
+</div>
+<!-- Express Botanical Access Buttons -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Fast Conservatory ID Access</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<button class="flex items-center justify-center gap-space-sm py-space-sm px-space-md bg-surface-container-low hover:bg-surface-container transition-colors rounded-lg font-label-lg text-label-lg text-on-surface">
+<svg class="w-5 h-5" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span>Continue with Google</span>
+</button>
+<button class="flex items-center justify-center gap-space-sm py-space-sm px-space-md bg-surface-container-low hover:bg-surface-container transition-colors rounded-lg font-label-lg text-label-lg text-on-surface">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.06 1.72-.93 2.74 1.01.08 2.02-.51 2.63-1.24z"></path>
+</svg>
+<span>Continue with Apple</span>
+</button>
+</div>
+</div>
+<!-- Divider -->
+<div class="relative flex items-center justify-center mb-space-lg">
+<div class="w-full h-px bg-surface-container-high"></div>
+<span class="absolute bg-surface-container-lowest px-space-md font-label-sm text-label-sm text-outline">or with email credentials</span>
+</div>
+<!-- FORM STATE 1: SIGN IN -->
+<form class="flex flex-col gap-space-md" id="signin-form" onsubmit="event.preventDefault(); simulateAuthSuccess('Sign In');">
+<!-- Botanical ID / Email -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center justify-between" for="signin-email">
+<span>Botanical ID / Email Address</span>
+<span class="text-secondary font-label-sm text-label-sm">Registered Nursery Ledger</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">potted_plant</span>
+<input class="w-full pl-11 pr-space-md py-space-sm bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="signin-email" placeholder="clara.vance@conservatory.org" required="" type="email" value="clara.vance@conservatory.org"/>
+</div>
+</div>
+<!-- Passcode with Toggle -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface" for="signin-passcode">Conservatory Passcode</label>
+<a class="font-label-sm text-label-sm text-primary hover:text-secondary transition-colors underline underline-offset-4" href="login.html">Forgot Passcode?</a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">lock</span>
+<input class="w-full pl-11 pr-12 py-space-sm bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="signin-passcode" placeholder="••••••••••••" required="" type="password" value="AroidWhisperer2025"/>
+<button aria-label="Toggle password visibility" class="absolute right-space-md text-outline hover:text-on-surface transition-colors flex items-center p-1" onclick="togglePasswordVisibility('signin-passcode', this)" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Remember Device Checkbox -->
+<div class="flex items-center justify-between pt-space-xs">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Remember my device in this greenhouse</span>
+</label>
+</div>
+<!-- Primary Sign In CTA -->
+<button class="w-full py-space-sm px-space-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-space-sm mt-space-sm" type="submit">
+<span>Access Sanctuary &amp; Specimen Dashboard</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+<!-- FORM STATE 2: CREATE CONSERVATORY ACCOUNT (Hidden by default) -->
+<form class="hidden flex-col gap-space-md" id="signup-form" onsubmit="event.preventDefault(); simulateAuthSuccess('Passport Created');">
+<!-- Full Legal/Botanical Name -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface" for="signup-name">Client &amp; Specimen Curator Full Name</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">person</span>
+<input class="w-full pl-11 pr-space-md py-space-sm bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="signup-name" placeholder="Clara Vance" required="" type="text"/>
+</div>
+</div>
+<!-- Email Address -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface" for="signup-email">Email Address for Specimen Telemetry</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">mail</span>
+<input class="w-full pl-11 pr-space-md py-space-sm bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="signup-email" placeholder="curator@sanctuary.org" required="" type="email"/>
+</div>
+</div>
+<!-- Create Master Passcode -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface" for="signup-passcode">Create Master Passcode (Min. 8 characters)</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">lock</span>
+<input class="w-full pl-11 pr-12 py-space-sm bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="signup-passcode" placeholder="Create high-strength key" required="" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-space-md text-outline hover:text-on-surface transition-colors flex items-center p-1" onclick="togglePasswordVisibility('signup-passcode', this)" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Optional Order / Specimen Link ID -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1" for="signup-order-id">
+<span>Link Initial Order or Specimen Tag</span>
+<span class="text-outline font-label-sm text-label-sm">(Optional)</span>
+</label>
+<span class="font-label-sm text-label-sm text-secondary">Instant Warranty Binding</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline text-[20px] pointer-events-none">qr_code_2</span>
+<input class="w-full pl-11 pr-space-md py-space-sm bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="signup-order-id" placeholder="e.g. #VH-84920 or #MD-2025-V7" type="text"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">
+                Enter your packing slip badge code to synchronize nursery provenance data upon registration.
+              </p>
+</div>
+<!-- Conservatory Letter Subscription Checkbox -->
+<label class="flex items-start gap-space-xs cursor-pointer select-none pt-space-xs">
+<input checked="" class="w-4 h-4 mt-0.5 rounded text-primary accent-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+                Receive bi-weekly Conservatory Letter, rare aroid reserve notices, and seasonal greenhouse repotting calendars.
+              </span>
+</label>
+<!-- Primary Create Passport CTA -->
+<button class="w-full py-space-sm px-space-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-space-sm mt-space-sm" type="submit">
+<span>Establish Botanical Passport</span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+</form>
+</div>
+<!-- Guest Quick-Tracking Drawer / Banner -->
+<div class="mt-space-lg pt-space-md border-t-0 bg-surface-container-low/60 rounded-lg p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">local_shipping</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Guest Order or Transit Checkup?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Track living greenhouse parcel without signing in.</span>
+</div>
+</div>
+<button class="px-space-md py-space-xs bg-surface-container-lowest hover:bg-surface-container-high transition-colors text-primary font-label-sm text-label-sm rounded-lg shadow-sm shrink-0" onclick="openGuestTracker()" type="button">
+            Track with Order #
+          </button>
+</div>
+<!-- Archival Provenance & SSL Data Protection Footer -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">lock</span>
+<span>256-Bit SSL Botanical Data Encryption</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">eco</span>
+<span>Zero-Carbon Cloud</span>
+</span>
+<span>•</span>
+<span class="text-on-surface">Botanical Codex 2025</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Collapsible Interactive Guest Order Modal / Tray (Hidden by default) -->
+<div class="hidden mt-space-lg p-space-lg bg-surface-container rounded-xl shadow-lg transition-all animate-fadeIn" id="guest-tracker-modal">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary">biotech</span>
+<h3 class="font-title-lg text-title-lg text-primary">Guest Botanical Transit &amp; Root Vitality Tracker</h3>
+</div>
+<button class="text-outline hover:text-on-surface p-1" onclick="openGuestTracker()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        Enter your greenhouse reference number and postal destination to review climatized packaging telemetry and estimated arrival window.
+      </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm items-center">
+<input class="w-full px-space-md py-space-sm bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Order # (e.g. VH-89301)" type="text"/>
+<input class="w-full px-space-md py-space-sm bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Associated Email Address" type="email"/>
+<button class="w-full py-space-sm px-space-md bg-secondary text-on-secondary font-label-lg text-label-lg rounded-lg hover:bg-secondary/90 transition-colors" onclick="alert('Locating botanical transit container #VH-89301... Insulated heat packs active, roots stabilized.');">
+          Query Greenhouse Logistics
+        </button>
+</div>
+</div>
+</div>
+<!-- Dynamic Feedback Banner for Interactive Auth Simulation -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="auth-toast">
+<div class="bg-primary text-on-primary px-space-lg py-space-md rounded-xl shadow-xl flex items-center gap-space-md">
+<span class="material-symbols-outlined text-primary-fixed text-[24px]">verified</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary-fixed" id="toast-title">Botanical Passport Authorized</span>
+<span class="font-body-sm text-body-sm text-on-primary" id="toast-desc">Welcome Clara Vance. Loading specimen telemetry...</span>
+</div>
+</div>
+</div>
+<!-- Client-Side Vanilla Micro-Interactions -->
+<script>
+    function switchAuthTab(targetTab) {
+      const signInBtn = document.getElementById('tab-btn-signin');
+      const signUpBtn = document.getElementById('tab-btn-signup');
+      const signInForm = document.getElementById('signin-form');
+      const signUpForm = document.getElementById('signup-form');
+
+      if (targetTab === 'signin') {
+        // Active Button styling
+        signInBtn.className = "flex-1 py-space-sm px-space-md text-center font-label-lg text-label-lg rounded-md transition-all duration-200 bg-primary text-on-primary shadow-sm";
+        signUpBtn.className = "flex-1 py-space-sm px-space-md text-center font-label-lg text-label-lg rounded-md transition-all duration-200 text-on-surface-variant hover:text-on-surface";
+        
+        // Show/Hide Forms
+        signInForm.classList.remove('hidden');
+        signInForm.classList.add('flex');
+        signUpForm.classList.add('hidden');
+        signUpForm.classList.remove('flex');
+      } else {
+        // Active Button styling
+        signUpBtn.className = "flex-1 py-space-sm px-space-md text-center font-label-lg text-label-lg rounded-md transition-all duration-200 bg-primary text-on-primary shadow-sm";
+        signInBtn.className = "flex-1 py-space-sm px-space-md text-center font-label-lg text-label-lg rounded-md transition-all duration-200 text-on-surface-variant hover:text-on-surface";
+        
+        // Show/Hide Forms
+        signUpForm.classList.remove('hidden');
+        signUpForm.classList.add('flex');
+        signInForm.classList.add('hidden');
+        signInForm.classList.remove('flex');
+      }
+    }
+
+    function togglePasswordVisibility(inputId, triggerBtn) {
+      const input = document.getElementById(inputId);
+      const icon = triggerBtn.querySelector('.material-symbols-outlined');
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.textContent = 'visibility_off';
+      } else {
+        input.type = 'password';
+        icon.textContent = 'visibility';
+      }
+    }
+
+    function openGuestTracker() {
+      const modal = document.getElementById('guest-tracker-modal');
+      modal.classList.toggle('hidden');
+    }
+
+    function simulateAuthSuccess(actionType) {
+      const toast = document.getElementById('auth-toast');
+      const toastTitle = document.getElementById('toast-title');
+      const toastDesc = document.getElementById('toast-desc');
+
+      if (actionType === 'Passport Created') {
+        toastTitle.textContent = "Conservatory Passport Established";
+        toastDesc.textContent = "Your botanical lineage ledger is initialised. Welcome to Verdant Haven.";
+      } else {
+        toastTitle.textContent = "Sanctuary Credentials Verified";
+        toastDesc.textContent = "Welcome back, Clara Vance. Synchronizing 14 living specimens...";
+      }
+
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 4000);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-xl pb-space-lg mt-space-xl"><div class="max-w-[1320px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md pr-space-lg"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-primary font-serif">Verdant Haven</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">An artisanal boutique greenhouse nurturing healthy, resilient botanical specimens, handcrafted earthenware pots, and organic plant nutrition. Sourced responsibly, shipped sustainably in plastic-free packaging.</p><div class="flex flex-col gap-space-xs mt-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-semibold">The Conservatory Letter</span><p class="font-body-sm text-body-sm text-on-surface-variant">Bi-weekly horticultural advice, rare drop announcements, and indoor cultivation insights.</p><div class="flex items-center gap-space-xs mt-space-xs"><input class="flex-1 px-space-md py-space-sm bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Your email address..." type="email"/><button class="px-space-md py-space-sm bg-primary text-on-primary font-label-lg text-label-lg rounded-lg hover:bg-primary-container transition-colors">Subscribe</button></div></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Plant Care Guides</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="care-light-levels" href="care-lab.html">Assessing Natural Light</a></li><li><a class="hover:text-primary transition-colors" data-path="care-watering" href="care-lab.html">The Art of Root Hydration</a></li><li><a class="hover:text-primary transition-colors" data-path="care-repotting" href="care-lab.html">Substrates &amp; Repotting</a></li><li><a class="hover:text-primary transition-colors" data-path="care-pest-management" href="care-lab.html">Organic Pest Defense</a></li><li><a class="hover:text-primary transition-colors" data-path="care-pet-friendly" href="catalog.html?filter=pet-safe">Pet-Friendly Houseplants</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Sustainability</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="sustainability-pledge" href="passport.html" title="Sanctuary Botanical Guarantee &amp; Provenance">Our Botanical Pledge</a></li><li><a class="hover:text-primary transition-colors" data-path="sustainable-packaging" href="mailing-label.html">Zero-Plastic Packaging</a></li><li><a class="hover:text-primary transition-colors" data-path="ethical-sourcing" href="passport.html">Ethical Grower Network</a></li><li><a class="hover:text-primary transition-colors" data-path="carbon-neutral" href="order-confirmation.html">Carbon-Neutral Delivery</a></li><li><a class="hover:text-primary transition-colors" data-path="pot-recycling" href="product.html">Vessel Reuse Initiative</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-primary">Guest Concierge</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="botanical-guarantee" href="passport.html">30-Day Plant Guarantee</a></li><li><a class="hover:text-primary transition-colors" data-path="shipping-and-tracking" href="order-confirmation.html">Shipping &amp; Greenhouse Transit</a></li><li><a class="hover:text-primary transition-colors" data-path="live-horticulturist-video-consultation-root-health-audit" href="consultation.html">Book a Plant Doctor</a></li><li><a class="hover:text-primary transition-colors" data-path="30-day-root-vitality-checkup-booking" href="vitality-checkup.html">Schedule 30-Day Root Checkup</a></li><li><a class="hover:text-primary transition-colors" data-path="corporate-gifting" href="consultation.html">Atelier &amp; Office Design</a></li><li><a class="hover:text-primary transition-colors" data-path="contact" href="consultation.html">Customer Inquiries</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><span>© 2025 Verdant Haven Botanical Co. All rights reserved.</span><a class="hover:text-primary transition-colors" data-path="privacy-policy" href="javascript:void(0)" onclick="openPolicyModal('Sanctuary Privacy &amp; Telemetry Protocol'); return false;">Privacy Policy</a><a class="hover:text-primary transition-colors" data-path="terms-of-service" href="javascript:void(0)" onclick="openPolicyModal('Sanctuary Terms &amp; Horticultural Assurance'); return false;">Terms of Service</a></div><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Follow The Conservatory</span><div class="flex items-center gap-space-sm text-on-surface-variant"><a aria-label="Instagram Journal" class="p-space-xs hover:text-primary transition-colors flex items-center" href="https://instagram.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a aria-label="Pinterest Boards" class="p-space-xs hover:text-primary transition-colors flex items-center" href="https://pinterest.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">nature</span></a><a aria-label="Horticultural Video Channel" class="p-space-xs hover:text-primary transition-colors flex items-center" href="https://youtube.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">smart_display</span></a></div></div></div></div></footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+          // Wire login buttons to proceed to dashboard
+          document.querySelectorAll('button[type="submit"], form button').forEach(btn => {
+            btn.onclick = (e) => {
+              e.preventDefault();
+              VerdantStore.showToast('Welcome to Sanctuary', 'Signed in as Clara Vance.', 'login', 'success');
+              setTimeout(() => {
+                window.location.href = 'dashboard.html';
+              }, 800);
+            };
+          });
+
+          // Quick One-Click Demo Login button injection
+          const card = document.querySelector('.bg-surface-container-lowest, form');
+          if (card) {
+            const demoBtn = document.createElement('button');
+            demoBtn.type = 'button';
+            demoBtn.className = 'w-full py-2.5 px-4 mb-4 rounded-lg bg-secondary/10 hover:bg-secondary/20 text-secondary text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5';
+            demoBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">bolt</span> Quick Demo 1-Click Access (Clara Vance)';
+            demoBtn.onclick = () => {
+              window.location.href = 'dashboard.html';
+            };
+            card.prepend(demoBtn);
+          }
+        });
+      </script>
+</body></html>

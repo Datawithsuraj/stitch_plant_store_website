@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@media print{.no-print{display:none!important;}body{background:#ffffff!important;}.parchment-sheet{box-shadow:none!important;margin:0!important;padding:0!important;max-width:100%!important;}}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "tertiary": "#581904",
+        "on-secondary-container": "#546a2e",
+        "primary": "#003629",
+        "on-secondary-fixed-variant": "#394d14",
+        "outline": "#707974",
+        "surface-variant": "#e3e3de",
+        "on-primary-fixed-variant": "#1d4f40",
+        "on-tertiary-fixed-variant": "#793019",
+        "tertiary-fixed": "#ffdbd0",
+        "on-secondary": "#ffffff",
+        "primary-container": "#1b4d3e",
+        "surface-bright": "#faf9f4",
+        "surface-container-lowest": "#ffffff",
+        "on-background": "#1b1c19",
+        "on-tertiary-container": "#fd9779",
+        "inverse-primary": "#9ed1bd",
+        "secondary-fixed": "#d2eca2",
+        "error": "#ba1a1a",
+        "on-error": "#ffffff",
+        "on-surface-variant": "#404945",
+        "inverse-surface": "#30312e",
+        "background": "#faf9f4",
+        "on-tertiary-fixed": "#3a0a00",
+        "tertiary-container": "#762e17",
+        "secondary": "#50652a",
+        "primary-fixed": "#baeed9",
+        "surface-container": "#efeee9",
+        "on-error-container": "#93000a",
+        "on-primary-container": "#8abda9",
+        "outline-variant": "#c0c9c3",
+        "primary-fixed-dim": "#9ed1bd",
+        "surface-container-low": "#f5f4ef",
+        "secondary-fixed-dim": "#b6d088",
+        "surface-dim": "#dbdad5",
+        "on-primary-fixed": "#002117",
+        "error-container": "#ffdad6",
+        "surface-container-high": "#e9e8e3",
+        "on-surface": "#1b1c19",
+        "surface-container-highest": "#e3e3de",
+        "inverse-on-surface": "#f2f1ec",
+        "surface": "#faf9f4",
+        "tertiary-fixed-dim": "#ffb59f",
+        "on-secondary-fixed": "#131f00",
+        "on-primary": "#ffffff",
+        "secondary-container": "#cfe99f",
+        "on-tertiary": "#ffffff",
+        "surface-tint": "#376757"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-md": "1rem",
+        "gutter": "1.5rem",
+        "space-lg": "1.5rem",
+        "space-xl": "2.5rem",
+        "margin": "3rem",
+        "space-sm": "0.5rem",
+        "space-xs": "0.25rem",
+        "gutter-mobile": "1rem",
+        "margin-mobile": "1.25rem"
+      },
+      "fontFamily": {
+        "headline-lg": ["Playfair Display"],
+        "label-lg": ["Plus Jakarta Sans"],
+        "headline-md": ["Playfair Display"],
+        "headline-lg-mobile": ["Playfair Display"],
+        "headline-sm": ["Playfair Display"],
+        "body-sm": ["Plus Jakarta Sans"],
+        "display-lg-mobile": ["Playfair Display"],
+        "body-md": ["Plus Jakarta Sans"],
+        "label-sm": ["Plus Jakarta Sans"],
+        "display-lg": ["Playfair Display"],
+        "title-md": ["Plus Jakarta Sans"],
+        "body-lg": ["Plus Jakarta Sans"],
+        "title-lg": ["Plus Jakarta Sans"]
+      },
+      "fontSize": {
+        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "500"}],
+        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+        "headline-md": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+        "headline-lg-mobile": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+        "headline-sm": ["22px", {"lineHeight": "30px", "fontWeight": "600"}],
+        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+        "display-lg-mobile": ["38px", {"lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+        "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+        "title-md": ["18px", {"lineHeight": "26px", "fontWeight": "600"}],
+        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+        "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="no-print fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-[1320px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="inline-flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors duration-150" data-path="order-history" href="#"><span class="material-symbols-outlined text-[20px]">arrow_back</span><span class="font-label-lg text-label-lg">Back to Order</span></a><div class="h-5 w-px bg-surface-variant hidden sm:block"></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[22px]">local_florist</span><span class="font-headline-sm text-headline-sm tracking-tight text-primary">Verdant Haven</span><span class="font-label-sm text-label-sm text-on-surface-variant/80 uppercase tracking-widest hidden md:inline ml-space-xs">Atelier &amp; Nursery</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg"><a aria-current="page" class="transition-colors py-1 px-3 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg" data-path="botanical-certificate" href="#">Certificate of Provenance</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-3" data-path="care-protocol" href="#">Horticultural Care Ledger</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1 px-3" data-path="order-invoice" href="#">Archival Invoice</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md"><button class="inline-flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-all duration-200 active:scale-95" onclick="window.print()" type="button"><span class="material-symbols-outlined text-[18px]">print</span><span class="font-label-lg text-label-lg hidden sm:inline">Print Record</span></button><button class="inline-flex items-center gap-space-xs px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary transition-all duration-200 shadow-[0_4px_12px_-2px_rgba(0,54,41,0.2)] active:scale-95" type="button"><span class="material-symbols-outlined text-[18px]">download</span><span class="font-label-lg text-label-lg hidden sm:inline">Download PDF</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative w-full pt-16 bg-surface min-h-screen"><div class="pointer-events-none fixed inset-0 flex items-center justify-center overflow-hidden z-0 select-none opacity-20"><div class="relative flex flex-col items-center justify-center text-center p-8"><div class="w-80 h-80 sm:w-96 sm:h-96 rounded-full flex items-center justify-center"><div class="text-center flex flex-col items-center justify-center"><span class="material-symbols-outlined text-primary text-[72px] sm:text-[96px]">park</span><span class="font-headline-sm text-headline-sm text-primary tracking-widest mt-2 uppercase">Conservatory Seal</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase">Verdant Haven Botanical Atelier</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim font-bold tracking-wider">EST. 1894 • RECORD VERIFIED</span></div></div></div></div><div class="relative z-10 w-full max-w-[1320px] mx-auto px-margin-mobile lg:px-margin py-space-xl"><div class="flex flex-col w-full">
+<!-- Document Action & Archival Utility Bar (Hidden on physical print) -->
+<aside aria-label="Archival Document Actions" class="no-print w-full bg-surface-container-low rounded-xl p-space-md sm:p-space-lg shadow-sm mb-space-xl">
+<div class="flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-xs sm:gap-space-md">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">verified</span>
+          Verified Living Record
+        </div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Document Archive Ref:</span>
+<span class="font-label-lg text-label-lg text-primary tracking-normal">#VH-INV-2025-84920</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-3.5 py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg transition-all duration-150 shadow-sm active:scale-95" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+          Print Certificate &amp; Invoice
+        </button>
+<button class="inline-flex items-center gap-space-xs px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-all duration-150 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+          Download Archival PDF (Vector)
+        </button>
+<button class="inline-flex items-center gap-space-xs px-3.5 py-2 rounded-lg bg-secondary/10 hover:bg-secondary/20 text-secondary font-label-lg text-label-lg transition-all duration-150 active:scale-95" id="nfcLedgerBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">nfc</span>
+          Verify NFC Medallion #MD-772
+        </button>
+<a class="inline-flex items-center gap-space-xs px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary font-label-lg text-label-lg transition-colors" data-path="order-history" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+          Return to Orders
+        </a>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-wrap items-center justify-between gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">workspace_premium</span>
+<span>Formatted for standard US Letter &amp; A4 Archival 160gsm Cotton Rag Stock. Color calibration: Esko Botanical Pantone CMYK.</span>
+</div>
+<span class="text-tertiary-container font-label-sm text-label-sm hidden md:inline">Status: Fully Collateralized &amp; Dispatched</span>
+</div>
+</aside>
+<!-- Parchment Archival Folio Container -->
+<article class="parchment-sheet relative w-full bg-surface-bright text-on-surface shadow-xl rounded-xl p-6 sm:p-10 lg:p-14 overflow-hidden">
+<!-- Micro Guilloché Security Pattern & Ornate Dual Framing -->
+<div class="pointer-events-none absolute inset-3 sm:inset-5 rounded-lg bg-primary/[0.015] -z-0"></div>
+<div class="pointer-events-none absolute inset-4 sm:inset-6 rounded-lg bg-secondary/[0.01] -z-0"></div>
+<!-- Security Micro-Watermark SVG Pattern -->
+<div class="pointer-events-none absolute inset-0 opacity-[0.035] -z-0 flex items-center justify-center overflow-hidden select-none">
+<svg class="w-full h-full" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="80" id="guillochePattern" patternunits="userSpaceOnUse" width="80">
+<circle class="text-primary" cx="40" cy="40" fill="none" r="38" stroke="currentColor" stroke-width="0.75"></circle>
+<circle class="text-secondary" cx="40" cy="40" fill="none" r="28" stroke="currentColor" stroke-width="0.5"></circle>
+<path class="text-primary" d="M 0 40 Q 20 20 40 40 T 80 40 M 40 0 Q 60 20 40 40 T 40 80" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#guillochePattern)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<!-- DOCUMENT CORE CONTENT (Relative z-10) -->
+<div class="relative z-10 flex flex-col gap-space-xl">
+<!-- ================= SECTION 1: CERTIFICATE OF PROVENANCE ================= -->
+<section aria-labelledby="certificate-title" class="flex flex-col">
+<!-- Header Crest & Archival Identification Block -->
+<div class="flex flex-col items-center text-center pb-space-lg">
+<!-- Crest Logo & Seal Motif -->
+<div class="inline-flex flex-col items-center mb-space-sm">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-primary-fixed shadow-md mb-space-xs">
+<span class="material-symbols-outlined text-[34px]">spa</span>
+</div>
+<span class="font-headline-sm text-headline-sm tracking-wide text-primary uppercase">Verdant Haven</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-[0.25em] uppercase">Botanical Atelier • Glasshouse Nursery</span>
+<span class="font-body-sm text-body-sm italic text-secondary mt-0.5 tracking-wider font-serif">“Ex Foliis Ad Radices — Cultus Perpetuus”</span>
+</div>
+<!-- Document Hierarchy Title -->
+<div class="max-w-3xl mx-auto mt-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] px-3 py-1 bg-surface-container rounded-full text-secondary font-bold">
+              Official Conservatory Registry • Serialized Folio
+            </span>
+<h1 class="font-headline-lg text-headline-lg text-primary mt-space-xs tracking-tight" id="certificate-title">
+              Certificate of Botanical Provenance &amp; Horticultural Authenticity
+            </h1>
+</div>
+<!-- Metadata Registry Chips -->
+<div class="mt-space-md flex flex-wrap justify-center gap-space-xs sm:gap-space-sm font-label-sm text-label-sm">
+<div class="px-3.5 py-1.5 rounded-lg bg-surface-container-high text-primary font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">fingerprint</span>
+<span>Specimen ID: <strong class="font-semibold">#MD-2025-V7</strong></span>
+</div>
+<div class="px-3.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface-variant font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">token</span>
+<span>Ledger Block: <strong>#ES-9931-BIO</strong></span>
+</div>
+<div class="px-3.5 py-1.5 rounded-lg bg-surface-container-high text-secondary-container bg-primary font-medium flex items-center gap-1.5 text-on-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">contactless</span>
+<span>NFC Medallion: <strong>#MD-772</strong></span>
+</div>
+<div class="px-3.5 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+<span>Glasshouse Bay: <strong>Bay #04 (Aroid Microclimate)</strong></span>
+</div>
+</div>
+</div>
+<!-- Formal Conservatory Attestation Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md sm:p-space-lg text-center mx-auto max-w-4xl shadow-sm mb-space-lg">
+<p class="font-body-lg text-body-lg text-on-surface italic leading-relaxed">
+            “This archival instrument solemnly certifies that the botanical specimen cataloged herein has been propagated from authentic vegetative stock, acclimated across an unhurried 28-month conditioning schedule, and personally verified by the Conservatory Registrar as physiologically pristine, pet-safe quarantined, and biologically primed for private residential curation.”
+          </p>
+</div>
+<!-- Specimen Detailed Biological & Biometric Dossier (Bento Grid) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Column A: Specimen Botanical Dossier (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Taxonomic Nomenclature</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Class A Specimen</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary italic font-serif">
+                Monstera Deliciosa Liebm.
+              </h2>
+<p class="font-body-sm text-body-sm text-secondary font-medium mt-0.5">Family Araceae • Subfamily Monsteroideae • Neotropical Origin</p>
+<!-- Phenotypic Attributes List -->
+<div class="mt-space-md grid grid-cols-1 sm:grid-cols-2 gap-space-sm font-body-sm text-body-sm">
+<div class="p-space-sm bg-surface-bright rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Foliar Architecture</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">6 Mature Fenestrated Lobes</span>
+<span class="text-on-surface-variant block text-xs mt-0.5">Secondary perforations fully defined</span>
+</div>
+<div class="p-space-sm bg-surface-bright rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Rhizome &amp; Roots</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Dual Aerial Anchors</span>
+<span class="text-on-surface-variant block text-xs mt-0.5">Lignified 38cm mycorrhizal roots</span>
+</div>
+<div class="p-space-sm bg-surface-bright rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Potting Medium</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Organic Aroid Bark Matrix</span>
+<span class="text-on-surface-variant block text-xs mt-0.5">100% Peat-free • Biochar &amp; Pumice</span>
+</div>
+<div class="p-space-sm bg-surface-bright rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Vessel Attribution</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">8.5" Tuscan Terracotta</span>
+<span class="text-on-surface-variant block text-xs mt-0.5">Hand-thrown breathable clay pot</span>
+</div>
+</div>
+</div>
+<!-- Provenance Timeline Badge -->
+<div class="mt-space-md pt-space-sm bg-primary/5 rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">history_edu</span>
+<span class="font-body-sm text-body-sm text-primary font-medium">Acclimation Cycle: <strong>840 Days (28 Months)</strong> in Glasshouse Bay 04</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Sanctuary Logged</span>
+</div>
+</div>
+<!-- Column B: Real-time Telemetry at Harvest / Dispatch (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-high rounded-xl p-space-lg flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Biometric Pre-Dispatch Telemetry</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                  Live Verified
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sensor readings captured during final quarantine inspection prior to climate sealing:</p>
+<!-- Gauge 1: Foliar Turgor -->
+<div class="mt-space-md">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">water_drop</span>
+                    Foliar Cell Turgor Pressure
+                  </span>
+<span class="font-title-md text-title-md font-bold text-primary">98.4% <span class="font-body-sm text-body-sm font-normal text-secondary">(Optimal)</span></span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden p-0.5">
+<div class="h-full bg-secondary rounded-full" style="width: 98.4%;"></div>
+</div>
+</div>
+<!-- Gauge 2: Root Hydration Index -->
+<div class="mt-space-sm">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">grass</span>
+                    Root Zone Hydration Index
+                  </span>
+<span class="font-title-md text-title-md font-bold text-primary">92.0% <span class="font-body-sm text-body-sm font-normal text-secondary">(Saturated)</span></span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden p-0.5">
+<div class="h-full bg-secondary rounded-full" style="width: 92%;"></div>
+</div>
+</div>
+<!-- Sensor Metrics Pairs -->
+<div class="grid grid-cols-2 gap-space-xs mt-space-md pt-space-xs">
+<div class="bg-surface-bright rounded-lg p-2.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Bay Temperature</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-md text-title-md text-primary font-bold">71.4°F</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 21.9°C</span>
+</div>
+</div>
+<div class="bg-surface-bright rounded-lg p-2.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Relative Humidity</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-md text-title-md text-primary font-bold">68% RH</span>
+<span class="font-body-sm text-body-sm text-secondary font-semibold">±1.5%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Botanical Cryptographic Hash -->
+<div class="mt-space-md bg-surface-container rounded-lg p-2.5 font-mono text-[11px] text-on-surface-variant flex items-center justify-between">
+<span class="truncate">SHA-256: e871a2..990b7e41d84</span>
+<span class="text-secondary font-bold uppercase tracking-wider text-[10px]">ECDSA Signed</span>
+</div>
+</div>
+</div>
+<!-- Curatorial Sign-Off & Official Botanical Escrow Seals -->
+<div class="mt-space-lg grid grid-cols-1 md:grid-cols-3 gap-space-md items-center bg-surface-container-low rounded-xl p-space-lg">
+<!-- Arbiter Sign-off Column -->
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Lead Conservatory Arborist</span>
+<!-- Stylized Signature representation -->
+<div class="h-12 flex items-center">
+<span class="font-serif italic font-headline-md text-headline-md text-primary tracking-wide select-none">
+                Dr. Elena Alvarez
+              </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Elena Alvarez, Ph.D. Hort.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fellow, Royal Botanical Horticultural Society</span>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Inspected &amp; Sealed: March 29, 2025 • 07:45 AM PST</span>
+</div>
+<!-- Wax Seal Decorative Emblem (Center) -->
+<div class="flex flex-col items-center justify-center text-center">
+<div class="relative w-24 h-24 rounded-full bg-tertiary-container text-tertiary-fixed shadow-lg flex items-center justify-center p-2 select-none group">
+<!-- Concentric seal rings -->
+<div class="w-20 h-20 rounded-full bg-tertiary flex flex-col items-center justify-center p-1 text-center">
+<span class="material-symbols-outlined text-[28px] text-tertiary-fixed">eco</span>
+<span class="text-[8px] tracking-widest uppercase font-bold text-tertiary-fixed-dim leading-none mt-1">VERDANT</span>
+<span class="text-[7px] tracking-widest uppercase text-tertiary-fixed-dim leading-none">SEALED</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-widest mt-space-xs">Official Conservatory Stamp</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Archival Ledger Certificate #84920</span>
+</div>
+<!-- Registrar & Living Guarantee Escrow Verification -->
+<div class="flex flex-col md:items-end md:text-right">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Escrow Registrar Attestation</span>
+<div class="inline-flex items-center gap-1.5 mt-1 text-primary">
+<span class="material-symbols-outlined text-[20px] text-secondary">verified_user</span>
+<span class="font-title-md text-title-md font-semibold">Living Heritage Escrow</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-1">
+              Specimen insurance underwritten for transit shock, temperature deviation, and first-season root vitality.
+            </p>
+<div class="mt-space-xs inline-flex items-center gap-1 px-2.5 py-1 rounded bg-secondary/15 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+              Secured in Registry Vault #BAY04
+            </div>
+</div>
+</div>
+</section>
+<!-- Guilloché Horizontal Divider -->
+<div class="relative py-space-sm flex items-center justify-center">
+<div class="w-full h-px bg-outline-variant/50"></div>
+<div class="absolute px-4 bg-surface-bright text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">psychiatry</span>
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-on-surface-variant">Financial Ledger • Archival Settlement</span>
+<span class="material-symbols-outlined text-[18px]">psychiatry</span>
+</div>
+</div>
+<!-- ================= SECTION 2: COMMERCIAL SETTLEMENT & TAX INVOICE ================= -->
+<section aria-labelledby="invoice-heading" class="flex flex-col">
+<!-- Invoice Header & Billed Parties Block -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Billed Party -->
+<div class="md:col-span-6 bg-surface-container-low p-space-md sm:p-space-lg rounded-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-space-xs">Billed &amp; Dispatched To</span>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold">Clara Vance</h3>
+<p class="font-body-md text-body-md text-on-surface mt-1">2840 SW Periander St</p>
+<p class="font-body-md text-body-md text-on-surface">Portland, Oregon 97201</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">United States • Residential Estate Delivery (Rear Conservatory Gate Code Provided)</p>
+<div class="mt-space-sm flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+<span>Dedicated Climate Courier Dispatch ID: #VH-LOG-712</span>
+</div>
+</div>
+<!-- Invoice Details / Terms -->
+<div class="md:col-span-6 bg-surface-container-low p-space-md sm:p-space-lg rounded-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Commercial Tax Invoice</span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold uppercase">Paid in Full</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-1" id="invoice-heading">VH-84920-INV</h2>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-sm pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Order Settlement Date</span>
+<span class="font-title-md text-title-md text-on-surface font-medium">March 29, 2025</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Tax Jurisdiction ID</span>
+<span class="font-title-md text-title-md text-on-surface font-medium">OR-AGR-094-EX</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Payment Clearance</span>
+<span class="font-title-md text-title-md text-secondary font-semibold">Multi-Instrument</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Botanical Escrow Status</span>
+<span class="font-title-md text-title-md text-primary font-semibold">Underwritten (48H)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Ledger Table of Line Items -->
+<div class="w-full overflow-x-auto rounded-xl bg-surface-container-lowest shadow-sm">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-space-md" scope="col">Item #</th>
+<th class="py-3.5 px-space-md" scope="col">Curatorial Specimen &amp; Provisioning Description</th>
+<th class="py-3.5 px-space-md text-center" scope="col">Qty</th>
+<th class="py-3.5 px-space-md text-right" scope="col">Unit Price</th>
+<th class="py-3.5 px-space-md text-right" scope="col">Total (USD)</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Item 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-space-md font-mono text-on-surface-variant align-top">01</td>
+<td class="py-4 px-space-md align-top">
+<div class="font-title-md text-title-md text-primary font-serif font-semibold">Monstera Deliciosa Liebm.</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Specimen #MD-2025-V7 • Curator Grade A • Acclimated in Bay #04. Includes serialized hand-stamped NFC Brass Medallion #MD-772 and 8.5" Tuscan Hand-Thrown Breathable Terracotta Planter Vessel with matching saucer.
+                  </div>
+</td>
+<td class="py-4 px-space-md text-center font-medium align-top">1</td>
+<td class="py-4 px-space-md text-right font-medium align-top">$185.00</td>
+<td class="py-4 px-space-md text-right font-bold text-primary align-top">$185.00</td>
+</tr>
+<!-- Item 2 -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-space-md font-mono text-on-surface-variant align-top">02</td>
+<td class="py-4 px-space-md align-top">
+<div class="font-title-md text-title-md text-on-surface font-semibold">Organic Aroid Bark Substrate Blend No. 4</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    4-Liter hermetically sealed pouch. Hand-blended Douglas Fir bark nuggets, micro-perforated horticultural biochar, chunky calcined diatomite, and volcanic pumice.
+                  </div>
+</td>
+<td class="py-4 px-space-md text-center font-medium align-top">1</td>
+<td class="py-4 px-space-md text-right font-medium align-top">$24.00</td>
+<td class="py-4 px-space-md text-right font-bold text-primary align-top">$24.00</td>
+</tr>
+<!-- Item 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-space-md font-mono text-on-surface-variant align-top">03</td>
+<td class="py-4 px-space-md align-top">
+<div class="font-title-md text-title-md text-on-surface font-semibold">Specialized Horticultural Transit (48-Hr Dedicated)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Climate-controlled courier van (continuous 68°F – 72°F monitoring) inside custom insulated breathable oxygen cocoon with vibration-dampened root cradle.
+                  </div>
+</td>
+<td class="py-4 px-space-md text-center font-medium align-top">1</td>
+<td class="py-4 px-space-md text-right font-medium align-top">$18.00</td>
+<td class="py-4 px-space-md text-right font-bold text-primary align-top">$18.00</td>
+</tr>
+<!-- Item 4 -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-space-md font-mono text-on-surface-variant align-top">04</td>
+<td class="py-4 px-space-md align-top">
+<div class="font-title-md text-title-md text-secondary font-semibold">Atelier Membership Perk: Thermal Wrap &amp; Nursery Hold</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Complimentary root acclimation insulation and weather-gate inspection protocol (Applied Code: <strong>GARDENCLUB</strong>).
+                  </div>
+</td>
+<td class="py-4 px-space-md text-center font-medium align-top">1</td>
+<td class="py-4 px-space-md text-right font-medium align-top">$0.00</td>
+<td class="py-4 px-space-md text-right font-bold text-secondary align-top">−$0.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Ledger Financial Reconciliation & Allocation Bento -->
+<div class="mt-space-md grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<!-- Payment Instruments & Botanical Escrow Details (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between h-full">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-space-xs">Settlement Instrumentation Breakdown</span>
+<div class="space-y-space-sm mt-space-sm">
+<!-- Instrument 1: Primary Visa Card -->
+<div class="p-space-sm bg-surface-bright rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-md bg-primary-container text-on-primary flex items-center justify-center font-bold font-mono text-xs">
+                      VISA
+                    </div>
+<div>
+<div class="font-label-lg text-label-lg text-primary">Visa Signature •••• 9104</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Auth Token: #TOK-9021-VH • Processed at 07:44:12 PST</div>
+</div>
+</div>
+<span class="font-title-md text-title-md font-bold text-primary">$150.00</span>
+</div>
+<!-- Instrument 2: House Credit / Membership Credit -->
+<div class="p-space-sm bg-surface-bright rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-md bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+<div>
+<div class="font-label-lg text-label-lg text-secondary">Conservatory Patron Credit Applied</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Ledger #AC-7781 • Remaining Balance: $43.00</div>
+</div>
+</div>
+<span class="font-title-md text-title-md font-bold text-secondary">$77.00</span>
+</div>
+</div>
+</div>
+<!-- Escrow Safeguard Callout -->
+<div class="mt-space-md pt-space-xs p-space-sm bg-surface-container rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">gavel</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong>Botanical Escrow Condition:</strong> Funds are locked in living guarantee custody until delivery recipient acknowledges safe delivery or 48 hours lapse post-unboxing inspection.
+              </p>
+</div>
+</div>
+<!-- Total Calculation Ledger (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container rounded-xl p-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-space-xs">Financial Summary</span>
+<div class="space-y-space-xs py-space-xs font-body-md text-body-md">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Specimen &amp; Botanical Subtotal</span>
+<span class="font-medium text-on-surface">$209.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Specialized Climate Transit</span>
+<span class="font-medium text-on-surface">$18.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="flex items-center gap-1">
+                  Oregon Agricultural Nursery Tax Exemption
+                  <span class="material-symbols-outlined text-[15px] text-secondary">info</span>
+</span>
+<span class="font-medium text-secondary">$0.00</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-sm bg-primary text-on-primary rounded-xl p-space-md flex flex-col justify-between shadow-md">
+<div class="flex justify-between items-baseline">
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-on-primary-container">Net Settled Amount</span>
+<span class="font-headline-md text-headline-md font-serif font-bold text-white tracking-tight">$227.00</span>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 text-primary-fixed font-label-sm text-label-sm">
+<span>Status: ZERO BALANCE DUE</span>
+<span class="font-semibold uppercase tracking-wider">PAID IN FULL</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 3: LEGAL ASSURANCES & NFC QR PASSPORT ================= -->
+<section aria-label="Legal Assurances and Cryptographic Authentication" class="bg-surface-container-high rounded-xl p-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg items-center">
+<!-- Left: 90-Day Living Guarantee Assurance -->
+<div class="md:col-span-8 flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs text-primary font-title-md text-title-md font-semibold">
+<span class="material-symbols-outlined text-[24px] text-secondary">energy_savings_leaf</span>
+<span>The Verdant Haven 90-Day Unconditional Botanical Guarantee</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Every curated specimen from our glasshouses is covered by our full living plant replacement warranty. Should your <em>Monstera Deliciosa Liebm.</em> show physiological distress, leaf necrosis, or shock within 90 days of residential placement, our senior horticulturalists will provide on-site telemedicine diagnosis or dispatch an acclimated replacement at zero fee.
+            </p>
+<div class="flex flex-wrap items-center gap-space-md mt-space-xs font-label-sm text-label-sm text-primary">
+<span class="flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+                Complimentary 30-Day Root Vitality Checkup
+              </span>
+<span class="flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+                Lifetime Botanical Care Advisory Line
+              </span>
+</div>
+</div>
+<!-- Right: Printable QR Code Box & NFC Tap Guide -->
+<div class="md:col-span-4 bg-surface-bright rounded-xl p-space-md flex flex-col items-center text-center shadow-sm">
+<!-- Simulated Crisp SVG QR Code for Archival Telemetry -->
+<div class="w-32 h-32 p-2 bg-white rounded-lg shadow-inner flex items-center justify-center">
+<svg class="w-full h-full text-primary" fill="currentColor" viewbox="0 0 100 100">
+<!-- Outer Corners -->
+<rect height="30" rx="3" width="30" x="0" y="0"></rect>
+<rect fill="white" height="20" width="20" x="5" y="5"></rect>
+<rect height="10" width="10" x="10" y="10"></rect>
+<rect height="30" rx="3" width="30" x="70" y="0"></rect>
+<rect fill="white" height="20" width="20" x="75" y="5"></rect>
+<rect height="10" width="10" x="80" y="10"></rect>
+<rect height="30" rx="3" width="30" x="0" y="70"></rect>
+<rect fill="white" height="20" width="20" x="5" y="75"></rect>
+<rect height="10" width="10" x="10" y="80"></rect>
+<!-- Data Matrix Elements -->
+<rect height="6" width="6" x="36" y="6"></rect>
+<rect height="12" width="6" x="48" y="10"></rect>
+<rect height="6" width="6" x="58" y="6"></rect>
+<rect class="text-secondary" height="28" rx="2" width="28" x="36" y="36"></rect>
+<circle cx="50" cy="50" fill="white" r="7"></circle>
+<circle class="text-primary" cx="50" cy="50" fill="currentColor" r="4"></circle>
+<rect height="6" width="12" x="10" y="40"></rect>
+<rect height="6" width="18" x="6" y="52"></rect>
+<rect height="16" width="8" x="72" y="38"></rect>
+<rect height="10" width="8" x="86" y="44"></rect>
+<rect height="6" width="14" x="38" y="72"></rect>
+<rect height="12" width="10" x="58" y="78"></rect>
+<rect height="18" width="6" x="74" y="72"></rect>
+<rect height="6" width="10" x="84" y="84"></rect>
+</svg>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold mt-space-xs uppercase tracking-wider">
+              Scan to Authenticate NFC
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant max-w-[180px] leading-tight mt-0.5">
+              Access real-time soil logs &amp; sanctuary transfer portal
+            </span>
+<span class="font-mono text-[10px] text-secondary font-semibold mt-1">VH-SPECIMEN-MD-772</span>
+</div>
+</div>
+</section>
+<!-- Archival Legal Footer Notice & Seal -->
+<footer class="pt-space-sm flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm text-center md:text-left">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_florist</span>
+<span>Verdant Haven Botanical Atelier • Glasshouse Bay #04, Sauvie Island Nursery Sanctuary, Portland OR 97231</span>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm">
+<span>State Nursery Cert: #OR-AG-88190</span>
+<span>EIN: 93-4881029</span>
+<span class="text-primary font-semibold">© 2025 Verdant Haven</span>
+</div>
+</footer>
+</div>
+</article>
+<!-- Interactive Client-side Script for NFC Ledger & Print Feedback -->
+<script>
+    document.getElementById('nfcLedgerBtn')?.addEventListener('click', function() {
+      const btn = this;
+      const originalHTML = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Reading Medallion...';
+      btn.classList.add('bg-secondary/30');
+
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-primary">verified</span> Medallion #MD-772 Verified';
+        setTimeout(() => {
+          btn.innerHTML = originalHTML;
+          btn.classList.remove('bg-secondary/30');
+        }, 3200);
+      }, 900);
+    });
+  </script>
+</div></div></main><footer class="no-print w-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] py-space-lg"><div class="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">shield</span><span>Archival Botanical Ledger • Sealed &amp; Registered under Verdant Haven Conservatory Protocol</span></div><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm">Serial ID: VH-BOT-9842</span><span class="font-label-sm text-label-sm text-on-surface-variant/80">© 2024 Verdant Haven Atelier. All rights reserved.</span></div></div></footer></body></html>
